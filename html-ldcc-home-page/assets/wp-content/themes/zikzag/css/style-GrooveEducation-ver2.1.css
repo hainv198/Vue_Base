@@ -1,0 +1,1054 @@
+.edutech-header-button {
+    background-repeat: no-repeat;
+    border-radius: initial;
+    background-color: transparent !important;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: calc((100% - 560px) /2);
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    padding: 13px 30px 20px 30px;
+    color: #fff;
+    text-align: center;
+  }
+  .item-center{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    position: relative;
+  }
+  .image-video-header{
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    z-index: 2;
+  }
+  .item-center .image-video-header .pulsation{
+    background-color: #E60078;
+    width: 71px;
+    height: 71px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    border-radius: 50px;
+    position: absolute;
+    left: -11px;
+    top: -11px;
+    z-index: -1;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: arcontactus-pulse 2s infinite;
+    animation: arcontactus-pulse 2s infinite;
+  }
+  .item-center .image-video-header .pulsation:nth-of-type(2n) {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+  }
+  .edutech-header-button:hover{
+    color:#fff;
+  }
+  .edutech-header-button span{
+    padding-top: 5px;
+    font-size: 18px;
+  }
+  .section-header-education {
+    background-image: url(../../../uploads/2021/02/bg-block1-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:100px;
+    padding-bottom: 40px;
+  }
+  .groove-inline-block{
+    display:inline-block;
+    margin-right:15px;
+  }
+  .edx-custom-padding{
+    padding-right:40px;
+  }
+  .section-edx-education{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../../../uploads/2021/02/white-bg-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 45px 0px;
+  }
+  .edx-button{
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  .edx-button-container {
+    height:200px;
+  }
+  .edx-content{
+    padding-bottom:40px;
+    padding-top: 15px;
+  }
+  .wgl-tabs_header_wrap{
+
+  }
+  .btn-edx{
+    width: 200px;
+    background: #E60978;
+    color: #fff !important;
+    padding: 8.5px 18px;
+    position: relative;
+    max-width: 196px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    height: auto;
+    height: 48px;
+    font-size: 17px;
+    padding: 14.5px 10px;
+  }
+  .education--sub-title span{
+    font-weight: 700 !important;
+    font-size: 16px !important;
+  }
+  .education-title span{
+    font-family: 'Plumpfull Black';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: inherit;
+    color: #000000 !important;
+  }
+  .education-title{
+    background-image: url(../../../uploads/2021/02/active-menu%402x.png) !important;
+    background-size:169px 11px;
+  }
+  .edutech-wgl-tab .wgl-tabs_title{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .edutech-wgl-tab-1 .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-technology.png);
+    width: 53px;
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-1.active .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-technology-white.png)
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-1:hover .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-technology-white.png)
+  }
+  .edutech-wgl-tab-2 .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/icon-education.png);
+    width: 62px;
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-2.active .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/icon-education-white.png)
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-2:hover .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/icon-education-white.png)
+  }
+  .edutech-wgl-tab-3 .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-manufacturing.png);
+    width: 54px;
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-3.active .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-manufacturing-white.png)
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-3:hover .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-manufacturing-white.png)
+  }
+  .edutech-wgl-tab-4 .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-franchise.png);
+    width: 66px;
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-4.active .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-franchise-white.png)
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-4:hover .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-franchise-white.png)
+  }
+  .edutech-wgl-tab-5 .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-healthcare.png);
+    width: 56px;
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-5.active .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-healthcare-white.png)
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-5:hover .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/offer-healthcare-white.png)
+  }
+  .edutech-wgl-tab-6 .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/icon-ohs.png);
+    width: 46px;
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-6.active .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/icon-ohs-white.png)
+  }
+  .wgl-tabs_headings .edutech-wgl-tab-6:hover .wgl-tabs_icon{
+    background-image: url(../../../uploads/2021/02/icon-ohs-white.png)
+  }
+  .edutech-wgl-tab .wgl-tabs_icon{
+    height:53px;
+  }
+  .edutech-wgl-tab.active .wgl-tabs_header{
+    color:#fff;
+    background-color: #E60078
+  }
+  .edutech-wgl-tab.active .wgl-tabs_header:before {
+    left: 50%;
+    border-color: #E60078 transparent transparent transparent;
+    border-width: 17px;
+    bottom: -34px;
+}
+.edutech-wgl-tab.active .wgl-tabs_header::after{
+  
+}
+
+.edutech-wgl-tab.active .wgl-tabs_header{
+  color: #FFFFFF;
+  background-color: #E60078;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #E2E2E2;
+}
+.edutech-wgl-tab:hover .wgl-tabs_header{
+  color: #FFFFFF;
+  background-color: #E60078;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #E2E2E2;
+}
+
+.section-edx-education:before {
+  content: "";
+  background: url(../../../uploads/2021/02/paper.png) no-repeat;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 110px;
+  height: 125px;
+}
+.section-eLearningSolution-education .wgl-tabs_header_wrap.active .wgl-tabs_header:after {
+  border-bottom: 15px solid #E60078;
+  border-right: 15px solid #E60078;
+}
+.section-eLearningSolution-education .wgl-tabs_header:after {
+  content: '';
+  font-size: 13px;
+  line-height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-border-radius: 0 0 5px 0;
+  -moz-border-radius: 0 0 5px 0;
+  border-radius: 0 0 5px 0;
+  border: 1em solid transparent;
+  -webkit-transform: translateY(1em) translateX(-50%) rotate(45deg);
+  -moz-transform: translateY(1em) translateX(-50%) rotate(45deg);
+  -ms-transform: translateY(1em) translateX(-50%) rotate(45deg);
+  -o-transform: translateY(1em) translateX(-50%) rotate(45deg);
+  transform: translateY(1em) translateX(-50%) rotate(45deg);
+}
+.section-eLearningSolution-education .wgl-tabs_header{
+  padding:19px 10px 12px 10px;
+}
+.edutech-wgl-tab .wgl-tabs_header{
+  margin-bottom:0;
+}
+.eLarning-img{
+  padding-bottom:20px;
+}
+.section-eLearningSolution-education .wgl-tabs_content{
+  box-shadow: 0 3px 10px rgba(0,0,0,.16);
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 25px 24px 20px;
+}
+.edu-block-4{
+    padding: 80px 0 50px;
+  }
+  .edu-block-5 .media-wrap{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .edu-block-5 .groove-infobox-image {
+    width:20%;
+  }
+  .edu-counter{
+  padding: 70px 22px 10px 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 336px;
+  }
+  .edu-counter1{
+  background-image: url(../../../uploads/2021/02/number-box-1-1.png);
+  padding: 82px 30px 80px 45px;
+  }
+  .edu-counter2{
+    background-image:url(../../../uploads/2021/02/number-box-2-1.png);
+      padding: 54px 22px 85px 22px;
+      margin-left: calc((100% - 336px)/2);
+  }
+  .edu-counter3{
+    background-image:url(../../../uploads/2021/02/number-box-3-1.png);
+    margin-left: calc((100% - 336px)/2);
+    padding: 83px 22px 105px 22px;
+  }
+  .edu-counter4{
+    background-image:url(../../../uploads/2021/02/number-box-2-1.png);
+    margin-left: calc(100% - 336px);
+    padding: 54px 22px 130px 22px;
+  }
+  .edu-counter1 .media-wrap , .edu-counter3 .media-wrap{
+    position: absolute;
+    top:0;
+    right:0;
+  }
+  
+  .edu-block-6 > .groove-container , .edu-block-8 > .groove-container,.edu-block-9 > .groove-container ,.edu-block-10 > .groove-container{
+    max-width: 1376px !important;
+  }
+  .edu-block-7 .groove-infobox-image{
+    display: block;
+    width: 10%;
+  }
+  .edu-block-7 .groove-infobox-image img{
+    max-width: 40px;
+  }
+  .btn-edu-block-7{
+    padding:40px 0;
+  }
+  .btn-edu-block-7 a{
+    padding: 12px 35px;
+  }
+  .edu-block-8 .groove-col-20{
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: calc(20% - 30px) !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: dashed 1px #bdbdbd;
+    border-radius: 6px;
+  }
+  .edu-block-8 .groove-image{
+    padding: 20px 15px;
+    text-align: center;
+  }
+  .edu-block-10-infobox{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 22px;
+    margin-bottom: 15px;
+    width:calc(100% - 30px);
+    font-size:17px;
+  }
+  .edu-block-10-infobox-left{
+    margin-left:30px;
+  }
+  
+  .edu-block-10 .groove-image{
+    text-align: center;
+  }
+  .edu-block-11 .wgl-accordion_header{
+    border-radius: 6px;
+    border-color: #f5f5f5;
+    background-color: #f5f5f5;
+    margin-bottom: 0;
+  }
+  .edu-block-11 .wgl-accordion_header:hover{
+    color: #E60078;
+    background-color: #ffffff;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0px 8px 30px 0px rgb(0 0 0 / 12%);
+  }
+  .edu-block-11 .wgl-accordion_header.active{
+    color: #E60078;
+    background-color: #ffffff;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0px 8px 30px 0px rgb(0 0 0 / 12%);
+  }
+  .edu-block-11 .wgl-accordion_content{
+    margin-top: 15px;
+  }
+  .edu-block-11 .wgl-accordion_panel{
+    padding: 5px 0;
+  }
+  .edu-block-12-colleft{
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin-right: 50px;
+  }
+  .edu-block-9 .groove-col-33{
+    margin: 0 15px;
+  }
+  .edu-block-9 .blog-post{
+    padding: 15px;
+  }
+  .groove-col-33 .blog-post:hover{
+  
+  }
+  .edu-block-9 img{
+    border-radius: 10px;
+    object-fit: cover;
+    height: 285px;
+  }
+  .edu-block-9 .post_date{
+    background: #e60078;
+    color: #fff;
+    margin-left: auto;
+    margin-top: -30px;
+    margin-right: 20px;
+    position: absolute;
+    right: 0px;
+  }
+  .edu-block-9 .post_date span{
+  font-family: 'Plumpfull Black';
+      text-transform: none;
+      font-weight: normal;
+  }
+  .edu-block-9 .post_date span:first-child {
+    order: 2;
+  }
+  .edu-block-9 .post_date span:nth-child(2) {
+    font-size: 24px;
+  }
+  .edu-block-9 .post_meta-categories{
+    margin-top:30px;
+  }
+  .edu-block-3 .wgl-accordion_header{
+    display: block;
+  }
+  .wgl-counter_value-wrap {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    letter-spacing: -.05em;
+    position: relative; 
+    white-space: nowrap;
+  }
+  
+  .wgl-counter__placeholder-wrap {
+    position: relative; 
+    font-size: 36px;
+  }
+  
+  .wgl-counter__value {
+    position: absolute;
+    z-index: 1;
+    right: 0; 
+    font-size: 36px;
+    font-family: 'Plumpfull Black';
+    font-weight: 500;
+  }
+  
+.wgl-counter__placeholder {
+    visibility: hidden; 
+    font-size: 36px;
+}
+.wgl-counter__prefix {
+    text-align: right; }
+.wgl-counter__suffix {
+    text-align: left;
+    position: static;
+    font-size: 36px;
+    font-family: 'Plumpfull Black';
+    font-weight: 500;}
+    .edu-counter p{
+    font-size: 17px;
+    line-height: 24px;
+    padding: 7px 10px;
+    }
+    .edu-block-2 .groove-image{
+    text-align: center;
+    }
+    .edu-block-2 h1{
+    text-align: left;
+    }
+  .edu-block-7 img{
+    width:38px;
+    height: 35px;
+  }
+  .edu-solution-1{
+    text-align: center;
+  }
+  .edu-solution-image-1, .edu-solution-image-2, .edu-solution-image-3{
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .edu-solution-image-2{
+    padding: 40px 70px;
+    border: solid 1px #E60078;
+    border-radius: 20px;
+    background: #fff;
+  }
+  .edu-solution-block1, .edu-solution-block2{
+    margin: 0 15px;
+    border: solid 1px;
+    border-radius: 17px;
+    padding: 60px 45px 45px !important;
+    margin-top: 40px;
+    position: relative;
+    background: #fff;
+  }
+  .edu-solution-block1{
+    margin-left: 0;
+  }
+  .edu-solution-block2{
+    padding: 60px 30px 45px !important;
+    margin-right: 0;
+  }
+  .ul-solution li{
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 20px;
+  }
+  .ul-solution{
+    padding-top: 35px;
+  }
+  .solution-title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 0;
+    height: 92px;
+    margin-top: -110px;
+  }
+  .solution-title h3{
+    font-size: 50px !important;
+    border: solid 1px;
+    padding: 33px 3px;
+    width: 320px;
+    margin: auto;
+    background: #fff;
+    border-radius: 20px;
+  }
+  .module-content{
+    width: calc(50% - 20px);
+    display: inline-block;
+    padding: 20px 15px 18px 15px;
+    text-align: center;
+    margin: 10px;
+    border: solid 1px #999999;
+    border-radius: 20px;
+    height: 160px;
+  }
+  .module-content p{
+    font-size: 27px;
+    padding-top: 15px;
+    line-height: 36px;
+  }
+  .edu-solution-image-4{
+    text-align: center;
+    z-index: 0;
+  }
+  .edu-solution-block3{
+    width: 310px;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    background: #fff;
+    z-index: 6;
+    padding: 15px 0;
+    border: solid 1px;
+    line-height: 53px;
+    margin-top: -48px;
+    height: 84px;
+    position: relative;
+    border-radius: 20px;
+  }
+  .module-row1{
+    padding-top: 15px;
+  }
+@media (min-width: 776px) and (max-width: 1200px) {
+    .edu-block-6  .groove-row{
+    display: block !important;
+    }
+    .edu-block-6 .groove-col-25{
+    width: 49% !important;
+    display: inline-block;
+    }
+    .edu-counter{
+    margin: auto;
+    }
+    .edu-block-7 .groove-infobox-image{
+    width: 13%;
+    }
+    #edx-block2 .img-right img, .edu-block-3 .groove-col-60 img{
+      height: auto !important;
+    }
+    .module-content p{
+      font-size: 22px;
+    }
+}
+@media only screen and (max-width: 776px) {
+  .nowrap{
+    white-space: nowrap;
+  }
+  .wgl-video_popup .videobox_link{
+    width: 100%;
+    margin: 0;
+  }
+  .image-video-header img{
+    width: 34px;
+  }
+  .image-video-header {
+    bottom: 5px;
+    right: 25px;
+  }
+  .item-center .image-video-header .pulsation{
+    left: -8px;
+    top: -8px;
+    width: 50px;
+    height: 50px;
+  }
+  .edu-solution-image-2{
+    padding: 30px 0;
+    width: 100%;
+  }
+  .edu-solution-block1{
+    margin: 0;
+    margin-top: 70px;
+  }
+  .solution-title h3{
+    font-size: 32px !important;
+    width: 200px;
+    line-height: 32px !important;
+    padding: 20px 0px;
+  }
+  .solution-title{
+    margin-top: -103px;
+  }
+  .ul-solution {
+    padding-top: 0px;
+  }
+  .module-row1{
+    padding-top: 0px;
+  }
+  .ul-solution li{
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 10px;
+  }
+  .edu-solution-block1, .edu-solution-block2{
+    margin: 0;
+    margin-top: 65px;
+    padding: 65px 25px 20px !important;
+  }
+  .module-content p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .module-content img{
+    height: 50px;
+  }
+  .edu-solution-block{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .module-content{
+    height: 140px;
+  }
+  .edu-solution-block3{
+    height: auto;
+    font-size: 28px;
+    width: 175px;
+    line-height: 32px;
+    margin-top: -33px;
+  }
+  .edu-solution-image-4{
+    width: 95%;
+    margin: auto;
+  }
+   .image-video-header .pulsation{
+    background-color: #E60078;
+    width: 56px;
+    height: 56px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    border-radius: 50px;
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    z-index: -1;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: arcontactus-pulse 2s infinite;
+    animation: arcontactus-pulse 2s infinite;
+  }
+   .image-video-header .pulsation:nth-of-type(2n) {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+  }
+  .edutech-header-button{
+    padding: 13px 20px 20px 20px;
+  }
+.edu-header-title {
+    font-size: 30px !important;
+    line-height: 36px  !important;
+}
+.btn-edx{
+    display: block;
+}
+.section-header-education{
+    background-image: none;
+    background: #fff;
+}
+.section-edx-education{
+    background-image: none;
+    padding: 45px 10px;
+}
+.section-edx-education:before{
+    display: none;
+}
+.edu-block-1{
+    padding-top:100px !important;
+}
+.edu-header-title span{
+    font-size: 30px !important;
+    line-height: 36px !important;
+}
+.edx-custom-padding{
+    padding:auto;
+}
+.edu-block-8 .groove-col-20{
+    width: calc(50% - 32px) !important;
+}
+.edu-block-10-infobox-left{
+    margin:auto;
+}
+.groove-animation-1 {
+    top: -330px;
+    left: 0;
+}
+.groove-animation-2 {
+    left: 20px;
+    top: 35px;
+}
+.groove-animation-3 {
+    left: 47%;
+    top: 54px;
+}
+.groove-animation-4 {
+    right: 15px;
+}
+.groove-animation-image img{
+    max-width: 65px;
+}
+.groove-animation-3 img{
+    max-width: 40px;
+}
+.groove-animation-5 img {
+    max-width: 40%;
+}
+.groove-animation-5 img {
+    max-width: 60px;
+}
+.groove-animation-5 {
+    right: 8px;
+    top: -310px;
+}
+.groove-space {
+    height: 150px;
+}
+.edx-custom-padding {
+    padding: 10px 0;
+    text-align: center;
+}
+.edx-content{
+    text-align: left;
+}
+.section-edx-education h2 {
+    padding-bottom: 20px;
+    text-align: left;
+}
+.edx-button-container {
+    height: 50px;
+}
+.edx-button {
+    top: 15px;
+    min-width: 200px;
+}
+.dbl__title-wrapper-left {
+    background-position: center bottom !important;
+}
+.edu-block-4 .groove-infobox-content{
+    text-align: left;
+}
+.edu-block-6 .groove-col-25{
+    width:100% !important;
+}
+.edu-counter1, .edu-counter4 {
+    margin-left: calc((100% - 336px)/2);
+}
+.edu-block-7 .groove-image{
+    padding: 0 10px;
+    width: 20%;
+}
+.edu-block-8 .groove-col-20{
+    margin:10px 15px;
+    display: inline-block;
+}
+.edu-block-8 .groove-col-20:nth-last-child(1){
+    margin-left: calc((100% - 177px)/2);
+}
+.edu-block-10-infobox{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.edu-block-5 .groove-infobox-content {
+    text-align:left;
+}
+
+.edu-block-3 .wgl-tabs_icon{
+    width: 53px;
+    display: block;
+    height: inherit;
+    min-height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: calc((100% - 53px)/2);
+}
+.edu-block-3 .wgl-accordion_content{
+    display: block;
+    border: solid 1px #E60078;
+    border-top: none;
+}
+.eLarning-img {
+    padding-bottom: 10px;
+    margin-top: 35px;
+}
+.btn-edu-block-7 {
+    padding: 30px 0 10px;
+}
+.iso-image-mobile{
+    max-height : 42px;
+}
+.edu-block-9 .post_meta-categories{
+    margin-top: 30px !important;
+}
+.location .media-wrapper{
+    text-align: center;
+}
+.edu-block-2 .groove-image{
+    text-align: center !important;
+}
+.edu-block-12 .groove-title-heading{
+    text-align: left !important;
+}
+.edu-block-12 .dbl__title-wrapper-left {
+    background-position: left bottom !important;
+}
+
+}
+.section-header-education.edu-block-1{
+    padding-top: 105px;
+    padding-bottom: 40px;
+}
+.edu-block-1 .groove-animation-1{
+    top: -490px;
+}
+.edu-block-1 .groove-animation-5{
+  top: -480px;
+}
+.edu-header-title span{
+    font-weight: 400;
+}
+.edu-header-title{
+    font-weight: 400 !important;
+}
+.wgl-accordion_header{
+    padding: 15px 45px 15px 15px;
+}
+.education-menu{
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+}
+.education-menu .menu-item{
+    display: inline-block;
+    margin: 0;
+    padding: 15px 10px;
+}
+.edu-item a{
+    font-size: 17px;
+    padding: 15px 20px;
+    font-weight: 600 !important;
+}
+.edu-item a:hover{
+    color: #e60078;
+}
+.edu-item-button{
+    color: #fff;
+    background: #E60078;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.edu-item:hover{
+    background-image: url(../../../uploads/2021/02/active-menu%402x.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 92px 7px;
+    cursor: pointer;
+}
+.edu-item:hover a{
+    color:#e60078;
+}
+.menu-item .edu-item-button:hover{
+    color: #fff;
+}
+.groove-col-menu-1 .wgl-logotype-container{
+    padding: 15px 10px 15px 20px;
+}
+.footer{
+    background-color: #f9fbfd;
+}
+.wgl-container .row-footer .footer-block-1{
+    max-width: 1376px;
+    background-image: url(../../../uploads/2021/04/footer-xlarge.png);
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 80px 120px 150px 120px !important;
+}
+.location-title{
+    color:#000000;
+}
+.location-title img{
+    margin-right:10px;
+}
+.location-content p{
+    color:#000000;
+}
+.location-title{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.align-center{
+    align-items: center;
+    margin-top: 15px;
+}
+.align-center .groove-col-50{
+    padding: 0;
+}
+.edu-copyright{
+    text-align:right;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.edu-fotter-abs{
+    position: absolute;
+    right: 45px;
+    top: 55px;
+}
+.section-eLearningSolution-education .wgl-accordion_panel{
+    background: #fff;
+}
+@media only screen and (max-width: 776px) {
+    .edutech-header-button{
+        margin-top: 10px;
+    }
+    .edutech-header-button{
+      margin-left: 0;
+    }
+    .edutech-header-button span{
+        font-size: 15px;
+    }
+    .edu-block-1 .groove-animation-1{
+      top: -430px;
+    }
+    .edu-block-1 .groove-animation-5{
+      top: -415px;
+    }
+    .section-header-education.edu-block-1 {
+      padding-bottom: 10px;
+    }
+    .btn-edu-block-7 a{
+        margin: auto;
+        height: auto;
+        padding: 12px 20px;
+    }
+    .btn-edu-block-7 {
+        padding: 0px 0 10px;
+    }
+    .edu-block-10  .btn-edu-block-7{
+        margin-top: 15px;
+    }
+    .wgl-accordion_content{
+        border: none;
+    }
+    .wgl-container .row-footer .footer-block-1{
+        padding: 13px 20px 135px!important;
+        background-image: none;
+        background-color: #fff;
+    }
+    .location-title{
+        padding-bottom: 8px;
+        padding-top: 20px;
+    }
+    .align-center .groove-col-50{
+        text-align: left;
+        padding-top: 10px;
+    }
+    .groove-info-box-left .location-content{
+        width: 100%;
+    }
+    .edu-block-9 .groove-col-33{
+        margin: 0;
+    }
+    .wgl-accordion_header{
+        padding: 15px 45px 15px 15px;
+    }
+    .edu-block-3 .wgl-accordion_header{
+        padding: 15px;
+    }
+
+}
+@media (min-width: 776px) and (max-width: 1200px) {
+    .edu-block-10{
+        margin: 0 15px;
+    }
+    .wgl-container .row-footer .footer-block-1{
+        background-size: contain;
+        padding: 80px 100px 150px 100px !important;
+    }
+    .edu-block-10 .groove-row{
+        align-items: center;
+    }
+    .btn-edu-block-7{
+        padding: 20px 0;
+    }
+    .edu-counter4{
+        padding: 80px 22px 100px 22px;
+    }
+    .edu-block-6 .groove-col-25{
+        margin-bottom: 10px;
+    }
+    .mobile-50{
+        padding: 0 20px;
+    }
+}

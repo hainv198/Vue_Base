@@ -1,0 +1,634 @@
+.react-infobox{
+    margin: 20px 0px 30px 0px;
+    padding: 50px 27px 47px 27px;
+    background-color: #FFFFFF;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 14px 20px 0px rgb(161 175 188 / 10%);
+}
+.section-careers-sticky{
+    margin-bottom: 30px;
+}
+.wmud-img-1{
+    max-width: 54px;
+}
+.wmud-img-2{
+    max-width: 65px;
+}
+.wmud-img-3{
+    max-width: 59px;
+}
+.wmud-img-4{
+    max-width: 60px;
+}
+.react-block-1 .dbl__title-wrapper{
+    margin-top: 60px;
+}
+.react-block-2 .groove-image{
+    min-height: 65px;
+    margin-bottom: 15px;
+}
+.react-block-1 .wgl-tabs{
+    margin-top: 30px;
+}
+.react-block-4, .react-block-10{
+    background-image: url(../../../../../groovetechnology.com/wp-content/uploads/2021/01/Path-22832.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.react-block-10{
+    background-size: contain;
+}
+.react-block-11,.react-block-7 {
+    background-color: #fff;
+}
+.react-block-4 .groove-text-editor{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E8E9E9;
+    box-shadow: 0px 14px 20px 0px rgb(161 175 188 / 10%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 0px 15px 0px 0px;
+    padding: 40px 50px 40px 50px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #fff;
+    margin-top: 40px;
+}
+.react-block-4 a{
+    color:#E31378;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.react-block-5 {
+    margin-top: 40px;
+}
+.react-block-5 .groove-row{
+    align-items: center;
+}
+.react-block-5 img{
+    width: 90%;
+    margin-left:10%;
+}
+.swiper-slide-inner{
+    margin:0 !important;
+}
+.swiper-container:hover .slick-next {
+    -webkit-transform:  translate(5px, -25px);
+    transform: translate(5px, -25px);
+}
+.swiper-container:hover  .slick-prev {
+    -webkit-transform: translate(-5px, -25px);
+    transform: translate(-5px, -25px);
+}
+.slick-arrow {
+    position: absolute !important;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    border-radius: unset;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    color: transparent !important;
+    background: transparent;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    z-index: 1;
+    color: hsla(0,0%,93.3%,.9);
+    top: 50%;   
+    -webkit-transform: translate3d(0,-50%,1px);
+    transform: translate3d(0,-50%,1px);
+    background-size: 50px;
+    background-color: transparent !important;
+}
+.slick-arrow:hover{
+    background-color: transparent !important;
+}
+.slick-prev {
+    background: url(../img/back.png) no-repeat;
+    background-size: 50px;
+    left: 35px;
+}
+.slick-next {
+    background: url(../img/next.png) no-repeat;
+    background-size: 50px;
+    right: 35px;
+}
+.slick-slide{
+    padding:80px 0;
+}
+.slick-slide{
+    opacity: 0.5;
+}
+.slick-active{
+    opacity: 0.5;
+}
+.slick-current{
+    opacity: 1;
+    z-index: 9;
+}
+.slick-current img{
+    transform: scale(1.5);
+    transition: all 0.7s;
+    z-index: 9;
+    box-shadow: 2px 3px 6px 0px rgb(83 42 42 / 25%);
+}
+.slick-track .slick-active:first-child img, .slick-track .slick-active:last-child img{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+.swiper-slide-next {
+    z-index: 9;
+    opacity: 1;
+}
+.react-block-7 .lazyload, .lazyloading{
+    opacity:1 !important;
+}
+
+.wgl-accordion_header{
+    padding: 15px 130px 10px 40px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E8E9E9;
+}
+.wgl-accordion_header:hover{
+    border-color: #E31378;
+}
+.wgl-accordion_header.active {
+    color: #E60078;
+    border-radius: 4px 4px 0px 0px;
+    border-width: 1px 1px 0px 1px;
+    border-color: #E31378;
+    padding-bottom: 0;
+    border-bottom: none !important;
+}
+.wgl-accordion_content {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 130px 27px 40px;
+    background-color: #FFFFFF;
+    border: solid 1px #e60078;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+}
+.wgl-accordion{
+    width:100%;
+}
+a.groove-btn {
+    display: block;
+}
+.react-block-10 a.groove-btn{
+    width: 270px;
+    margin-top: 15px;
+}
+a{
+    color:#e60078;
+}
+.custom-mega-menu a{
+    color:#000;
+}
+.custom-mega-menu a:hover{
+    color:#e60078;
+}
+
+.react-block-7 a,.react-block-9 a{
+    color:#000;
+}
+.react-block-7 a:hover,.react-block-9 a:hover{
+    color:#e60078;
+}
+.react-block-7 .infobox-content-title, .react-block-9 .infobox-content-title{
+    color:#000;
+}
+.react-block-9 .a-sumit img ,.react-block-7 .a-sumit img {
+    max-width: 81px;
+    margin: auto;
+    display: flex;
+}
+.react-block-7 .div-h3,.react-block-9 .div-h3{
+    margin-bottom: 5px;
+}
+.groove-infobox-image{
+    width: 15%; 
+}
+ul.career_links_anchor{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    background: #fff;
+}
+.career_links_anchor li::after {
+    content: "|";
+    display: inline-block;
+    margin: 0 7px;
+    font-weight: bold;
+    position: relative;
+    top: -2px;
+}
+.career_links_anchor li:last-child::after {
+    display: none;
+}
+.career_links_anchor a{
+    color: #000 !important;
+}
+.career_links_anchor li.is-active a {
+    color: #e60078 !important;
+}
+.career_links_anchor{
+    text-transform: uppercase;
+    padding:15px;
+}
+.career_links_anchor li:hover a{
+    color: #e60078 !important;
+}
+.careers-links{
+    width:100%;
+}
+.react-block-1 .groove-btn{
+    width: 225px;
+    padding: 12px 0;
+    margin-top: 35px;
+}
+.react-block-1  .groove-infobox-image{
+    width: 30%;
+}
+.react-block-1  .infobox-content-title{
+    font-weight: 600;
+}
+.react-block-1  .groovythingapp p{
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.react-block-1 .groove-infobox-content a{
+    color:#000000;
+}
+.react-block-1 .groove-infobox-content a:hover{
+    color:#e60078;
+}
+.what-h2{
+    margin-bottom: 15px;
+}
+.react-block-3 .content-of-title{
+    margin-bottom: 20px;
+}
+.wgl-tabs_header {
+    min-height: 185px;
+    background-color: #FFF;
+}
+
+.wgl-tabs_headings .wgl-tabs_header_wrap.active .wgl-tabs_header:after, .wgl-tabs_headings .wgl-tabs_header_wrap.active .wgl-tabs_header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: -1;
+    margin-left: -16px;
+    border-radius: 0 0 5px 0;
+}
+.wgl-tabs_header_wrap.active .wgl-tabs_header {
+    color: #000000;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E60078;
+}
+.wgl-tabs_headings .wgl-tabs_header_wrap.active .wgl-tabs_header:before {
+    left: 50%;
+    border-color: #E60078 transparent transparent transparent;
+    border-width: 17px;
+    bottom: -34px;
+    display: block;
+}
+.wgl-tabs_headings .wgl-tabs_header_wrap.active .wgl-tabs_header:after {
+    left: calc(50% + 1px);
+    border-color: #fff transparent transparent transparent;
+    border-width: 16px;
+    bottom: -32px;
+    display: block;
+}
+ .wgl-tabs_header:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E60078;
+    box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 50%);
+}
+.wgl-tabs_content{
+    background: #fff;
+}
+.react-block-1{
+    background-image: url(../../../../../groovetechnology.com/wp-content/uploads/2020/09/bg-block1-2.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top:0;
+}
+.block-1-col2{
+    margin: 75px 0px 30px 5px;
+}
+.a-sumit {
+    display: flex;
+    align-items: center;
+    padding: 20px 27px 20px 20px;
+    background-color: #FFFFFF;
+    border: solid 1px #E8E9E9;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 35px;
+}
+.groove-info-box-left {
+    width: 100% !important;
+}
+.react-block-11 .groove-btn, .react-block-9 .groove-btn ,.react-block-7 .groove-btn {
+    padding: 13px 0px;
+    border-radius: 40px 40px 40px 40px;
+    background: #E60078;
+    width: 250px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+}
+
+.react-block-10 .groove-column-gap-default{
+    margin-bottom: 20px;
+}
+.sticky-container{
+    min-height: 60px;
+}
+.react-block-10 img{
+    width:85%;
+}
+.wgl-tabs_content{
+    margin-top: 15px;
+}
+.img-boder2{
+    position: absolute;
+    top: 420px;
+    width: 200px;
+}
+.img-boder1{
+    position: absolute;
+    right: 0;
+    top: 400px;
+    width: 170px;
+}
+.img-boder3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+}
+.groove-animation{
+    top: 0px;
+    left: -43px;
+    width: 120px;
+}
+.top30{
+    margin-top:30px;
+}
+.block-11-image-1,.block-11-image-2{
+    margin-right:40px;
+}
+.react-block-11 .groove-infobox-image{
+    width: 70%;
+}
+.react-block-11 .groove-image{
+    display: flex;
+    align-items: center;
+}
+.react-block-11 .groove-infobox-content {
+    width: 100%;
+}
+.react-block-11 .a-sumit:hover .infobox-content-title{
+    color:#e60078 !important;
+}
+.custom-block-1 .groove-section{
+    padding-top: 0;
+}
+@media only screen and (min-width: 1000px) {
+    .career_links_anchor li{
+        margin-bottom: 0 !important;
+    }
+    .react-block-1 .block-1-col{
+        padding:0 30px !important;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    .career_links_anchor li{
+        margin-top:15px;
+    }
+    ul.career_links_anchor{
+        justify-content: end;
+    }
+    ul.career_links_anchor{
+        background:#fff;
+    }
+    ul.career_links_anchor{
+        height: 43px;
+    }
+    .career_links_anchor{
+        width: calc( 100% + -20px);
+        padding: 10px;
+    } 
+    .a-sumit{
+        display: block;
+        padding: 15px 10px;
+        margin-top: 5px;
+    }
+    .groove-infobox-image {
+        width: 100%;
+        margin: auto;
+    }
+    .react-block-1  .groove-infobox-image{
+        width: 40%;
+    }
+    .react-block-11 .groove-btn,.react-block-9 .groove-btn, .react-block-7 .groove-btn {
+        margin: 5px auto;
+    }
+    .groove-infobox-content{
+        margin: 10px 0px;
+    }
+    .slick-current img {
+        transform: scale(1);
+    }
+    .slick-next{
+        background-size: 40px;
+        right: 0px;
+    }
+    .swiper-wrapper{
+        display: block;
+    }
+    .slick-slide {
+        padding: 20px 0px;
+    }
+    .slick-dots{
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+    .slick-dots li{
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background-color: #000;
+        border-radius: 50%;
+        position: relative;
+        margin: 0 5px;
+    }
+    .slick-dots button{
+        background-color: transparent !important;
+        color: transparent;
+    }
+    li.slick-active {
+        background-color: #E60078;
+        background: #E60078;
+        opacity: 1;
+    }
+    .slick-slide {
+        opacity: 1;
+    }
+    .react-block-4 .groove-text-editor{
+        margin: 5px 10px 15px;
+        padding: 30px;
+    }
+    .wgl-accordion_header {
+        padding: 0px 40px 0px 10px;
+    }
+    .wgl-accordion_content {
+        padding: 10px;
+    }
+    a.groove-btn {
+        padding: 15px 0px;
+        margin: auto;
+    }
+    .wgl-tabs_icon {
+        display: block;
+        margin: 0 !important;
+    }
+    .react-block-1 .wgl-accordion_header {
+        padding: 10px;
+        display: block !important;
+    }
+    .react-block-1 .dbl__title-wrapper {
+        margin-top: 30px;
+    }
+    .content-of-title{
+        margin-bottom: 15px;
+    }
+    .block-1-col2 {
+        margin: 10px 0px 30px;
+    }
+    .sticky-container{
+        min-height: 50px;
+    }
+    .react-block1-row{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .block-1-col{
+        order: 2;  
+    }
+    .block-1-col2{
+        order: 1;
+    }
+    .react-block1-row .groove-title-heading {
+        text-align: left;
+    }
+    .react-block-1 .groove-btn {
+        margin-top: 15px;
+    }
+    .react-block-5 {
+        margin-top: 0px;
+    }
+    .order-2{
+        order:2;
+    }
+    .react-block-5 img {
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .react-block-10 .groove-column-gap-default {
+        margin-bottom: 0;
+    }
+     .career_links_anchor {
+        display: block;
+        position: relative;
+        height: 43px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .header{
+        margin-left: -15px;
+    }
+    .react-block-11 .groove-image {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: auto;
+    }
+    .react-block-11 .groove-image img{
+        margin: 0px 10px;
+    }
+    .infobox-content-title{
+        margin-top: 5px;
+    }
+    .react-block-11 .groove-infobox-image{
+        width: 100%;
+    }
+    .block-11-image-1, .block-11-image-2{
+        margin-right:0px;
+    }
+
+    .react-block-11 .a-sumit{
+        margin-top: 5px;
+        display: block;
+    }
+    .infobox-content-title{
+        margin-top: 5px;
+    }
+    .footer .groove-infobox-content{
+        margin: 0;
+    }
+    .footer .infobox-content-title{
+        margin: 0;
+    }
+    .block-1-col .eLarning-img{
+        margin-top: 0px;
+    }
+    .react-block-10 img {
+        width: auto;
+    }
+    .slick-slide img{
+        margin: auto;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .react-block-11 .groove-infobox-image{
+        width: 90%;
+    }
+    .block-1-col .eLarning-img  img , .react-block-5 img , .react-block-7 .swiper-slide-inner img{
+        height:auto !important;
+    }
+}

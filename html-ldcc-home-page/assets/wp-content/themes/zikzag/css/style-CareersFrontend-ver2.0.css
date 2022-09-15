@@ -1,0 +1,835 @@
+.page-life-at-groove .menu-life-at-groove .mega-menu-link,
+.page-job .menu-careers .mega-menu-link,
+.page-available-jobs .menu-career-job .mega-menu-link,
+.page-employee-core-values .menu-career-why>.mega-menu-link,
+.page-company-benefits .menu-career-why>.mega-menu-link {
+    border-bottom: 2px solid #e60078 !important;
+}
+.footer-block-1 ul li, .footer-block-1 ol li{
+    margin-right: 22px;
+    padding: 20px 10px;
+}
+
+.page-company-benefits .menu-career-benefits .mega-menu-link,
+.page-employee-core-values .menu-career-corevalues .mega-menu-link {
+    color: #e60078 !important;
+}
+.page-job .row-footer .menu-footer-home span,
+.page-available-jobs .row-footer .menu-footer-jobs span,
+.page-employee-core-values .row-footer .menu-footer-core span,
+.page-company-benefits .row-footer .menu-footer-benefits span,
+.page-life-at-groove .row-footer .menu-footer-life span {
+    color: #e60078 ;
+}
+
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-item>a.mega-menu-link {
+    height: 72px;
+    font-size: 16px;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(7),
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(8),
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(6),
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(12) {
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    margin: 7px 5px 10px 5px;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(6) {
+    margin-left: 10px;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(7)>a:hover,
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(8)>a:hover,
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(6)>a:hover {
+    border-bottom: 0 !important;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(7) {
+    background: url(../../../uploads/2021/01/social-facebook%402x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(7):hover {
+    background: url(../../../uploads/2021/01/social-facebook-hover%402x.png);
+    transition: all 0.4s;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(8) {
+    background: url(../../../uploads/2021/01/social-linkedin%402x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(8):hover {
+    background: url(../../../uploads/2021/01/social-linkedin-hover%402x.png);
+    transition: all 0.4s;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(12) {
+    background: url(../../../uploads/2022/02/search-menu.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(12)>a.mega-menu-link:hover {
+    border: none !important;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(12):hover {
+    background: url(../../../uploads/2022/02/search-menuhover.png);
+    transition: all 0.4s;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(12) {
+    position: relative !important;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(12)>.mega-sub-menu {
+    top: 55px;
+    left: -205px !important;
+    max-width: 220px !important;
+    padding: 0px !important;
+    position: absolute !important;
+    border: 0px !important;
+    background: 0px 0px transparent !important;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(6) {
+    background: url(../../../uploads/2021/01/social-email%402x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(6):hover {
+    background: url(../../../uploads/2021/01/social-email-hover%402x.png);
+    transition: all 0.4s;
+    background-size: cover;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(6) {
+    position: relative !important;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li:nth-child(6)>.mega-sub-menu {
+    max-width: 250px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    left: -90px !important;
+    top: 50px;
+    border: 0 !important;
+    background: 0 0 !important;
+    background-color: transparent !important;
+}
+
+.email-contact {
+    display: inline-block;
+    background-size: 100%;
+    margin-right: 2px;
+}
+
+.email-menu-hover {
+    background-color: #fff !important;
+    padding: 7px 10px !important;
+    background: 0 0;
+    color: #000 !important;
+    font-size: 15px !important;
+    line-height: 20px;
+    font-weight: 500;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 50%) !important;
+    border-radius: 40px;
+    display: flex !important;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+.email-menu-hover:hover {
+    color: #e60078 !important;
+    transition: all 0.4s;
+}
+
+#email-copy-active,
+#email-copy-active1 {
+    color: #e60078;
+    display: none;
+    position: absolute;
+    top: 15px;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-item>a.mega-menu-link:hover {
+    border-bottom: 2px solid #e60078;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
+    border-color: #e60078;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-item.mega-toggle-on>.mega-sub-menu {
+    border-top: 1px solid #e6ebf0;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
+    font-weight: 600 !important;
+}
+
+
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
+    background: #fff;
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px #d9d9d9d9;
+    border-style: solid;
+    border-top: 0;
+}
+
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover,
+#mega-menu-wrap-career_location #mega-menu-career_location>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus {
+    background: #fff;
+    color: #e60078;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.menu-copyemail .mega-menu-item {
+    padding: 0 !important;
+    margin-left: -11px !important;
+}
+
+.menu-copyemail .mega-menu-item .textwidget {
+    position: relative;
+}
+
+.menu-copyemail .mega-menu-item .textwidget p {
+    margin-bottom: 5px;
+}
+
+.mega-menu-copyemail .mega-menu-item .textwidget:hover {
+    cursor: pointer;
+}
+
+.mega-menu-copyemail .mega-menu-item .textwidget:hover .email-menu-hover {
+    color: #e60078;
+}
+
+.mega-menu-copyemail .mega-menu-item .textwidget:hover .image-emailcopy {
+    opacity: 0 !important;
+}
+
+.mega-menu-copyemail .mega-menu-item .textwidget:hover .image-emailcopy1 {
+    opacity: 1 !important;
+}
+
+#email-copy-active,
+#email-copy-active1 {
+    position: absolute;
+    top: 10px;
+    left: -90px;
+}
+
+.menu-copyemail .mega-menu-item {
+    padding: 0 !important;
+    margin-left: -11px !important;
+}
+
+.menu-copyemail .mega-menu-item .textwidget {
+    position: relative;
+}
+
+.menu-copyemail .mega-menu-item .textwidget p {
+    margin-bottom: 5px;
+}
+
+.email-menu-hover {
+    height: 40px;
+    padding-left: 46px !important;
+}
+
+.menu-copyemail .textwidget>p {
+    display: flex;
+}
+
+.image-emailcopy {
+    position: absolute;
+    left: -1px;
+    opacity: 1 !important;
+}
+
+.image-emailcopy1 {
+    position: absolute;
+    left: -1px;
+    opacity: 0 !important;
+    top: 0;
+}
+
+/* footer */
+.careers-footer-block-1 {
+    background-color: #333333;
+    z-index: 1;
+}
+
+.career-footer-ul {
+    display: block;
+    list-style-type: none;
+}
+
+.career-footer-link-container {
+    display: flex;
+}
+
+.career-footer-link-flex {
+    width: 50%;
+    text-align: center;
+}
+
+.career-footer-link-flex-left {
+    padding-left: 50px;
+}
+
+.career-footer-link-flex-right {
+    padding-right: 50px;
+}
+
+.career-footer-ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer_top-area .careers-footer-block-1 ul li:hover a {
+    color: #F7F7F7 !important;
+}
+
+.careers-footer-block-1 a.career-footer-link {
+    color: #D9D9D9;
+}
+
+.careers-footer-block-1 a.career-footer-link:hover {
+    color: #F7F7F7 !important;
+}
+
+
+.location-title {
+    padding-bottom: 5px;
+    line-height: 20px;
+}
+
+.footer .wgl-container p.p-copyright {
+    line-height: 15px;
+    font-size: 15px;
+    color: #999999;
+    text-align: right;
+    margin-top: -16px;
+}
+
+.p-copyright a {
+    color: #999999 !important;
+}
+
+.groove-infobox-image-footer .groove-image {
+    padding-right: 25px;
+    width: 100%;
+}
+
+.footer .groove-info-box-left {
+    margin-bottom: 30px;
+}
+
+.footer-image-logo {
+    margin-bottom: 65px;
+}
+
+.p-copyright a:hover {
+    color: #E60078 !important;
+}
+
+.input-job-url {
+    cursor: pointer;
+}
+
+.input-job-url:hover {
+    cursor: pointer;
+}
+
+.job-sharing {
+    position: absolute;
+    bottom: 0;
+    padding: 0 36px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.job-sharing .fab:before {
+    height: 27px !important;
+    background: #e4eef6;
+    color: #7c8a98;
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 9px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.job-sharing .fab:hover::before {
+    background: #e60078;
+    color: #ffffff;
+}
+
+.share_link {
+    font-size: 15px;
+    margin: 20px 0 10px;
+    display: inline-block;
+    background: transparent;
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+}
+
+.div-jobcopy {
+    width: 36px;
+    height: 36px;
+    position: relative;
+}
+
+.share_link .copy-text {
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    z-index: 2;
+    left: 0;
+    display: none;
+    color: #e60078;
+    margin-bottom: 5px;
+}
+
+.job-copylink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.job-copylinkhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+.div-jobcopy:hover .job-copylink {
+    opacity: 0;
+}
+
+.div-jobcopy:hover .job-copylinkhover {
+    opacity: 1;
+}
+
+.job_feature-link {
+    position: relative;
+}
+
+.job_feature-link ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job_feature-link .job-type {
+    background-color: #c6e5b1;
+    color: #000000;
+    border-radius: 4px;
+    padding: 0 16px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.job_feature-link .position {
+    width: 100%;
+    padding: 0;
+    min-height: 90px;
+    margin: 0 0 20px;
+}
+
+.job_feature-link .view-job {
+    color: #e60078;
+    bottom: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.job-listing-container .swiper-slide-inner {
+    /* padding: 24px 36px 50px; */
+    border: solid 1px #E0E0E0;
+    margin: 0 25px;
+    border-radius: 4px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.job-listing-container .swiper-slide-inner .job_feature-link {
+    padding: 24px 36px 70px;
+    position: relative;
+    display: block;
+}
+
+ul.job_listings li.job_listing {
+    transition: 0.5s;
+}
+
+ul.job_listings li.job_listing:hover,
+.swiper-slide-inner:hover {
+    box-shadow: 0px 3px 6px 0px #00000029;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+ul.job_listings li.job_listing h3,
+.job-listing-container .swiper-slide-inner h3 {
+    transition: 0.3s;
+}
+
+ul.job_listings li.job_listing:hover h3,
+.job-listing-container .swiper-slide-inner:hover h3 {
+    color: #e60078 !important;
+    transition: 0.3s;
+}
+
+.job-listing-container .share_social-wpapper {
+    display: flex;
+    align-items: center;
+}
+
+.job-listing-container .slick-slide img {
+    height: auto;
+}
+
+.share_link:hover {
+    cursor: pointer;
+}
+
+.slick-arrow {
+    position: absolute !important;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    border-radius: unset;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    color: transparent !important;
+    background: transparent;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    z-index: 1;
+    color: hsla(0, 0%, 93.3%, .9);
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 1px);
+    transform: translate3d(0, -50%, 1px);
+    background-size: 50px;
+    background-color: transparent !important;
+}
+
+.slick-prev {
+    background: url(../img/back.png) no-repeat;
+    background-size: 50px;
+    left: 35px;
+}
+
+.slick-next {
+    background: url(../img/next.png) no-repeat;
+    background-size: 50px;
+    right: 35px;
+}
+
+.job-listing-container .slick-list {
+    margin: 0 90px;
+}
+
+.job-listing-container .swiper-slide {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.job-listing-container .slick-current {
+    transition: all 0.7s;
+    transform: scale(1.2);
+}
+
+.career-footer-certificate {
+    text-align: left;
+    padding-top: 10px;
+}
+.footer .menu-copyemail,
+.footer .menu-facebook,
+.footer .menu-linkedin{
+    display: none;
+}
+.footer-block-1 .menu-item-has-children .sub-menu{
+    display: none;
+}
+.footer-block-1 .menu-item-has-children{
+    padding-top: 18px;
+}
+.footer-block-1 .menu-item-has-children:hover {
+    padding-top: 18px;
+    border-top: solid 2px #e60078;
+}
+.footer-block-1 .menu-item-has-children:hover .sub-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-width: 200px;
+    padding-left: 0;
+    margin-left: 0;
+    bottom: 64px;
+    z-index: 9999;
+    left: 0;
+    transition: 1s all;
+}
+.footer-block-1 .menu-item-has-children .sub-menu li:first-child{
+    border-top: solid 0.5px #2f495a;
+}   
+.footer-block-1 .menu-item-has-children .sub-menu li{   
+    background-color: #15222a;
+    padding: 10px;
+    margin-right: 0;
+    border: solid 0.5px #2f495a;
+    border-top: none;
+}
+.page-employee-core-values .footer .footer-block-1 .menu-item-has-children a,
+.page-company-benefits .footer .footer-block-1 .menu-item-has-children a{
+    color: #e60078 !important;
+}
+.footer .footer-block-1 .menu-item-has-children .sub-menu li a{
+    color: #fff  !important;
+    font-weight: 600;
+}
+.footer .footer-block-1 .menu-item-has-children .sub-menu li a:hover{
+    color: #e60078 !important;
+}
+.page-employee-core-values .footer .footer-block-1 .menu-item-has-children .sub-menu li.menu-career-corevalues a,
+.page-company-benefits .footer .footer-block-1 .menu-item-has-children .sub-menu li.menu-career-benefits a
+{
+    color: #e60078 !important;
+}
+.footer .footer-block-1 {
+    padding: 0px 10px !important;
+}
+
+@media (max-width: 768px) {
+    .footer .groove-info-box-left {
+        margin-bottom: 20px;
+    }
+    .careers-footer-image {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-image-logo {
+        width: calc(45% - 20px);
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .footer-image-logo2 {
+        display: inline-block;
+        width: 55%;
+    }
+
+    .career-footer-link-flex-right {
+        padding-right: 0;
+    }
+
+    .career-footer-link-flex-left {
+        padding-left: 0;
+    }
+
+    .careers-footer-address {
+        padding-bottom: 65px;
+        padding-top: 20px;
+    }
+
+    .ww-content {
+        width: 230px;
+    }
+
+    .ww-detail {
+        width: calc(100% - 230px);
+    }
+
+    .job-listing-container .slick-list {
+        margin: 0;
+    }
+
+    .job-listing-container .slick-current {
+        transform: scale(1);
+    }
+
+    .job-listing-container .slick-slide img {
+        height: auto !important;
+    }
+
+    .job-listing-container .swiper-slide {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .career-footer-certificate {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .gptw-link-footer img {
+        padding-top: 10px;
+    }
+
+    .slick-dots button {
+        padding: 0;
+    }
+    .menu-bottom ul li a span{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 776px) and (max-width: 1200px) {
+    .job-listing-container .slick-list {
+        margin: 0;
+    }
+
+    .job-listing-container .swiper-slide-inner {
+        margin: 0px 10px;
+    }
+
+    .job-listing-container .slick-current {
+        transform: scale(1.1);
+    }
+
+    .job-wys-container {
+        padding: 0 30px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .menu-bottom ul li {
+        background-repeat: no-repeat;
+        background-position: center 10px;
+    }
+
+    .menu-bottom ul li.menu-careerjob {
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-jobs.svg);
+    }
+
+    .page-available-jobs .menu-bottom ul li.menu-careers {
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/icon-careers-active.svg);
+    }
+
+    .page-job .menu-bottom ul li.menu-careerjob{
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-jobs-hover.svg);
+    }
+
+    .menu-bottom ul li.menu-careerwhy {
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-why.svg);
+    }
+    .page-company-benefits .menu-bottom ul li.menu-careerwhy,
+    .page-employee-core-values .menu-bottom ul li.menu-careerwhy {
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-why-hover.svg);
+    }
+    .menu-bottom ul li.menu-careerwhy li.menu-career-tab1 .menu-icon{
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-core.svg);
+    }
+    .page-employee-core-values .menu-bottom ul li.menu-careerwhy li.menu-career-tab1 .menu-icon{
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-core-hover.svg);
+    }
+    .menu-bottom ul li.menu-careerwhy li.menu-career-tab2 .menu-icon{
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-benefit.svg);
+    }
+    .page-company-benefits .menu-bottom ul li.menu-careerwhy li.menu-career-tab2 .menu-icon{
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-benefit-hover.svg);
+    }
+    .menu-bottom ul li.menu-careerlife {
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-life.svg);
+    }
+    .page-life-at-groove .menu-bottom ul li.menu-careerlife {
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-life-hover.svg);
+    }
+    .menu-bottom ul li .menu-career-tab1 a span,.menu-bottom ul li .menu-career-tab2 a span{
+        font-size: 13px;
+    }
+    .menu-bottom .more-show ul li a span{
+        font-size: 13px;
+    }
+    .menu-bottom > ul > li.menu-careerwhy.is-active{
+        background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/menu-career-why-hover.svg);
+    }
+    .page-job .menu-bottom > ul > li.menu-careers > a{
+        color: #000000;
+    }
+    .page-job .menu-bottom > ul > li.menu-careerjob > a{
+        color: #e60078;
+    }
+    .page-job .menu-bottom > ul > li.menu-careers > a::before{
+        background-color: transparent;
+    }
+    .page-available-jobs .menu-bottom>ul>li.menu-careers>a,
+    .page-company-benefits .menu-bottom>ul>li.menu-careerwhy>a,
+    .page-employee-core-values .menu-bottom>ul>li.menu-careerwhy>a,
+    .page-life-at-groove .menu-bottom>ul>li.menu-careerlife>a,
+    .page-employee-core-values .menu-bottom .menu-career-tab1 span,
+    .page-company-benefits .menu-bottom .menu-career-tab2 span{
+        color: #e60078;
+    }
+    .page-company-benefits .menu-bottom > ul > li.menu-careerwhy > a::before,
+    .page-employee-core-values .menu-bottom > ul > li.menu-careerwhy > a::before,
+    .page-life-at-groove .menu-bottom > ul > li.menu-careerlife > a::before,
+    .page-job .menu-bottom > ul > li.menu-careerjob > a::before,
+    .page-available-jobs .menu-bottom > ul > li.menu-careers > a::before
+    {
+        content: "";
+        background-color: #e60078;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+    
+
+}
+@media (min-width: 768px) {
+    .footer-block-2 .nonmarginbottom{
+        margin-bottom: 0;
+    }
+}
