@@ -408,7 +408,7 @@
   background-image: url(../../../uploads/2021/02/bg-title-1.png);
 }
 .section-our-process  .frontpage-wgl-tab.active .wgl-tabs_header .wgl-tabs_title{
-  color: #E60078;
+  color: #B3000F;
   background-color: rgba(0, 0, 0, 0);
 }
 .section-our-process .wgl-tabs_header {
@@ -849,7 +849,7 @@ body.elementor-kit-57 input[type="submit"]{
     margin-left: -5px;
   }
   .about-groove-nth2{
-    padding: 150px 0px 0px 30px !important;;
+    /*padding: 150px 0px 0px 30px !important;*/
   }
   .frontpage-block-3{
     padding: 30px 0px 0px 0px !important;

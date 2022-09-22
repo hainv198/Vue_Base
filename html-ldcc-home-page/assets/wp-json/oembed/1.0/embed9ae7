@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<oembed><code>oembed_invalid_url</code><message>Not Found</message><data><status>404</status></data></oembed>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 20/21 objects using disk
+Page Caching using disk: enhanced (SSL caching disabled) 
+Content Delivery Network via Amazon Web Services: CloudFront: cdn.groovetechnology.com
+Content Delivery Network Full Site Delivery via cloudfront
+Lazy Loading
+Minified using disk
+Database Caching 6/8 queries in 0.002 seconds using disk
+
+Served from: server.groovetechnology.com @ 2022-08-31 16:04:43 by W3 Total Cache
+-->

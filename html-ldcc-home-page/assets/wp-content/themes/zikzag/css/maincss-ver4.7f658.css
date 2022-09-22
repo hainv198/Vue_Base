@@ -284,7 +284,7 @@ table:not(:last-child) {
     text-align: left;
 }
 .page-header_title {
-    font-weight: 800;
+    font-weight: 700;
     color: inherit;
     text-transform: capitalize;
 }
@@ -818,7 +818,6 @@ body ol > li:before {
     /*background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/tittle-after.svg);*/
     background-position: center bottom;
     background-repeat: no-repeat;
-    padding-bottom: 20px;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
@@ -1195,7 +1194,7 @@ textarea {
     display: none;
 }
 .page-header .page-header_title {
-    font-family: "Plumpfull Black" !important;
+    font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     margin-top: 10px;
 }
@@ -1980,7 +1979,7 @@ h4 span {
     font-size: 30px !important;
     line-height: 40px !important;
     font-weight: 700 !important;
-    font-family: "Plumpfull Black" !important;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 20px !important;
 }
 .mega-border {
@@ -2712,15 +2711,14 @@ ol.mega-li > li:before {
     color: #fff;
 }
 .location-title {
-    font-weight: 300;
+    font-weight: 600;
     text-transform: uppercase;
-    font-family: "Plumpfull Black";
     padding-bottom: 10px;
     margin-bottom: 0;
     font-size: 17px;
 }
 .vn-title {
-    color: #e60078;
+    color: #B3000F;
 }
 .groove-infobox-image-footer .groove-image {
     width: 50%;
@@ -3318,7 +3316,7 @@ ul.career_links_anchor {
     color: #000 !important;
 }
 .career_links_anchor li.is-active a {
-    color: #e60078 !important;
+    color: #B3000F !important;
 }
 .career_links_anchor li::after {
     content: "|";
@@ -3369,7 +3367,6 @@ ul.career_links_anchor {
     ul.career_links_anchor {
         height: 43px;
         background: #fff;
-        justify-content: end;
     }
     .career_links_anchor {
         display: block;
@@ -3906,6 +3903,12 @@ h2 a {
     /*max-width: 1170px;*/
     /*padding: 60px;*/
 }
+
+@media only screen and (max-width: 390px) {
+    .groove-section.groove-section-boxed > .groove-container {
+        padding: unset;
+    }
+}
 .groove-section .groove-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4162,7 +4165,7 @@ input[type="submit"] {
     border-radius: 5px 5px 5px 5px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #e60078;
+    border-color: #B3000F;
     box-shadow: 0 0 0 0 rgb(0 0 0 / 50%);
 }
 .groove-text-editor ul li {
@@ -4251,11 +4254,11 @@ h1.frontpage-title span {
 a.groove-btn {
     color: #fff !important;
     background-color: #e60078;
-    border-radius: 40px;
+    border-radius: 5px;
     padding: 13px 0;
     text-align: center;
     cursor: pointer;
-    width: 225px;
+    width: 255px;
     font-size: 15px;
 }
 .groove-headingtitle {
@@ -4268,7 +4271,7 @@ a.groove-btn {
     color: #000 !important;
 }
 .dbl__title-wrapper span {
-    font-family: "Plumpfull Black";
+
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
@@ -4385,6 +4388,7 @@ a.groove-btn {
     .groove-column[data-col="60"],
     .groove-column[data-col="70"] {
         width: 100%;
+
     }
     .groove-column.groove-col-16,
     .groove-column.groove-col-20,
