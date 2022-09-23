@@ -1161,9 +1161,9 @@ textarea {
 }
 .custom-contact-form input:not([type="submit"]):focus,
 .custom-contact-form textarea:focus {
-    border-color: rgba(236, 0, 140, 0.65);
-    background-color: rgba(236, 0, 140, 0.05);
-    color: #ec008c;
+    /*border-color: rgba(236, 0, 140, 0.65);*/
+    /*background-color: rgba(236, 0, 140, 0.05);*/
+    /*color: #ec008c;*/
 }
 .custom-contact-form .your-email,
 .custom-contact-form .your-name {
@@ -1516,10 +1516,10 @@ span.mandatory {
         background-position: center 10px;*/
     }
     .menu-bottom .more-show ul li.is-active a {
-        color: #e60078;
+
     }
     .menu-bottom .more-show ul li.is-active a span {
-        color: #e60078;
+
     }
     .menu-bottom ul li.menu-process {
         /*background-image: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/mobile/icon-process.svg);*/
@@ -3861,7 +3861,7 @@ body {
 }
 a:hover {
     cursor: pointer;
-    color: #e60078;
+    color: #B3000F;
 }
 .color {
     color: #e60078;
@@ -3927,7 +3927,7 @@ h2 a {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 20px;
     /*background-color: #00a0d2;*/
-    height: 250px;
+    height: 270px;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -4230,7 +4230,7 @@ input[type="submit"] {
     color: #000 !important;
 }
 .groove-col-33 .blog-post:hover .blog-post_title a {
-    color: #e60078 !important;
+    color: #B3000F !important;
 }
 .groove-marginleft30 {
     margin-left: 30px;
