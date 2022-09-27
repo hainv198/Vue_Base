@@ -2334,13 +2334,13 @@ ol.mega-li > li:before {
     border-bottom: 0 !important;
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li:nth-child(9) {
-    background: url(../../../uploads/2021/01/social-facebook%402x.png) !important;
+    background: url(../../../uploads/2021/01/social-linkedin%402x.png) !important;
     background-repeat: no-repeat;
     background-size: cover !important;
     
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li:nth-child(9):hover {
-    background: url(../../../uploads/2021/01/social-facebook-hover%402x.png) !important;
+    background: url(../../../uploads/2021/01/social-linkedin-hover%402x.png) !important;
     transition: all 0.4s;
     background-size: cover !important;
 }
