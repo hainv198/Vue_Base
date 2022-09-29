@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*! Nanum Barun Gothic (Korean) http://hangeul.naver.com */
+
+:lang(ko){font-family:"NotoSansDemiLight"}
+:lang(en){font-family:"RobotoMedium"}
+@font-face{font-family:"NotoSansMedium";src:url("../fonts/NotoSans-Medium.eot");src:local("※"),url("../fonts/NotoSans-Medium.eot?#iefix") format("embedded-opentype"),url("../fonts/NotoSans-Medium.woff") format("woff"),url("../fonts/NotoSans-Medium.woff2") format("woff2");font-style:normal;font-weight:normal}
+@font-face{font-family:"NotoSansDemiLight";src:url("../fonts/NotoSans-DemiLight.eot");src:local("※"),url("../fonts/NotoSans-DemiLight.eot?#iefix") format("embedded-opentype"),url("../fonts/NotoSans-DemiLight.woff") format("woff"),url("../fonts/NotoSans-DemiLight.woff2") format("woff2");font-style:normal;font-weight:normal}
+@font-face{font-family:"NotoSansLight";src:url("../fonts/NotoSans-Light.eot");src:local("※"),url("../fonts/NotoSans-Light.eot?#iefix") format("embedded-opentype"),url("../fonts/NotoSans-Light.woff") format("woff"),url("../fonts/NotoSans-Light.woff2") format("woff2");font-style:normal;font-weight:normal}
+@font-face{font-family:"NotoSansRegular";src:url("../fonts/NotoSans-Regular.eot");src:local("※"),url("../fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/NotoSans-Regular.woff") format("woff"),url("../fonts/NotoSans-Regular.woff2") format("woff2");font-style:normal;font-weight:normal}
+@font-face{font-family:"NotoSansBold";src:url("../fonts/NotoSansKR-Bold.eot");src:local("※"),url("../fonts/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/NotoSansKR-Bold.woff") format("woff"),url("../fonts/NotoSansKR-Bold.woff2") format("woff2");font-style:normal;font-weight:normal}
+@font-face{font-family:"RobotoBold";src:url("../fonts/Roboto-Bold.ttf");font-style:normal;font-weight:normal}
+@font-face{font-family:"RobotoMedium";src:url("../fonts/Roboto-Medium.ttf");font-style:normal;font-weight:normal}
+
+/* REM 기준 */
+
+/* Mobile */
+@media screen and (max-width:1024px){
+    html{font-size:18px}}
+@media screen and (max-width:960px){
+    html{font-size:17.60px}}
+@media screen and (max-width:910px){
+    html{font-size:17.30px}}
+@media screen and (max-width:860px){
+    html{font-size:17px}}
+@media screen and (max-width:810px){
+    html{font-size:16.70px}}
+@media screen and (max-width:760px){
+    html{font-size:16.40px}}
+@media screen and (max-width:710px){
+    html{font-size:16.10px}}
+@media screen and (max-width:660px){
+    html{font-size:15.80px}}
+@media screen and (max-width:610px){
+    html{font-size:15.50px}}
+@media screen and (max-width:560px){
+    html{font-size:15.20px}}
+@media screen and (max-width:510px){
+    html{font-size:14.90px}}
+@media screen and (max-width:460px){
+    html{font-size:14.60px}}
+@media screen and (max-width:410px){
+    html{font-size:14.30px}}
+@media screen and (max-width:360px){
+    html{font-size:14px}}
+@media screen and (max-width:320px){
+    html{font-size:13.77px}}
+

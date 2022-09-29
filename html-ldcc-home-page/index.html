@@ -1370,8 +1370,200 @@
 <!--        End Banner    -->
     </section>
 <!--Service -->
-    <section
-            class="diff-block-2 groove-section groove-section-boxed" id=longterm>
+
+<!--    pc  -->
+    <section class="service_pc diff-block-2 groove-section groove-section-boxed" id=longterm style="max-width: 1110px;margin: auto">
+
+        <style>
+            @media only screen and (max-width: 395px) {
+                .container_slider {
+                    position: relative;
+                    margin-top: 120px;
+                    margin-bottom: 100px;
+                    display: block !important;
+                }
+                .row_slide {
+                    display: flex !important;
+                    flex-direction: row !important;
+                    width: 100% !important;
+                    gap: 5px;
+                    position: absolute;
+                    top: -100px;
+                }
+                .column_item p {
+                    padding: 10px;
+                    margin: unset;
+                    display: none;
+                }
+                .mySlides {
+                    display: flex;
+                    justify-content:center ;
+                }
+
+                .cursor {
+                    cursor: pointer;
+                }
+
+
+                .numbertext {
+                    color: #ffffff;
+                    font-size: 12px;
+                    background-color: #DA291C;
+                    padding: 8px 12px;
+                    position: absolute;
+                    left: 0 !important;
+                    top: 269px !important;
+                    border-radius: 2px;
+                }
+
+                .row_slide:after {
+                    content: "";
+                    background-color:red ;
+                    display: table;
+                    clear: both;
+                }
+
+                /* Six columns side by side */
+                .column {
+                    float: left;
+                }
+                .column_item {
+                    display: flex;
+                    justify-content: flex-start;
+                    border: 1px solid #f30;
+                    padding: 6px;
+                    border-radius: 5px;
+                    margin-bottom: 5px;
+                    /*background-color: #DA291C;*/
+                }
+                .column_item p {
+                    padding: 10px;
+                    margin: unset;
+                }
+
+                .row_slider {
+                    width: 100%;
+                    padding: 5px !important;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                /* Add a transparency effect for thumnbail images */
+                .demo {
+                    opacity: 0.8;
+
+                }
+
+                .active,
+                .demo:hover {
+                    opacity: 1;
+                }
+                .background {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    display: -webkit-flex;
+                    display: -moz-box;
+                    display: flex;
+                    -webkit-transition-property: -webkit-transform;
+                    transition-property: -webkit-transform;
+                    transition-property: transform;
+                    transition-property: transform,-webkit-transform;
+                    -moz-box-sizing: content-box;
+                    box-sizing: content-box;
+                }
+            }
+
+            .container_slider {
+                display: flex;
+                position: relative;
+            }
+
+            .row_slide {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+
+            /* Hide the images by default */
+            .mySlides {
+                display: flex;
+                justify-content:center ;
+            }
+
+            .cursor {
+                cursor: pointer;
+            }
+
+
+            .numbertext {
+                color: #ffffff;
+                font-size: 12px;
+                background-color: #DA291C;
+                padding: 8px 12px;
+                position: absolute;
+                top: 420px;
+                border-radius: 2px;
+            }
+
+            .row_slide:after {
+                content: "";
+                background-color:red ;
+                display: table;
+                clear: both;
+            }
+
+            /* Six columns side by side */
+            .column {
+                float: left;
+            }
+            .column_item {
+                display: flex;
+                justify-content: flex-start;
+                border: 1px solid #f30;
+                padding: 6px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                /*background-color: #DA291C;*/
+            }
+            .column_item p {
+                padding: 10px;
+                margin: unset;
+            }
+
+            .row_slider {
+                width: 100%;
+                padding: 70px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+                opacity: 0.8
+            }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+            .background {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: flex;
+                -webkit-transition-property: -webkit-transform;
+                transition-property: -webkit-transform;
+                transition-property: transform;
+                transition-property: transform,-webkit-transform;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+            }
+
+        </style>
+
         <div class="groove-title-heading  title-heading-center  wgl-double_heading banner_reponsive">
             <h2 class="dbl__title-wrapper groove-headingtitle">
                 <span>Our service</span>
@@ -1380,132 +1572,172 @@
                 We deliver well rounded IT services
             </p>
         </div>
-        <div class="groove-container groove-column-gap-default" style="padding: 20px">
-            <div class=groove-row>
-                <div class="groove-column groove-col-33">
-                <div class=diff-box style="padding: 20px;margin: 5px;">
-
-                    <div class="groove-image img-ct-sp">
-                        <img style="width:60px;padding: 5px;"  width=72
-                             alt="What makes us different - Groove Technology - 10"
-                             srcset="assets/image/Service/home_page/icons8-multiple-devices-100.png"
-                             data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144332.png
-                             class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                        <noscript>
-                            <img class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2072%2072'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144332.png style=width:72px;height:55px;  width=72 heigth=55 alt="What makes us different - Groove Technology - 10">
-                        </noscript>
+        <div class="container_slider row">
+            <div class="row_slide  ">
+                <div class="column"  onclick="currentSlide(1)">
+                    <div class="column_item demo cursor">
+                        <img src="assets/image/Service/home_page/icons8-multiple-devices-100.png" alt="Lotte" width="50">
+                        <p class="demo cursor ">Application development & integration</p>
                     </div>
-                    <h3 class="div-h3">Application development & integration</h3>
-                    <p>
-                        Advanced manufacturing sites that view and control processes in real time. <br>Innovative distribution stores transforming shopping experience
-                        from marketing to on/offline integration
-
-
-                    </p>
                 </div>
-                <div class=diff-box style="padding: 20px;margin: 5px;">
-                    <div class="groove-image img-ct-sp">
-
-                        <img style="height:55px; padding: 5px"
-                             srcset="assets/image/Service/home_page/icons8-system-task-100.png"
-                             alt="What makes us different - Groove Technology - 11" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144336.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                        <noscript>
-                            <img class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2037%2037'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144336.png style=width:37px;height:66px;  width=37 heigth=66 alt="What makes us different - Groove Technology - 11">
-                        </noscript>
+                <div class="column"  onclick="currentSlide(2)">
+                    <div class="column_item demo cursor">
+                        <img src="assets/image/Service/home_page/icons8-erp-system-100.png" alt="Lotte" width="50">
+                        <p class="demo cursor "  onclick="currentSlide(2)">
+                            ERP implementation
+                        </p>
                     </div>
-                    <h3 class="div-h3">System management</h3>
-                    <p>You can take advantage of our mature QA processes which we will adjust to adapt your development process, or we will adopt your processes and adjust them to suit a remote engagement.</p>
+                </div>
+                <div class="column" onclick="currentSlide(3)">
+                    <div class="column_item demo cursor">
+                        <img src="assets/image/Service/home_page/icons8-phonelink-lock-100.png" alt="Lotte" width="50">
+                        <p class="demo cursor "  onclick="currentSlide(3)">Security</p>
+                    </div>
+                </div>
+                <div class="column" onclick="currentSlide(4)">
+                    <div class="column_item demo cursor">
+                        <img src="assets/image/Service/home_page/icons8-hub-100.png" alt="Lotte" width="50">
+                        <p class="demo cursor "  onclick="currentSlide(4)">
+                            IT offshore</p>
+                    </div>
+                </div>
+                <div class="column" onclick="currentSlide(5)">
+                    <div class="column_item demo cursor">
+                        <img src="assets/image/Service/home_page/icons8-system-task-100.png" alt="Lotte" width="50">
+                        <p class="demo cursor "  onclick="currentSlide(5)">System management</p>
+                    </div>
+                </div>
+                <div class="column" onclick="currentSlide(6)">
+                    <div class="column_item demo cursor">
+                        <img src="assets/image/Service/home_page/icons8-cloud-storage-100.png" alt="Lotte" width="50">
+                        <p class="demo cursor "  onclick="currentSlide(6)">Cloud transformation</p>
+                    </div>
+                </div>
+                <div class="column" onclick="currentSlide(7)">
+                    <div class="column_item demo cursor">
+                        <img src="assets/image/Service/home_page/icons8-server-100.png" alt="Lotte" width="50">
+                        <p class="demo cursor "  onclick="currentSlide(7)">Data Center</p>
+                    </div>
                 </div>
             </div>
-                <div class="groove-column groove-col-33">
-                    <div class=diff-box style="padding: 20px;margin: 5px;">
-                        <div class="groove-image img-ct-sp">
-                            <img style="width:55px;padding: 5px"
-                                 alt="What makes us different - Groove Technology - 13"
-                                 srcset="assets/image/Service/home_page/icons8-erp-system-100.png"
-                                 data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144333.png
-                                 class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                            ><noscript>
-                            <img
-                                class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144333.png style=width:64px;height:55px;  width=64 heigth=55 alt="What makes us different - Groove Technology - 13"></noscript></div><h3 class="div-h3">
-                        ERP implementation</h3>
-                        <p>We are pragmatic and understand that there is no one size fits all development process, as much as possible we try to adapt to your processes, and we will continuously make suggestions for improving and maturing the working processes.</p>
-                    </div>
-                    <div class=diff-box style="padding: 20px;margin: 5px;">
-                        <div
-                        class="groove-image img-ct-sp">
-                    <img style="height:55px; padding: 5px"
-                         alt="What makes us different - Groove Technology - 14"
-                         srcset="assets/image/Service/home_page/icons8-cloud-storage-100.png"
-                         data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144338.png
-                         class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                        class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2056'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144338.png style=width:56px;height:55px;  width=56 heigth=55 alt="What makes us different - Groove Technology - 14"></noscript></div><h3 class="div-h3">
-                        Cloud transformation</h3>
-                        <p>We provide optimized Cloud services for customers’ business environments, including not only L.Cloud but also public cloud services from global vendors such as AWS, Google and MS.</p>
-                </div>
-                </div>
-                <div class="groove-column groove-col-33">
-                    <div class=diff-box style="padding: 20px;margin: 5px;">
-                        <div class="groove-image img-ct-sp">
-                    <img style="width:55px;padding: 5px"
-                         alt="What makes us different - Groove Technology - 16"
-                         data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144335.png
-                         srcset="assets/image/Service/home_page/icons8-phonelink-lock-100.png"
-                         class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                            <noscript>
-                                <img
-                        class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2055%2055'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144335.png style=width:55px;height:60px;  width=55 heigth=60 alt="What makes us different - Groove Technology - 16"></noscript></div><h3 class="div-h3">
-                        Security</h3>
-                        <p>
-                            Encrypt documents automatically and applies adaptive access control as users create them.
-                            The centralized security policy travels with documents from their creation throughout the entire document lifecycle.
-                            Permission-based usage control and audit trail technologies protect against insider threats
-                        </p>
-                    </div>
-                    <div class=diff-box style="padding: 20px;margin: 5px;">
-                        <div class="groove-image img-ct-sp" >
-                            <img style="width:55px;height:55px;padding: 5px"
-                                 srcset="assets/image/Service/home_page/icons8-server-100.png"
-                                 width=55 heigth=55 alt="Lotte Data Communication" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144340.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                            <noscript>
-                                <img class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2078%2078'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144340.png style=width:78px;height:55px;  width=78 heigth=55 alt="What makes us different - Groove Technology - 12">
-                            </noscript>
+            <div class="row_slider">
+                <div class="mySlides">
+                    <div class="background" >
+                        <img src="assets/image/image2.jpg" alt="" style=" border-radius: 20px;transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
+                        <div style=" position: absolute">
+                            <img src="assets/image/image1.jpg" style="border-radius: 20px;width:100%">
                         </div>
-                        <h3 class="div-h3">Data Center</h3>
-                        <p>
-                            We operate customer's  IT assets safely
-                            through four data centers with a world-class IT infrastructure.
-                        </p>
                     </div>
-
+                    <div class="numbertext">Advanced manufacturing sites that view and control processes in real time.
+                        Innovative distribution stores transforming shopping experience from marketing to on/offline integration</div>
                 </div>
-                <div class="groove-column groove-col-33" >
-                    <div class=diff-box style="padding: 20px;margin: 5px;">
-                        <div class="groove-image img-ct-sp">
-                            <img style="width:55px;padding: 5px"
-                                 alt="What makes us different - Groove Technology - 16"
-                                 data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144335.png
-                                 srcset="assets/image/Service/home_page/icons8-hub-100.png"
-                                 class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                            <noscript>
-                                <img
-                                        class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2055%2055'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/03/Group-144335.png style=width:55px;height:60px;  width=55 heigth=60 alt="What makes us different - Groove Technology - 16"></noscript></div><h3 class="div-h3">
-                        IT offshore
-                    </h3>
-                        <p>
-                            We offer high-quality global outsourcing services at a reasonable price
-                        </p>
-                    </div>
-                    <div class=diff-box style="padding: 0 60px;margin: 5px;box-shadow: none;display: flex; flex-direction: column; justify-content: end">
-                        <a href="service_ldcc_page.html" style="border-radius:10px;padding: 10px 40px;color: whitesmoke; background-color: red;text-align: center">
-                            <span>View All</span>
-                        </a>
 
+                <div class="mySlides">
+                    <div class="background" >
+                        <img src="assets/image/image1.jpg" alt="" style="border-radius: 20px; transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
+                        <div style=" position: absolute">
+                            <img src="assets/image/image2.jpg" style="width:100%; border-radius: 20px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        </div>
                     </div>
+                    <div class="numbertext">We are pragmatic and understand that there is no one size fits all development process, as much as possible we try to adapt to your processes, and we will continuously make suggestions for improving and maturing the working processes.</div>
+                </div>
 
+                <div class="mySlides">
+                    <div class="background" >
+                        <img src="assets/image/image2.jpg" alt="" style=" border-radius: 20px;transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
+                        <div style=" position: absolute">
+                            <img src="assets/image/image3.webp" style="border-radius: 20px;width:100%">
+                        </div>
+                    </div>
+                    <div class="numbertext">
+                        Encrypt documents automatically and applies adaptive access control as users create them. The centralized security policy travels with documents from their creation throughout the entire document lifecycle. Permission-based usage control and audit trail technologies protect against insider threats
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="background" >
+                        <img src="assets/image/image3.webp" alt="" style="border-radius: 20px; transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
+                        <div style=" position: absolute">
+                            <img src="assets/image/image4.jpg" style="border-radius: 20px;width:100%">
+                        </div>
+                    </div>
+                    <div class="numbertext">
+                        We offer high-quality global outsourcing services at a reasonable price.
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="background" >
+                        <img src="assets/image/image4.jpg" alt="" style="border-radius: 20px; transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
+                        <div style=" position: absolute">
+                            <img src="assets/image/image_5.webp" style="border-radius: 20px;width:100%">
+                        </div>
+                    </div>
+                    <div class="numbertext">
+                        You can take advantage of our mature QA processes which we will adjust to adapt your development process, or we will adopt your processes and adjust them to suit a remote engagement.
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="background" >
+                        <img src="assets/image/image_5.webp" alt="" style="border-radius: 20px; transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
+                        <div style=" position: absolute">
+                            <img src="assets/image/image6.webp" style="border-radius: 20px;width:100%">
+                        </div>
+                    </div>
+                    <div class="numbertext">
+                        We provide optimized Cloud services for customers’ business environments, including not only L.Cloud but also public cloud services from global vendors such as AWS, Google and MS.
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="background" >
+                        <img src="assets/image/image1.jpg" alt="" style="border-radius: 20px; transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
+                        <div style=" position: absolute">
+                            <img src="assets/image/image7.jpg" style="border-radius: 20px;width:100%">
+                        </div>
+                    </div>
+                    <div class="numbertext">We operate customer's IT assets safely through four data centers with a world-class IT infrastructure.</div>
                 </div>
             </div>
         </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+                document.getElementsByClassName("demo").addEventListener("click", myFunction);
+
+                function myFunction() {
+                    document.getElementsByClassName("demo").innerHTML = "YOU CLICKED ME!";
+                }
+            }
+        </script>
     </section>
 
 <!--  Products  -->
@@ -1516,7 +1748,7 @@
             class="dbl__subtitle education--sub-title">
         </div><h2 class="dbl__title-wrapper"><span>Our products</span></h2><p
             class="groove-align-center content-of-title">Our products aim to drive up your operational efficiency </p></div><div
-            class="groove-container groove-column-gap-default groove-paddingtop70" style="max-width: 1366px"><div
+            class="groove-container groove-column-gap-default groove-paddingtop70" style="max-width: 1170px"><div
             class=groove-row>
         <div class="groove-element groove-column groove-col-50">
             <div class="groove-element groove-infobox edu-block-4-infobox">
@@ -1536,7 +1768,8 @@
                         <h3 class="infobox-content-title">
                             <a href="product_ldcc_page.html">API Gateway</a>
                         </h3>
-                        <p>Our API Gateway is secure, lightweight and highly performant. And it’s yours for free, forever.</p>
+                        <p>Our API Gatway allows client app/platform to connect with multiple external platforms with only one time of integration, thus reduce any future cost related to AP integration
+                        </p>
                     </div>
                 </div>
 
@@ -1554,8 +1787,8 @@
                     </div>
                     <div class=groove-infobox-content>
                         <h3 class="infobox-content-title"><a href="product_ldcc_saas.html#saas">SaaS</a></h3>
-                        <p>Increased efficiency and cost effectiveness are the reasons many businesses give for turning to cloud-based SaaS solutions.</p>
-                        <p>Cloud computing and SaaS have come a long way in a short time. Increased awareness and uptake has accelerated the growth of SaaS products and led to the rise of SaaS Integration Platforms (SIPs) such as Infrastructure as a Service (IaaS) and Platform as a Service (PaaS).</p>
+                        <p>We offer an eco-system of software available via internet to help optimize operations of our clients
+                        </p>
                     </div>
                 </div>
                 <div class=groove-info-box-left>
@@ -1575,9 +1808,7 @@
                         <h3 class="infobox-content-title">
                             <a href="product_ldcc_smart_bulling.html">Smart Building management</a>
                         </h3>
-                        <p>Cutting-edge IoT-based system for safer,
-                            more efficient building management</p>
-                        <p>Organic integration and automatic control of various equipment and facilities, enabling efficient management and cost savings.</p>
+                        <p>We offer cutting-edge IoT-based system for more efficient building management</p>
                     </div>
                 </div>
             </div>
@@ -1626,7 +1857,7 @@
                     <h2 class="dbl__title-wrapper"><span>OUR CASE STUDIES</span></h2></div>
             </div>
         </div>
-        <div class="groove-container groove-column-wrap only-pc">
+        <div class="groove-container groove-column-wrap only-pc" style="max-width: 1170px">
             <div class=groove-row>
                 <div class="groove-element groove-column groove-col-100">
                     <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-ios only-pc">
@@ -1673,7 +1904,7 @@
                             </div>
                             <div class=swiper-slide>
                                 <figure class=swiper-slide-inner>
-                                    <a href=case-studies/banking-and-personal-finance-management-app-development/index.html target=_blank>
+                                    <a href=case_studies_ldcc_page.html target=_blank>
                                         <img style=width:390px;height:261px; width=390 heigth=261
                                              alt="Lotte Data Communication Vietnam."
                                              data-src=assets/image/CaseStudies/case_v3.jpg
@@ -1836,8 +2067,7 @@
             </div>
         </div>
 
-        <div
-                class="groove-container porfolio-container groove-column-gap-default">
+        <div class="groove-container porfolio-container groove-column-gap-default" style="max-width: 1170px">
             <div
                     class=groove-row>
                 <div
@@ -1917,18 +2147,15 @@
                     <div class=contactform-margin>
                         <div class="contact-front1 only-pc hiden-tablet">
                         </div>
-                        <div
-                                class=contact-front2>
-                            <div
-                                    class="groove-title-heading title-heading-left  wgl-double_heading">
-                                <div
-                                        class="dbl__subtitle ">
+                        <div class=contact-front2>
+                            <div class="groove-title-heading title-heading-left  wgl-double_heading">
+                                <div class="dbl__subtitle ">
                                     <span>GET IN TOUCH WITH US</span></div>
                                 <h2 class="dbl__title-wrapper groove-headingtitle dbl__title-wrapper-left"
                                     style="background-image: none !important;margin: 0;"><span>START YOUR JOURNEY TO BETTER BUSINESS</span>
                                 </h2></div>
                             <div
-                                    class="groove-element custom-contact-form">
+                                    class="groove-element custom-contact-form" style="padding: 20px">
                                 <div
                                         role=form class=wpcf7 id=wpcf7-f5724-o1 lang=en-US dir=ltr>
                                     <div
@@ -2025,33 +2252,32 @@
                         </div>
                     </div>
                 </div>
-                <div
-                        class="groove-element groove-column groove-col-50">
-                    <div
-                            class="groove-image padding-block-8" style="display: flex;justify-content: center;margin-top: 50px;">
+                <div class="groove-element groove-column groove-col-50">
+                    <div class="groove-image padding-block-8">
+
                         <img
-                                style=width:600px; width=600 heigth=496
+                                style="margin-top: 180px"
                                 alt="Lotte Data Communication Vietnam."
-                                data-src=https://sphinx.vn/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fcontact.95a81ec9e88de82b86f23cee46c3cfef.svg&w=640&q=75
+                                srcset="assets/image/contact_home.jpg"
                                 class="only-pc lazyload"
                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                         <noscript><img
                                 class="only-pc lazy"
                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20600'%3E%3C/svg%3E"
-                                data-src=https://sphinx.vn/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fcontact.95a81ec9e88de82b86f23cee46c3cfef.svg&w=640&q=75
+                                srcset="assets/image/contact_home.jpg"
                                 style=width:600px; width=600 heigth=496
                                 alt="Lotte Data Communication Vietnam.">
                         </noscript>
                         <img
                                 style=width:100%;height:315px;object-fit:cover; width=100% heigth=315
                                 alt="Lotte Data Communication Vietnam."
-                                data-src=https://sphinx.vn/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fcontact.95a81ec9e88de82b86f23cee46c3cfef.svg&w=640&q=75
+                                srcset="assets/image/contact_home.jpg"
                                 class="only-mobile lazyload"
                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                         <noscript><img
                                 class="only-mobile lazy"
                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E"
-                                data-src=https://sphinx.vn/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fcontact.95a81ec9e88de82b86f23cee46c3cfef.svg&w=640&q=75
+                                srcset="assets/image/contact_home.jpg"
                                 style=width:100%;height:315px;object-fit:cover; width=100% heigth=315
                                 alt="Lotte Data Communication Vietnam.">
                         </noscript>
@@ -2274,7 +2500,7 @@
             </div>
         </div>
     </div>
-    </div>
+
     <div id=myModal3 class="modal fade groove-modal-popupvideo" role=dialog>
         <div class="modal-dialog groove-video-popup">
             <div class=modal-content>
@@ -2288,7 +2514,7 @@
             </div>
         </div>
     </div>
-    </div>
+
     <div id=myModal4 class="modal fade" role=dialog>
         <div class=modal-dialog>
             <div class=modal-content>

@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fcustomer_center\u002Fcustomer_support","\u002Fcustomer_center\u002Ffaq","\u002Frecruit\u002Frecruitment_talented_people"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

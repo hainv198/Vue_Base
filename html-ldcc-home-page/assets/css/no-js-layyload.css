@@ -89,7 +89,7 @@ figure.wp-block-image img.lazyloading {
 
 #mega-menu-wrap-main_menu.mega-keyboard-navigation > li.mega-menu-item > a.mega-menu-link:focus {
     background: rgba(0, 0, 0, 0);
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;
@@ -373,7 +373,7 @@ figure.wp-block-image img.lazyloading {
 @media only screen and (min-width: 769px) {
     #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item > a.mega-menu-link:hover {
         background: rgba(0, 0, 0, 0);
-        color: #e60078;
+        color: #DA291C;
         font-weight: normal;
         text-decoration: none;
         border-color: #fff;
@@ -382,7 +382,7 @@ figure.wp-block-image img.lazyloading {
 
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
     background: rgba(0, 0, 0, 0);
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;
@@ -397,7 +397,7 @@ figure.wp-block-image img.lazyloading {
 
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
     background: rgba(0, 0, 0, 0);
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;
@@ -1213,7 +1213,7 @@ figure.wp-block-image img.lazyloading {
 }
 
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus, #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus { /* Mega Menu > Menu Themes > Mega Menus > Second Level Menu Items (Hover) */
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     background: rgba(0, 0, 0, 0);
@@ -1791,7 +1791,7 @@ figure.wp-block-image img.lazyloading {
 
 #mega-menu-wrap-career_location.mega-keyboard-navigation > li.mega-menu-item > a.mega-menu-link:focus {
     background: rgba(0, 0, 0, 0);
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;
@@ -2075,7 +2075,7 @@ figure.wp-block-image img.lazyloading {
 @media only screen and (min-width: 769px) {
     #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-item > a.mega-menu-link:hover {
         background: rgba(0, 0, 0, 0);
-        color: #e60078;
+        color: #DA291C;
         font-weight: normal;
         text-decoration: none;
         border-color: #fff;
@@ -2084,7 +2084,7 @@ figure.wp-block-image img.lazyloading {
 
 #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
     background: rgba(0, 0, 0, 0);
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;
@@ -2099,7 +2099,7 @@ figure.wp-block-image img.lazyloading {
 
 #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
     background: rgba(0, 0, 0, 0);
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;
@@ -2915,7 +2915,7 @@ figure.wp-block-image img.lazyloading {
 }
 
 #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus, #mega-menu-wrap-career_location #mega-menu-career_location > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus { /* Mega Menu > Menu Themes > Mega Menus > Second Level Menu Items (Hover) */
-    color: #e60078;
+    color: #DA291C;
     font-weight: normal;
     text-decoration: none;
     background: rgba(0, 0, 0, 0);
@@ -3444,35 +3444,35 @@ a.mega-menu-link, #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-
     color: #a79e9efa;
 }
 .contact-messenger {
-    background: red;
+    background: #DA291C;
 }
 .dbl__subtitle span {
-    color: red;
+    color: #DA291C;
 }
 .color {
-    color: red;
+    color: #DA291C;
 }
 .section-our-process .frontpage-wgl-tab.active .wgl-tabs_header .wgl-tabs_title {
-    color: red;
+    color: #DA291C;
 }
 a.groove-btn {
     background-color: #B3000F;
 }
 .frontpage-block-3 .wgl-tabs_header_wrap.active .wgl-tabs_header {
-    border-color: red !important;
+    border-color: #DA291C !important;
 }
 .section-our-blog .button-read-more {
-    color: red !important;
+    color: #DA291C !important;
 }
 .porfolio-btn {
-    background: red !important;
+    background: #DA291C !important;
 }
 
 .btn-contactus {
-    background: red;
+    background: #DA291C;
 }
 .mega-menu-btn {
-    background: red !important;
+    background: #DA291C !important;
 }
 .frontpage-block-1 .groove-animation-3 {
     top: 80px !important;

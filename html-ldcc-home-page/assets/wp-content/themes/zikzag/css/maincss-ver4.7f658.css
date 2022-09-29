@@ -505,7 +505,7 @@ var {
 .post_meta-categories span {
     display: inline-block;
     position: relative;
-    color: #e60078;
+    color: #DA291C;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -575,11 +575,7 @@ var {
 .blog_columns-4:not(.blog_masonry) .wgl_col-3:nth-child(4n + 1) {
     clear: left;
 }
-body ol,
-body ul {
-    margin-left: 0.4em;
-    padding-left: 0.9em;
-}
+
 body ol li,
 body ul li {
     position: relative;
@@ -882,7 +878,7 @@ body ol > li:before {
     border-radius: 4px;
 }
 .blog-slider .blog-style-standard .blog-post .post_meta-categories span a {
-    color: #e60078;
+    color: #DA291C;
 }
 .blog-slider .blog-style-standard .blog-post .blog-post_content {
     width: 60%;
@@ -900,7 +896,7 @@ body ol > li:before {
     font-size: 18px;
     text-transform: none;
     border-radius: 40px;
-    background-color: #e60078;
+    background-color: #DA291C;
     padding: 7px 40px;
     color: #fff;
     font-weight: 600;
@@ -941,7 +937,7 @@ body ol > li:before {
     border-radius: 4px;
 }
 .blog-slider .blog-style-standard .blog-post .post_meta-categories span a {
-    color: #e60078;
+    color: #DA291C;
 }
 .blog-slider .blog-style-standard .blog-post .blog-post_content {
     width: 60%;
@@ -959,7 +955,7 @@ body ol > li:before {
     font-size: 15px;
     text-transform: none;
     border-radius: 40px;
-    background-color: #e60078;
+    background-color: #DA291C;
     padding: 13px 43px;
     color: #fff;
     font-weight: 600;
@@ -1224,6 +1220,7 @@ textarea {
 }
 .section-careers-sticky.she-header {
     top: 73px;
+    z-index: 999;
     background-color: #f9fbfd;
 }
 .admin-bar .section-careers-sticky.she-header {
@@ -1439,11 +1436,11 @@ span.mandatory {
     color: red;
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item > a.mega-menu-link:hover {
-    border-bottom: 2px solid #e60078;
+    border-bottom: 2px solid #DA291C;
     font-weight: 600;
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
-    border-color: #e60078;
+    border-color: #DA291C;
     font-weight: 600;
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item.mega-toggle-on > .mega-sub-menu {
@@ -1646,10 +1643,10 @@ span.mandatory {
         color: #000;
     }
     .page-about-us .menu-bottom ul li.menu-about-us a {
-        color: #e60078;
+        color: #DA291C;
     }
     .page-contact-us .menu-bottom ul li.menu-contact-us a {
-        color: #e60078;
+        color: #DA291C;
     }
     .page-about-us .menu-bottom ul li.btn-more,
     .page-case-studies .menu-bottom ul li.btn-more,
@@ -1682,7 +1679,7 @@ span.mandatory {
     .page-what-makes-us-different .menu-bottom > ul > li.btn-more > a,
     .single-job_listing .menu-bottom > ul > li.menu-careers > a,
     .single-post .menu-bottom > ul > li.menu-blog > a {
-        color: #e60078;
+        color: #DA291C;
         position: relative;
         font-size: 2.5rem;
         padding: 15px;
@@ -1705,7 +1702,7 @@ span.mandatory {
     .single-job_listing .menu-bottom > ul > li.menu-careers > a::before,
     .single-post .menu-bottom > ul > li.menu-blog > a::before {
         content: "";
-        background-color: #e60078;
+        background-color: #DA291C;
         width: 100%;
         height: 3px;
         position: absolute;
@@ -1764,7 +1761,7 @@ span.mandatory {
     .page-education ul li.menu-link-edutech::before,
     .page-what-makes-us-different ul li.menu-wmud::before {
         content: "";
-        background: #e60078;
+        background: #DA291C;
         width: 5px;
         height: 100%;
         display: inline-block;
@@ -1789,7 +1786,7 @@ span.mandatory {
         display: none;
     }
     .menu-bottom > ul > li.is-active > a {
-        color: #e60078;
+        color: #DA291C;
     }
     .menu-bottom ul li.menu-services .more-show ul li a {
         font-weight: 700;
@@ -2424,12 +2421,12 @@ ol.mega-li > li:before {
     text-transform: lowercase;
 }
 .email-menu-hover:hover {
-    color: #e60078 !important;
+    color: #DA291C !important;
     transition: all 0.4s;
 }
 #email-copy-active,
 #email-copy-active1 {
-    color: #e60078;
+    color: #DA291C;
     display: none;
     position: absolute;
     top: 15px;
@@ -2495,7 +2492,7 @@ ol.mega-li > li:before {
     text-align: center;
 }
 .edu-header-title span {
-    color: #e60078;
+    color: #DA291C;
     font-family: "Plumpfull Black";
 }
 .edu-block-12 .wpcf7 input:not([type="submit"]),
@@ -2580,14 +2577,14 @@ ol.mega-li > li:before {
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:focus a.mega-menu-link,
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:hover a.mega-menu-link {
-    color: #e60078;
+    color: #DA291C;
     background: #fff;
     font-weight: 700;
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus,
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover {
     background: #fff !important;
-    color: #e60078 !important;
+    color: #DA291C !important;
     font-weight: 700 !important;
 }
 .frontpage-block-10 .porfolio-post_media img {
@@ -2614,8 +2611,8 @@ ol.mega-li > li:before {
         color: transparent;
     }
     .frontpage-block-10 li.slick-active {
-        background-color: #e60078;
-        background: #e60078;
+        background-color: #DA291C;
+        background: #DA291C;
         opacity: 1;
     }
     .frontpage-block-10 .porfolio-post_media img {
@@ -2680,7 +2677,7 @@ ol.mega-li > li:before {
 }
 .footer-block-1 a:hover,
 .footer-block-2 a:hover {
-    color: #e60078 !important;
+    color: #DA291C !important;
 }
 .footer .footer_top-area ul li:hover a,
 .page-about-us .footer .footer_top-area ul li.menu-about-us a,
@@ -2697,7 +2694,7 @@ ol.mega-li > li:before {
 .page-what-makes-us-different .footer .footer_top-area ul li.menu-about-us a,
 .single.single-format-standard .footer .footer_top-area ul li.blog-posts a,
 .single.single-job_listing .footer .footer_top-area ul li.career-posts a {
-    color: #e60078 !important;
+    color: #DA291C !important;
 }
 .footer-block-1 {
     border-bottom: solid 0.5px #2f495a;
@@ -2788,7 +2785,7 @@ ol.mega-li > li:before {
         font-size: 16px;
     }
     .footer-block-2 a {
-        color: #e60078 !important;
+        color: #DA291C !important;
     }
     .footer .p-maps {
         font-size: 16px;
@@ -2843,7 +2840,7 @@ ol.mega-li > li:before {
     background: #fff;
 }
 .btn-contactus {
-    background: #e60078;
+    background: #DA291C;
     color: #fff !important;
     border-radius: 8px;
     font-size: 15px;
@@ -3001,7 +2998,7 @@ ol.mega-li > li:before {
     .page-case-studies .menu-bottom ul li.menu-casestudies span,
     .page-education .menu-bottom ul li.menu-link-edutech span,
     .page-what-makes-us-different .menu-bottom ul li.menu-wmud span {
-        color: #e60078;
+        color: #DA291C;
     }
     .menu-bottom .more-show ul li a span {
         padding-top: 3px;
@@ -3066,7 +3063,7 @@ ol.mega-li > li:before {
         background-image: url(../img/mobile/icon_services1-active%402x.png);
     }
     .menu-bottom .wgl-accordion_header.active li.menu-services-tab1 span {
-        color: #e60078;
+        color: #DA291C;
     }
     .menu-bottom ul li.menu-services li.menu-services-tab1.is-active .menu-icon {
         background-color: #ffedf6;
@@ -3077,7 +3074,7 @@ ol.mega-li > li:before {
         background-image: url(../img/mobile/icon_services2-active%402x.png);
     }
     .menu-bottom .wgl-accordion_header.active li.menu-services-tab2 span {
-        color: #e60078;
+        color: #DA291C;
     }
     .menu-bottom .more-show .wgl-accordion li {
         padding: 0;
@@ -3257,7 +3254,7 @@ ol.mega-li > li:before {
     font-size: 15px;
     line-height: 30px;
     margin-top: 5px;
-    background-color: #e60078;
+    background-color: #DA291C;
     border-radius: 40px;
     margin: 0 auto;
     color: #fff;
@@ -3330,7 +3327,7 @@ ul.career_links_anchor {
     display: none;
 }
 .career_links_anchor li:hover a {
-    color: #e60078 !important;
+    color: #DA291C !important;
 }
 ul.career_links_anchor {
     background: 0 0;
@@ -3425,7 +3422,7 @@ ul.career_links_anchor {
 }
 
 .contact-messenger {
-    background: #e60078;
+    background: #DA291C;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -3458,7 +3455,7 @@ ul.career_links_anchor {
     height: 22px;
 }
 .contact-messenger .pulsation {
-    background-color: #e60078;
+    background-color: #DA291C;
     width: 75px;
     height: 75px;
     -webkit-animation-duration: 2s;
@@ -3487,7 +3484,7 @@ ul.career_links_anchor {
 .mail-contact svg,
 .messgenger-contact svg {
     width: 24px;
-    color: #e60078;
+    color: #DA291C;
     height: 24px;
 }
 .menu-contact-messenger a {
@@ -3531,7 +3528,7 @@ ul.career_links_anchor {
     color:#000;
 }
 .mail-contact:hover .contact-text, .messgenger-contact:hover .contact-text{
-    color: #e60078;
+    color: #DA291C;
 }
 .messgenger-contact{
     margin-bottom: 15px;
@@ -3583,7 +3580,7 @@ ul.career_links_anchor {
         position: static;
     }
     .contact-messenger {
-    background: #e60078;
+    background: #DA291C;
     align-items: center;
     bottom: 75px;
     }
@@ -3596,7 +3593,7 @@ ul.career_links_anchor {
     margin: auto;
     }
     .contact-messenger  .pulsation{
-    background-color: #E60078;
+    background-color: #DA291C;
     border-radius: 50px;
     position: absolute;
     z-index: -1;
@@ -3617,7 +3614,7 @@ ul.career_links_anchor {
     }
     .mail-contact svg,.messgenger-contact svg{
     width: 24px;
-    color: #E60078;
+    color: #DA291C;
     height: 24px;
     }
     .menu-contact-messenger  a{
@@ -3822,8 +3819,8 @@ ul.career_links_anchor {
     margin: 0 5px;
 }
 .blog-header li.slick-active {
-    background-color: #e60078;
-    background: #e60078;
+    background-color: #DA291C;
+    background: #DA291C;
     opacity: 1;
 }
 .blog-header .recent-posts-content {
@@ -3838,7 +3835,7 @@ ul.career_links_anchor {
     padding-left: 25px;
 }
 .blog-header .recent-blog {
-    color: #e60078;
+    color: #DA291C;
     font-size: 13px;
     line-height: 18px;
     font-weight: 600;
@@ -3846,7 +3843,7 @@ ul.career_links_anchor {
 }
 .menu-readblog {
     font-size: 16px;
-    color: #e60078;
+    color: #DA291C;
     line-height: 21px;
     font-weight: 600;
 }
@@ -3864,7 +3861,7 @@ a:hover {
     color: #B3000F;
 }
 .color {
-    color: #e60078;
+    color: #DA291C;
 }
 h2,
 h2 a {
@@ -4039,22 +4036,22 @@ h2 a {
     transform: rotate(-45deg);
 }
 .wgl-accordion_header.active {
-    color: #e60078;
+    color: #DA291C;
 }
 .wgl-accordion_header.active .wgl-accordion_icon {
     transform: rotate(-45deg);
 }
 .wgl-accordion_header.active .wgl-accordion_icon:before {
-    color: #e60078;
+    color: #DA291C;
 }
 .wgl-accordion_header:hover {
-    color: #e60078;
+    color: #DA291C;
 }
 .wgl-accordion_header:hover .wgl-accordion_icon {
     transform: rotate(-45deg);
 }
 .wgl-accordion_header:hover .wgl-accordion_icon:before {
-    color: #e60078;
+    color: #DA291C;
 }
 .wgl-accordion_header {
     position: relative;
@@ -4089,7 +4086,7 @@ h2 a {
     font-weight: 700;
 }
 .blog-post_title:hover a {
-    color: #e60078;
+    color: #DA291C;
 }
 .button-read-more {
     position: absolute;
@@ -4104,7 +4101,7 @@ h2 a {
     /*padding: 40px 0;*/
 }
 .dbl__subtitle span {
-    color: #e60078;
+    color: #DA291C;
     font-size: 13px;
     line-height: 18px;
     font-family: Nunito, Sans-serif;
@@ -4130,7 +4127,7 @@ input[type="submit"] {
 }
 input[type="button"],
 input[type="submit"] {
-    background-color: #FF0000 !important;
+    background-color: #DA291C !important;
 }
 .groove-column.groove-col-100 {
     width: 100%;
@@ -4174,13 +4171,13 @@ input[type="submit"] {
     list-style-type: none;
 }
 .groove-text-editor ul li::before {
-    content: "";
-    background: url(https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/icon-arrow.svg) no-repeat;
+   /* content: "";
+    !*background: url(https://www.ldcc.co.kr/img/pc/main/ico_contact_arrow.png) no-repeat;*!
     width: 19px;
     height: 10px;
     position: absolute;
     left: 0;
-    top: 6px;
+    top: 6px;*/
 }
 .max-width1170px {
     max-width: 1170px !important;
@@ -4215,7 +4212,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 .groove-section .post_date {
-    background: #e60078;
+    background: #DA291C;
     color: #fff;
     margin-left: auto;
     margin-top: -30px;
@@ -4247,13 +4244,13 @@ h1.frontpage-title {
 h1.frontpage-title span {
     font-size: 50px !important;
     line-height: 60px !important;
-    color: #e60078 !important;
+    color: #DA291C !important;
     text-transform: uppercase !important;
     font-family: "Plumpfull Black";
 }
 a.groove-btn {
     color: #fff !important;
-    background-color: #e60078;
+    background-color: #DA291C;
     border-radius: 5px;
     padding: 13px 0;
     text-align: center;
@@ -4426,14 +4423,14 @@ a.groove-btn {
         border-radius: 4px;
     }
     .groove-accordion_header.active {
-        border: solid 1px #e60078;
+        border: solid 1px #DA291C;
         border-radius: 4px 4px 0 0;
         border-bottom: none;
         margin-bottom: 0;
     }
     .wgl-accordion_content {
         display: block;
-        border: solid 1px #e60078;
+        border: solid 1px #DA291C;
         border-top: none;
     }
     .wgl-double_heading .dbl__title-wrapper {
@@ -4629,7 +4626,7 @@ a.groove-btn {
     cursor: pointer;
 }
 .mega-menu-copyemail .mega-menu-item .textwidget:hover .email-menu-hover {
-    color: #e60078;
+    color: #DA291C;
 }
 .mega-menu-copyemail .mega-menu-item .textwidget:hover .image-emailcopy {
     opacity: 0 !important;
