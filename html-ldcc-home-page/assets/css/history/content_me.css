@@ -128,7 +128,7 @@ br.mHide{display:block;}
 /* 鍮뚮뵫&�쒗떚 */
 /* �ㅻ쭏�� 鍮뚮뵫 */
 /* IBS */
-.box_ibs{background:url(../../img/pc/sub1/bg_ibs.jpg) no-repeat 50% 0;background-size:cover}
+.box_ibs{background:url('https://www.ldcc.co.kr/img/pc/sub1/bg_ibs.jpg') no-repeat 50% 0;background-size:cover}
 .box_ibs .txt_middle{color:#fff;padding-top:125px;margin-bottom:0}
 .box_ibs .box_ibs_list{margin-top:120px;padding-bottom:113px;font-size:0;text-align:center}
 .box_ibs .box_ibs_list dl{position:relative;display:inline-block;vertical-align:top;margin-left:200px;padding-top:345px}
@@ -136,10 +136,10 @@ br.mHide{display:block;}
 
 .box_ibs .box_ibs_list dl:first-child{margin-left:0}
 .box_ibs .box_ibs_list dl:before{display:block;content:'';background-repeat:no-repeat;background-position:50% 0;height:100%;position:absolute;top:0;left:0;right:0}
-.box_ibs .box_ibs_list dl.ibs01:before{background-image:url(../../img/pc/sub1/ico_ibs01.png)}
-.box_ibs .box_ibs_list dl.ibs02:before{background-image:url(../../img/pc/sub1/ico_ibs02.png);top:57px}
-.box_ibs .box_ibs_list dl.ibs03:before{background-image:url(../../img/pc/sub1/ico_ibs03.png);top:66px}
-.box_ibs .box_ibs_list dt{font-size:30px;font-family:'NotoSansMedium';line-height:1;color:#fff;margin-bottom:25px}
+.box_ibs .box_ibs_list dl.ibs01:before{background-image:url('https://www.ldcc.co.kr/img/pc/sub1/ico_ibs01.png')}
+.box_ibs .box_ibs_list dl.ibs02:before{background-image:url('https://www.ldcc.co.kr/img/pc/sub1/ico_ibs02.png');top:57px}
+.box_ibs .box_ibs_list dl.ibs03:before{background-image:url('https://www.ldcc.co.kr/img/pc/sub1/ico_ibs03.png');top:66px}
+.box_ibs .box_ibs_list dt{font-size:30px;line-height:1;color:#fff;margin-bottom:25px}
 .box_ibs .box_ibs_list dd{font-size:18px;line-height:26px;color:#fff}
 
 /* �명뀛 ���꾩껜�ъ씤 */

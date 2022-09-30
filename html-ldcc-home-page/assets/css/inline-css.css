@@ -1,13 +1,13 @@
 
 body {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     font-size: 17px;
     line-height: 1.412;
     font-weight: 400;
     color: #000000;
 }
 input:not([type=checkbox]):not([type=submit]), select, textarea, label, blockquote cite, #comments .commentlist .comment_info .meta-wrapper *, .meta-wrapper, .blog-post_info-wrap > .meta-wrapper *, .author-widget_text, .portfolio__custom-meta span, .blog-post.format-quote .blog-post_quote-author, .wgl_module_team .team-department, body .comment-form-cookies-consent > label, .widget_product_categories .post_count, .widget_meta .post_count, .widget_archive .post_count, .wgl-counter .wgl-counter_title, .elementor-widget-wgl-pricing-table .pricing_header .pricing_desc, .elementor-widget-wgl-time-line-vertical .time_line-content .time_line-text, .wgl-portfolio-single_wrapper .wgl-portfolio-item_cats, .wgl-working-hours .working-item .working-item_day, .wgl-working-hours .working-item .working-item_hours, .post_meta-categories a, .wgl-tabs_title, .prev-link_wrapper .info_wrapper .prev_title, .prev-link_wrapper .info_wrapper .next_title, .next-link_wrapper .info_wrapper .prev_title, .next-link_wrapper .info_wrapper .next_title, .portfolio__custom-meta h5, .page_404_wrapper .zikzag_404__link {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .elementor-widget-wgl-time-line-vertical .time_line-content .time_line-text {
@@ -19,26 +19,26 @@ input:not([type=checkbox]):not([type=submit]), select, textarea, label, blockquo
 }
 
 .single_meta .single_info-share_social-wpapper > span.share_title, .single_info-share_social-wpapper > span {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body ol > li:before, .blog-post_cats, .blog-posts .blog-post_title, .column1 .item_title a, .zikzag_twitter .twitt_title, .tagcloud-wrapper .title_tags, .strip_template .strip-item a span, .single_team_page .team-single_speaches-info .speech-info_desc span, .shortcode_tab_item_title, .index_number, .primary-nav.footer-menu .menu-item a {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 700;
 }
 
 .theme-header-font, legend, .widget .widget-title, .banner_404, .blog-post_text-bg, .author-info_content .author-info_name, .comments-title .number-comments, .post_meta-categories, .wgl-pricing_plan .pricing_price .price_decimal, .mashsb-count .counts, .mashsb-box .mashsb-buttons a .text, .prev-link, .next-link, .heading_subtitle, .info_prev-link_wrapper a, .info_next-link_wrapper a, .single_team_page .team-single_speaches-info .speech-info_day, .wgl-portfolio-item_cats, body .comment-respond .comment-reply-title, .page-header_title, [class|=dropcap], .elementor-drop-cap, .elementor-counter, .wgl-counter .wgl-counter_value-wrap, .post_date span {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 blockquote, .banner_404, .author-info_public, .wgl-portfolio-single_item .tagcloud .tagcloud_desc, .wgl-portfolio-single_item .single_info-share_social-wpapper .share_title {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     color: #000000;
 }
 
 .countdown-section .countdown-amount, .wgl-infobox_bg_title, .wgl-background-text, .elementor-section.wgl-add-background-text:before {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 700;
 }
 
@@ -55,14 +55,14 @@ blockquote, .banner_404, .author-info_public, .wgl-portfolio-single_item .tagclo
 }
 
 .primary-nav > div > ul, .primary-nav > ul, .sitepress_container > .wpml-ls li, .primary-nav ul li.mega-menu-links > ul > li {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
     line-height: 30px;
     font-size: 18px;
 }
 
 .primary-nav ul li ul, .wpml-ls, .sitepress_container > .wpml-ls ul ul li, .primary-nav ul li div.mega-menu-container {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
     line-height: 30px;
     font-size: 17px;
@@ -209,48 +209,49 @@ ul.secondary li:before {
 }
 
 body {
+    font-family: 'Poppins', sans-serif !important;
 }
 
 ol.commentlist:after {
 }
 
 h1, h1 a, h1 span {
-    font-family: Nunito;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
     font-size: 36px;
     line-height: 36px;
 }
 
 h2, h2 a, h2 span {
-    font-family: Nunito;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
     font-size: 30px;
     line-height: 36px;
 }
 
 h3, h3 a, h3 span {
-    font-family: Nunito;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
     font-size: 22px;
     line-height: 30px;
 }
 
 h4, h4 a, h4 span {
-    font-family: Nunito;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
     font-size: 20px;
     line-height: 26px;
 }
 
 h5, h5 a, h5 span {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
 }
 
 h6, h6 a, h6 span {
-    font-family: Nunito;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;

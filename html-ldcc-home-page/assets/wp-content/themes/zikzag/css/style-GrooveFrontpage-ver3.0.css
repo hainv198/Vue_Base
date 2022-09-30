@@ -196,7 +196,7 @@
   margin-bottom: 15px;
 }
 .section-our-blog .post_date {
-  background-color: #E60078;
+  background-color: #B3000F;
 }
 .section-our-blog .post_date,
 .section-our-blog .post_date span {
@@ -216,7 +216,7 @@
 }
 .section-our-blog .button-read-more {
   font-size: 15px;
-  color: #E60078;
+  color: #B3000F;
   text-transform: capitalize;
   position: absolute;
   line-height: 20px;
@@ -332,7 +332,7 @@
   padding-top: 20px;
 }
 .frontpage-block-3 .groove-text-editor ul li{
-  font-weight: 600;
+  font-weight: 500 !important;
 }
 .frontpage-block-3{
   background-color: #FFFFFF;
