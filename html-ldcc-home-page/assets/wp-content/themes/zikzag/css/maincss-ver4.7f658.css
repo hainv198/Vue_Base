@@ -3290,7 +3290,7 @@ ol.mega-li > li:before {
     }
 }
 .sticky-container {
-    min-height: 60px;
+    /*min-height: 160px;*/
 }
 .careers-links {
     width: 100%;
@@ -3359,7 +3359,7 @@ ul.career_links_anchor {
         min-height: 50px;
     }
     .header {
-        margin-left: -15px;
+        /*margin-left: -15px;*/
     }
     ul.career_links_anchor {
         height: 43px;
