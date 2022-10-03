@@ -107,6 +107,7 @@ a:active,
 a:focus,
 a:hover {
     text-decoration: none;
+
 }
 input:not([type="checkbox"]):not([type="submit"]),
 select,
@@ -1346,7 +1347,7 @@ textarea {
     left: 50px;
 }
 .ball-triangle-path > div {
-    border-color: #ec008c;
+    border-color: #B3000F;
 }
 @-webkit-keyframes ball-triangle-path-1 {
     33% {
@@ -2270,6 +2271,9 @@ ol.mega-li > li:before {
 .sticky_active {
     position: fixed;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: whitesmoke!important;
+    color: black !important;
 }
 @media only screen and (max-width: 1300px) {
     .mega-sub-menu {
@@ -2824,7 +2828,20 @@ ol.mega-li > li:before {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #e6ebf0;
+
 }
+
+.sticky_active .menu-container-wrapper .row-menu .groove-element .mega-menu-wrap ul li a {
+    color: #222222!important;
+    font-weight: normal !important;
+}
+
+.sticky_active .menu-container-wrapper .row-menu .groove-element .mega-menu-wrap ul li a:hover {
+    color: #B3000F!important;
+    font-weight: normal !important;
+}
+
+
 #mega-menu-wrap-main_menu #mega-menu-main_menu {
     margin-top: 0;
 }

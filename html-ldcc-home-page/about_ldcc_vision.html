@@ -1141,35 +1141,75 @@
         font-weight: 500;
         }
       </style>
-      <div
-              class=sticky-space>
-        <div
-                class=sticky-container>
-          <div
-                  class="header section-careers-sticky">
-            <div
-                    class="textwidget custom-html-widget  careers-links">
-              <ul
-                      class=career_links_anchor>
-                <li class=is-active >
-                  <a class=services href="about_ldcc_page.html#overview" style="color: #2b2b2b!important;">OVERVIEW</a>
-                </li>
-                <li>
-                  <a class=cooperation href="#vision" style="color: #B3000F!important;">OUR VISION</a>
-                </li>
-                <li>
-                  <a class=whygroove href="about_ldcc_ceo.html#CEO">ABOUT CEO </a>
-                </li>
-                <li>
-                  <a class=example href="about_ldcc_history.html#history">OUR HISTORY</a>
-                </li>
-                <li>
-                  <a class=faq href="about_ldcc_partnership.html#partnership"> PARTNERSHIP</a>
-                </li>
-                <li>
-                  <a class=faq href="about_ldcc_newevent.html#new_event">NEW & EVENT</a>
-                </li>
-              </ul>
+      <div class=sticky-space  >
+        <div class=sticky-container >
+          <div class="header section-careers-sticky" style="display: flex;justify-content: center;margin-left: 0;padding: 10px">
+            <style>
+              .dropbtn_home {
+                padding: 10px;
+                position: relative;
+                display: inline-block;
+              }
+              .dropbtn {
+                /*background-color: #ffffff;*/
+                border-bottom: 1px solid #2b2b2b;
+                font-size: 16px;
+                padding: 10px;
+                margin: auto 0;
+                text-transform: unset;
+                cursor: pointer;
+              }
+              .dropdown {
+                padding: 10px;
+                position: relative;
+                display: inline-block;
+              }
+
+              .dropdown-content {
+                top:43px;
+                left: -5px;
+                display: none;
+                position: absolute;
+                background-color: #ffffff !important;
+                min-width: 200px;
+                width: 250px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 100;
+              }
+              .dropdown-content a {
+                color: #df0101;
+                padding: 16px;
+                text-decoration: none;
+                display: block;
+              }
+
+              .dropdown-content a:hover {
+                background-color: #f1f1f1
+              }
+
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+
+              .dropdown:hover .dropbtn {
+                background-color: whitesmoke;
+                color: #2b2b2b;
+              }
+            </style>
+            <div class="dropbtn_home">
+              <a class="dropbtn" href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+
+              <a class="dropbtn">Our Vision <i class='bx bx-chevron-down'></i></a>
+              <div class="dropdown-content">
+                <a href="about_ldcc_page.html#overview">Overview</a>
+                <a href="about_ldcc_vision.html#vision">Our Vision</a>
+                <a href="about_ldcc_ceo.html#CEO">CEO Message</a>
+                <a href="about_ldcc_history.html#history">Our History</a>
+                <a href="about_ldcc_partnership.html#partnership">Our partner</a>
+                <a href="about_ldcc_newevent.html#new_event">News and Events</a>
+              </div>
             </div>
           </div>
         </div>

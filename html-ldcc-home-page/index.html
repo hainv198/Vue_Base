@@ -5,6 +5,8 @@
     <style>img.lazy {
         min-height: 1px
     }</style>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -140,9 +142,13 @@
 
 <h1 style="position: absolute;color: transparent;">Lotte Data Communication Vietnam. RSS</h1>
 
+
+
 <!--End Logo  -->
-<header class=wgl-theme-header>
+
+<header class=wgl-theme-header id="header" style="display: block!important;">
     <!--    Start Navbar    -->
+
     <div class=wgl-site-header>
         <div class="container-wrapper menu-container-wrapper">
             <div class="groove-row row-menu">
@@ -973,8 +979,10 @@
                     @media only screen and (max-width: 2000px) {
                         .text_banner {
                            font-family: 'Poppins', sans-serif !important;
-                            width: 100%;
+                            width: 1000px;
+                            margin: auto;
                             margin-top: 100px;
+
                         }
                     }
                     @media only screen and (max-width: 360px) {
@@ -1289,9 +1297,218 @@
         </div>
 <!--        End Banner    -->
     </section>
+
+<!--    <section class="container-fluid mt-5">
+        <style>
+           .box_left .container_left {
+                position: relative;
+            }
+
+            /* Hide the images by default */
+            .mySlides {
+                display: none;
+            }
+
+            /* Add a pointer when hovering over the thumbnail images */
+            .cursor {
+                cursor: pointer;
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* Container for image text */
+            .caption-container {
+                text-align: center;
+                background-color: #222;
+                padding: 2px 16px;
+                color: white;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Six columns side by side */
+            .column {
+                float: left;
+                width: 16.66%;
+            }
+
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+                opacity: 0.6;
+            }
+
+            .active,
+            .demo:hover {
+                background: #B3000F;
+            }
+        </style>
+
+        <div class="row">
+            <div class="groove-title-heading  title-heading-center  wgl-double_heading banner_reponsive">
+                <h2 class="dbl__title-wrapper groove-headingtitle">
+                    <span>Our service</span>
+                </h2>
+                <p class="groove-align-center content-of-title">
+                    ”We deliver well-rounded IT services”
+                </p>
+            </div>
+            <div class="box_right col-md-6 col-sm-6 col-lg-6">
+                <div class="row">
+                    <div class="column"  onclick="currentSlide(1)">
+                        <div class="column_item demo cursor">
+                            <img src="assets/image/Service/home_page/icons8-multiple-devices-100.png"onclick="currentSlide(1)" alt="Lotte" width="50">
+                            <p>Application development & integration</p>
+                        </div>
+                    </div>
+                    &lt;!&ndash;<div class="column">
+                        <img class="demo cursor" src="assets/image/Service/home_page/icons8-multiple-devices-100.png" alt="Lotte" width="50">
+                        <p>Application development & integration</p>
+                        <img  src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                    </div>&ndash;&gt;
+                    <div class="column">
+                        <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_left col-md-6 col-sm-6 col-lg-6">
+                <div class="container_left">
+
+                    &lt;!&ndash; Full-width images with number text &ndash;&gt;
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="img_woods_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="img_5terre_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="img_mountains_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="img_lights_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="img_nature_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="img_snow_wide.jpg" style="width:100%">
+                    </div>
+
+                    &lt;!&ndash; Next and previous buttons &ndash;&gt;
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    &lt;!&ndash; Image text &ndash;&gt;
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    &lt;!&ndash; Thumbnail images &ndash;&gt;
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+
+    </section>-->
+
 <!--Service -->
     <section class="service_pc diff-block-2 groove-section groove-section-boxed" id=longterm style="max-width: 1110px;margin: auto">
-
         <style>
             @media only screen and (max-width: 395px) {
                 .container_slider {
@@ -1371,9 +1588,10 @@
 
                 }
 
-                .active,
+                .actives,
                 .demo:hover {
                     opacity: 1;
+                    background-color: #da291c;
                 }
                 .background {
                     position: relative;
@@ -1395,6 +1613,7 @@
             .container_slider {
                 display: flex;
                 position: relative;
+                margin-top: 20px;
             }
 
             .row_slide {
@@ -1416,11 +1635,13 @@
 
             .numbertext {
                 color: #ffffff;
-                font-size: 12px;
                 background-color: #DA291C;
                 padding: 8px 12px;
                 position: absolute;
-                top: 420px;
+                top: 305px;
+                left: 38px;
+                width: 430px;
+                font-size: 16px;
                 border-radius: 2px;
             }
 
@@ -1438,7 +1659,8 @@
             .column_item {
                 display: flex;
                 justify-content: flex-start;
-                border: 1px solid #f30;
+                background-color: whitesmoke;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
                 padding: 6px;
                 border-radius: 5px;
                 margin-bottom: 5px;
@@ -1460,9 +1682,12 @@
                 opacity: 0.8
             }
 
-            .active,
+            .actives,
             .demo:hover {
                 opacity: 1;
+                background-color: #da291c;
+                color: white!important;
+
             }
             .background {
                 position: relative;
@@ -1484,56 +1709,56 @@
 
         <div class="groove-title-heading  title-heading-center  wgl-double_heading banner_reponsive">
             <h2 class="dbl__title-wrapper groove-headingtitle">
-                <span>Our service</span>
+                <span style="color: #B3000F">Our services</span>
             </h2>
-            <p class="groove-align-center content-of-title">
-                We deliver well rounded IT services
-            </p>
+            <h3 class="groove-align-center content-of-title">
+                ”We deliver well-rounded IT services”
+            </h3>
         </div>
         <div class="container_slider row">
             <div class="row_slide  ">
                 <div class="column"  onclick="currentSlide(1)">
                     <div class="column_item demo cursor">
-                        <img src="assets/image/Service/home_page/icons8-multiple-devices-100.png" alt="Lotte" width="50">
-                        <p class="demo cursor ">Application development & integration</p>
+                        <i class='bx bx-devices' style="font-size: 2rem;" ></i>
+                        <p>Application development</p>
                     </div>
                 </div>
                 <div class="column"  onclick="currentSlide(2)">
                     <div class="column_item demo cursor">
-                        <img src="assets/image/Service/home_page/icons8-erp-system-100.png" alt="Lotte" width="50">
-                        <p class="demo cursor "  onclick="currentSlide(2)">
+                        <i class='bx bx-customize' style="font-size: 2rem"></i>
+                        <p onclick="currentSlide(2)">
                             ERP implementation
                         </p>
                     </div>
                 </div>
                 <div class="column" onclick="currentSlide(3)">
                     <div class="column_item demo cursor">
-                        <img src="assets/image/Service/home_page/icons8-phonelink-lock-100.png" alt="Lotte" width="50">
-                        <p class="demo cursor "  onclick="currentSlide(3)">Security</p>
+                        <i class='bx bx-shield'style="font-size: 2rem"></i>
+                        <p onclick="currentSlide(3)">Security</p>
                     </div>
                 </div>
                 <div class="column" onclick="currentSlide(4)">
                     <div class="column_item demo cursor">
-                        <img src="assets/image/Service/home_page/icons8-hub-100.png" alt="Lotte" width="50">
-                        <p class="demo cursor "  onclick="currentSlide(4)">
+                        <i class='bx bx-share-alt' style="font-size: 2rem"></i>
+                        <p onclick="currentSlide(4)">
                             IT offshore</p>
                     </div>
                 </div>
                 <div class="column" onclick="currentSlide(5)">
                     <div class="column_item demo cursor">
-                        <img src="assets/image/Service/home_page/icons8-system-task-100.png" alt="Lotte" width="50">
-                        <p class="demo cursor "  onclick="currentSlide(5)">System management</p>
+                        <i class='bx bx-task' style="font-size: 2rem"></i>
+                        <p  onclick="currentSlide(5)">System management</p>
                     </div>
                 </div>
                 <div class="column" onclick="currentSlide(6)">
                     <div class="column_item demo cursor">
-                        <img src="assets/image/Service/home_page/icons8-cloud-storage-100.png" alt="Lotte" width="50">
-                        <p class="demo cursor "  onclick="currentSlide(6)">Cloud transformation</p>
+                        <i class='bx bx-cloud-snow' style="font-size: 2rem"></i>
+                        <p onclick="currentSlide(6)">Cloud transformation</p>
                     </div>
                 </div>
                 <div class="column" onclick="currentSlide(7)">
                     <div class="column_item demo cursor">
-                        <img src="assets/image/Service/home_page/icons8-server-100.png" alt="Lotte" width="50">
+                        <i class='bx bx-data' style="font-size: 2rem"></i>
                         <p class="demo cursor "  onclick="currentSlide(7)">Data Center</p>
                     </div>
                 </div>
@@ -1545,9 +1770,11 @@
                         <div style=" position: absolute">
                             <img src="assets/image/image1.jpg" style="border-radius: 20px;width:100%">
                         </div>
+                        <div class="numbertext">
+                            We build and integrate best-in-class application to help you realize your business needs.
+                        </div>
                     </div>
-                    <div class="numbertext">Advanced manufacturing sites that view and control processes in real time.
-                        Innovative distribution stores transforming shopping experience from marketing to on/offline integration</div>
+
                 </div>
 
                 <div class="mySlides">
@@ -1556,8 +1783,11 @@
                         <div style=" position: absolute">
                             <img src="assets/image/image2.jpg" style="width:100%; border-radius: 20px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
                         </div>
+                        <div class="numbertext">
+                            We effectively implement the ERP system to optimize operation.
+                        </div>
                     </div>
-                    <div class="numbertext">We are pragmatic and understand that there is no one size fits all development process, as much as possible we try to adapt to your processes, and we will continuously make suggestions for improving and maturing the working processes.</div>
+
                 </div>
 
                 <div class="mySlides">
@@ -1566,10 +1796,11 @@
                         <div style=" position: absolute">
                             <img src="assets/image/image3.webp" style="border-radius: 20px;width:100%">
                         </div>
+                        <div class="numbertext">
+                            WE build a reliable business environment with optimized convergence security services with a group of information protection expert.
+                        </div>
                     </div>
-                    <div class="numbertext">
-                        Encrypt documents automatically and applies adaptive access control as users create them. The centralized security policy travels with documents from their creation throughout the entire document lifecycle. Permission-based usage control and audit trail technologies protect against insider threats
-                    </div>
+
                 </div>
 
                 <div class="mySlides">
@@ -1578,10 +1809,11 @@
                         <div style=" position: absolute">
                             <img src="assets/image/image4.jpg" style="border-radius: 20px;width:100%">
                         </div>
+                        <div class="numbertext">
+                            We offer high-quality global outsourcing services at a reasonable price.
+                        </div>
                     </div>
-                    <div class="numbertext">
-                        We offer high-quality global outsourcing services at a reasonable price.
-                    </div>
+
                 </div>
 
                 <div class="mySlides">
@@ -1590,10 +1822,11 @@
                         <div style=" position: absolute">
                             <img src="assets/image/image_5.webp" style="border-radius: 20px;width:100%">
                         </div>
+                        <div class="numbertext">
+                            We ensure an optimal performance of software and hardware system.
+                        </div>
                     </div>
-                    <div class="numbertext">
-                        You can take advantage of our mature QA processes which we will adjust to adapt your development process, or we will adopt your processes and adjust them to suit a remote engagement.
-                    </div>
+
                 </div>
 
                 <div class="mySlides">
@@ -1602,10 +1835,11 @@
                         <div style=" position: absolute">
                             <img src="assets/image/image6.webp" style="border-radius: 20px;width:100%">
                         </div>
+                        <div class="numbertext">
+                            We partner closely with clients to truly bring their operation to cloud.
+                        </div>
                     </div>
-                    <div class="numbertext">
-                        We provide optimized Cloud services for customers’ business environments, including not only L.Cloud but also public cloud services from global vendors such as AWS, Google and MS.
-                    </div>
+
                 </div>
 
                 <div class="mySlides">
@@ -1614,8 +1848,8 @@
                         <div style=" position: absolute">
                             <img src="assets/image/image7.jpg" style="border-radius: 20px;width:100%">
                         </div>
+                        <div class="numbertext">We operate customer's IT assets safely through four data centers with a world-class IT infrastructure.</div>
                     </div>
-                    <div class="numbertext">We operate customer's IT assets safely through four data centers with a world-class IT infrastructure.</div>
                 </div>
             </div>
         </div>
@@ -1644,10 +1878,10 @@
                     slides[i].style.display = "none";
                 }
                 for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+                    dots[i].className = dots[i].className.replace(" actives", "");
                 }
                 slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
+                dots[slideIndex-1].className += " actives";
                 captionText.innerHTML = dots[slideIndex-1].alt;
                 document.getElementsByClassName("demo").addEventListener("click", myFunction);
 
@@ -1765,8 +1999,8 @@
     <!--    New Event    -->
     <section class="groove-section section-our-blog frontpage-block-6 groove-section-boxed only-pc" style="margin-bottom: 50px;">
         <div class="groove-title-heading title-heading-center  wgl-double_heading">
-            <h2 class="dbl__title-wrapper education-title groove-headingtitle"><span>NEW & EVENT</span></h2>
-            <p style="margin-bottom: 10px;">The latest IT issues and news from LOTTE Data Communication</p>
+            <h2 class="dbl__title-wrapper education-title groove-headingtitle"><span>News & Events</span></h2>
+            <p style="margin-bottom: 10px;">Latest news and events from Lotte Data Communication.</p>
         </div>
         <div class="groove-container groove-column-gap-default" style="max-width: 1170px">
             <div class=groove-row>
@@ -2209,25 +2443,6 @@
                                         </textarea>
                                     </span>
                                 </label>
-                            </p>
-                            <!--<div style="display: flex; justify-content: space-around">
-                                <div style="padding: 10px">
-                                    <p>
-                                        <span><b>Head office</b></span>
-                                        <br>
-                                        <span>Address: 11th Floor, Petroland Building, No.12 Tan Trao St, Tan Phu Ward, Dist 7, Ho Chi Minh City</span>
-                                    </p>
-
-                                </div>
-                                <div>
-                                    <p>
-                                        <span><b>Head office</b></span>
-                                        <br>
-                                        <span>Address: 11th Floor, Petroland Building, No.12 Tan Trao St, Tan Phu Ward, Dist 7, Ho Chi Minh City</span>
-                                    </p>
-                                </div>
-                            </div>-->
-                            <p>
                                 <input type=submit value="Send Message" class="wpcf7-form-control wpcf7-submit">
                             </p>
                             <div class=wpcf7-response-output role=alert aria-hidden=true>
@@ -2585,125 +2800,54 @@
                         <div class=groove-row>
                             <div class="menufotter-col-left groove-element groove-column groove-col-50">
                                 <div class=groove-info-box-left>
-                                    <div class=groove-infobox-image-footer>
-                                        <div class=groove-image>
-                                            <img
-                                                    style=width:38px;height:38px; width=38 heigth=38
-                                                    alt="Lotte Data Communication Vietnam."
-                                                    data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/08/vn-flag@2x.png
-                                                    class=lazyload
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                            <noscript><img
-                                                    class=lazy
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2038%2038'%3E%3C/svg%3E"
-                                                    data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/08/vn-flag@2x.png
-                                                    style=width:38px;height:38px; width=38 heigth=38
-                                                    alt="Lotte Data Communication Vietnam.">
-                                            </noscript>
-                                        </div>
-                                    </div>
+
                                     <div class="groove-infobox-content location-content">
                                         <div class="infobox-content-title location-title vn-title">
                                             Ha Noi
                                         </div>
-                                        <p>Floor 31, LOTTE Center, 54 Lieu Giai, Ba Dinh District, Hanoi</p></div>
+                                        <p>Floor 31, LOTTE Center, 54 Lieu Giai, Ba Dinh District, Hanoi</p>
+                                        <p>Telephone: (+84) 24 3333 6605</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="menufotter-col-center groove-element groove-column groove-col-50">
                                 <div class=groove-info-box-left>
-                                    <div class=groove-infobox-image-footer>
-                                        <div class=groove-image>
-                                            <img
-                                                    style=width:38px; width=38
-                                                    alt="Lotte Data Communication Vietnam."
-                                                    data-src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1200px-Flag_of_South_Korea.svg.png
-                                                    class=lazyload
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                            <noscript><img
-                                                    class=lazy
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2038%2038'%3E%3C/svg%3E"
-                                                    data-src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1200px-Flag_of_South_Korea.svg.png
-                                                    style=width:38px; width=38
-                                                    alt="Lotte Data Communication Vietnam.">
-                                            </noscript>
-                                        </div>
-                                    </div>
+
                                     <div class="groove-infobox-content location-content">
-                                        <div class="infobox-content-title location-title">
+                                        <div class="infobox-content-title location-title" style="color: #B3000F">
                                             Ho Chi Minh
                                         </div>
                                         <p>Floor 11, Petroland Building, 12 Tan Trao Street, Tan Phu Ward, District 7,
-                                            Ho Chi Minh City</p></div>
+                                            Ho Chi Minh City</p>
+                                        <p>
+                                            Telephone: (+84) 28 5413 6359
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div
-                            class="groove-container groove-column-gap-default ">
-                        <div
-                                class=groove-row>
-                            <div
-                                    class="groove-element groove-column groove-col-50 padding0">
-                                <div
-                                        class=career-footer-certificate>
-                                    <a
-                                            target=_blank class=career-footer-link>
+                    <div class="groove-container groove-column-gap-default ">
+                        <div class=groove-row>
+                            <div class="groove-element groove-column groove-col-50 padding0">
+                                <div class=career-footer-certificate>
+                                    <a target=_blank class=career-footer-link>
                                         <img
-                                            style=" width: 108px; height: 44px; "
-                                            data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-iso-9001.svg
+                                            style=" width: 169px;border: 1px solid #FFFFFF; padding: 13px;border-radius: 5px "
+                                            srcset="assets/image/SAP_PartnerEdge_scrn_R_neg.png"
                                             class="career-footer-certificate-padding lazyload"
                                             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         <noscript><img
                                                 class="career-footer-certificate-padding lazy"
                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                                data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-iso-9001.svg
-                                                style=" width: 108px; height: 44px; "></noscript>
+                                                srcset="assets/image/SAP_PartnerEdge_scrn_R_neg.png"                                                style=" width: 108px; height: 44px; "></noscript>
                                     </a>
-                                    <a
-                                            target=_blank class=career-footer-link
-                                            ><img
-                                            style=" width: 108px; height: 44px; "
-                                            data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-iso-27001.svg
-                                            class="career-footer-certificate-padding lazyload"
-                                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                        <noscript><img
-                                                class="career-footer-certificate-padding lazy"
-                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                                data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-iso-27001.svg
-                                                style=" width: 108px; height: 44px; "></noscript>
-                                    </a>
-                                    <br
-                                            class=only-mobile>
-                                    <a
-                                            target=_blank class=career-footer-link
-                                            ><img
-                                            style=" width: 108px; height: 44px; "
-                                            data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-microsoft-GPN.svg
-                                            class="career-footer-certificate-padding lazyload"
-                                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                        <noscript><img
-                                                class="career-footer-certificate-padding lazy"
-                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                                data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-microsoft-GPN.svg
-                                                style=" width: 108px; height: 44px; "></noscript>
-                                    </a>
-                                    <a
-                                            target=_blank class="career-footer-link gptw-link-footer"
-                                            ><img
-                                            style=" width: 105px; height: 44px;"
-                                            data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-GPTW.svg
-                                            class=lazyload
-                                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                        <noscript><img
-                                                class=lazy
-                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                                data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-icon-footer-GPTW.svg
-                                                style=" width: 105px; height: 44px;"></noscript>
-                                    </a></div>
+
+                                </div>
                             </div>
                             <div class="groove-element groove-column groove-col-50">
                                 <p class=p-maps>
-                                    © 2016 by Lotte Data Communication Vietnam.
+                                    © 2022 by Lotte Data Communication Vietnam.
                                 </p>
                             </div>
                         </div>
@@ -2792,6 +2936,7 @@ function copyToClipboard1(element) {
     }
 }</script>
 <script async src=assets/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js></script>
+
 </body>
 
 </html>
