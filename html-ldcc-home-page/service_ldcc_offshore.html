@@ -1078,11 +1078,6 @@
                         <span>About Us</span>
                       </a>
                     </li>
-                    <!-- <li class=menu-wmud>
-                         <a href=what-makes-us-different/index.html>
-                             <span class=menu-icon></span><span>What Makes Us Different?</span>
-                         </a>
-                     </li>-->
                     <li class=menu-contact-us>
                       <a href=contact_us_ldcc_page.html>
                         <span class=menu-icon></span>
@@ -1177,7 +1172,7 @@
                 min-width: 200px;
                 width: 250px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
+                z-index: 100;
               }
               .dropdown-content a {
                 color: #df0101;
@@ -1198,9 +1193,10 @@
                   background-color: whitesmoke;
                 color: #2b2b2b;
               }
+
             </style>
             <div class="dropbtn_home">
-              <a class="dropbtn" href="index.html">Home</a>
+              <a class="dropbtn" href="about_ldcc_page.html">About</a>
             </div>
             <div class="dropdown">
               <a class="dropbtn" href="service_ldcc_offshore.html#offshore">IT Offshore <i class='bx bx-chevron-down'></i></a>
@@ -1214,43 +1210,89 @@
                 <a href="service_ldcc_Security.html#Security">Security</a>
               </div>
             </div>
-            <div class="dropdown">
-              <a class="dropbtn">App development<i class='bx bx-chevron-down'></i></a>
-              <div class="dropdown-content">
-                <a href="service_ldcc_offdhore_app.html#app">App development</a>
-                <a href="service_ldcc_offdhore_web.html#web">Web development</a>
-                <a href="service_ldcc_offdhore_data.html#data">Data processing</a>
-                <a href="service_ldcc_offdhore_tech.html#tech">Tech consulting</a>
-
-              </div>
-            </div>
           </div>
         </div>
         <hr>
       </div>
       <!--   SERVICE – Application development & integration -->
+      <div class="container container_slide mb-5">
+        <div class="row justify-content-center">
+          <div class="column">
+            <a class="demo cursor" onclick="currentSlide(1)">Web Development</a>
+          </div>
+          <div class="column">
+            <a class="demo cursor" onclick="currentSlide(2)">App Development</a>
+          </div>
+          <div class="column">
+            <a class="demo cursor" onclick="currentSlide(3)">Data processing</a>
+          </div>
+          <div class="column">
+            <a class="demo cursor" onclick="currentSlide(4)">Tech consulting</a>
+          </div>
+        </div>
+        <hr>
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div>
+            <img src="assets/image/Service/Detail/Picture5.png" style="width:100%; position:relative;">
+          </div>
+          <div class="numbertext">
+            <h2 class="text-center">WEB</h2>
+            <p>Develop and maintain app applications optimized for the customer's business.</p>
 
-      <div class="wrapper">
+          </div>
+
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext" style="left: 140px!important;">
+            <h2 class="text-center">APP</h2>
+            Lotte Data Communication develops and maintains web applications optimized for customer's business.
+          </div>
+          <img src="assets/image/Service/Detail/Picture6.png" style="width:100%" height="277">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext" style="left: 280px!important;">
+            <h2 class="text-center">
+              DATA PROCESSING
+            </h2>
+            Provide the data processing services according to business needs.
+          </div>
+          <img src="assets/image/Service/Detail/Picture8.png" style="width:100%; height: 277px !important; object-fit: contain">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext" style="left: 300px!important;">
+            <h2 class="text-center">TECHNOLOGY CONSULTING</h2>
+            Provide professional and strategic consulting services for overall IT.
+          </div>
+          <img src="assets/image/Service/Detail/Picture9.png" style="width:100%;height: 277px !important;object-fit: contain">
+        </div>
+
+
+
+        <!-- Thumbnail images -->
+
+      </div>
+
+      <div class="wrapper mb-3">
         <!--     *********     FEATURES       *********      -->
-        <div class="features-8 section-image" style="background-image: url('https://www.ldcc.co.kr/img/pc/sub1/img_bg_offshoring.png')">
+        <div class="features-8 section-image">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">OUR OFFSHORE</h2>
+            <h2 class="title"> OUR ATTRIBUTES</h2>
             <h4 class="description">Experience high-quality global outsourcing services at a reasonable price.</h4>
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
-                <div>
-                  <div>
-                    <img src="https://www.ldcc.co.kr/img/en/pc/sub01/img_en_offshoring.png" class="rounded" alt="">
-                  </div>
-                </div>
+              <div class="col-md- align-items-center">
+                <img src="https://www.ldcc.co.kr/img/en/pc/sub01/img_en_offshoring.png" class="rounded" alt="">
               </div>
               <div class="col-md-6">
                 <div class="col-sm-12">
                   <div class="info info-horizontal" style="padding: unset!important;">
                     <div class="icon">
-                      <img src="assets/image/Service/Cloud/Picture4.png" width="50" alt="">
+                      <i class='bx bx-sort-down mt-1' style="color: #da291c"></i>
                     </div>
                     <div class="description">
                       <h5 class="info-title">Lower labour costs </h5>
@@ -1259,7 +1301,7 @@
                   </div>
                   <div class="info info-horizontal" style="padding: unset!important;">
                     <div class="icon">
-                      <img src="assets/image/Service/Cloud/Picture5.png" width="50" alt="">
+                      <i class='bx bx-trending-up' style="color: #da291c"></i>
                     </div>
                     <div class="description">
                       <h5 class="info-title">Up-to-date with latest trends</h5>
@@ -1270,12 +1312,13 @@
                   </div>
                   <div class="info info-horizontal" style="padding: unset!important;">
                     <div class="icon">
-                      <img src="assets/image/Service/Cloud/Picture5.png" width="50" alt="">
+                      <i class='bx bx-like' style="color: #da291c" ></i>
                     </div>
                     <div class="description">
-                      <h5 class="info-title">Legacy systems and conversion to hybrid or cloud native</h5>
+                      <h5 class="info-title">Quality assurance</h5>
                       <p class="description">
-                        Design hybrid or cloud native systems that maximize resource consumption to lower costs while maintaining excellent performance.
+                        LDCC’s professional IT coordinating eliminates
+                        the risks from language barrier and quality gap.
                       </p>
                     </div>
                   </div>
@@ -1283,62 +1326,136 @@
               </div>
 
             </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="iot-block-6 groove-section groove-section-boxed" id=faq>
-
-        <div class="groove-container groove-column-gap-default " style="max-width: 1170px;margin-bottom: 50px;">
-          <div class=groove-row>
-            <div class="groove-element groove-column groove-col-100">
-              <a class="a-sumit only-pc" href="case_studies_ldcc_page.html" >
-                <div class=groove-info-box-left>
-                  <div class=groove-infobox-image>
-                    <div class=groove-image>
-                      <img style=width:71px;height:71px; width=71 heigth=71 alt="Groove Technology - Software Consultancy - 29" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/01/Group-49734.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                      <noscript><img
-                              class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2071%2071'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/01/Group-49734.png style=width:71px;height:71px; width=71 heigth=71 alt="Groove Technology - Software Consultancy - 29"></noscript>
-                    </div>
-                  </div>
-                  <div
-                          class=groove-infobox-content>
-                    <div
-                            class="div-h3 infobox-content-title">
-                      Would you like to know more detailed information?
-                    </div>
-                    <p>You can still send us your concern. We will help you to find a suitable solution.</p>
-                  </div>
-                </div>
-                <div class=groove-btn>
-                  Explore our case studies
-                </div>
-              </a>
-              <a class="a-sumit only-mobile" href="case_studies_ldcc_page.html" >
-                <div class=groove-infobox-image>
-                  <div class="groove-image groove-align-center">
-                    <img style=width:71px;height:71px; width=71 heigth=71 alt="Groove Technology - Software Consultancy - 30" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/01/Group-49734.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                    <noscript>
-                      <img
-                              class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2071%2071'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/01/Group-49734.png style=width:71px;height:71px; width=71 heigth=71 alt="Groove Technology - Software Consultancy - 30"></noscript>
-                  </div>
-                </div>
-                <div
-                        class="groove-infobox-content groove-align-center">
-                  <h3 class="infobox-content-title">
-                    Would you like to know more detailed information?
-                  </h3>
-                  <p>You can still send us your concern. We will help you to find a suitable solution.</p>
-                </div>
-                <div
-                        class=groove-btn>
-                  Explore our case studies
-                </div>
-              </a>
+            <div class="row justify-content-center">
+              <a href="https://glotoss.com/" class="btn btn-primary btn-round"> Explore our case studies</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <style>
+        .container_slide {
+          position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+          margin-top: 100px;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: #B3000F;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          font-size: 16px;
+          position: absolute;
+          top: 72px;
+          padding: 10px;
+          left: 215px;
+        }
+
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+          display:none ;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+          padding: 10px;
+          margin: 5px;
+          text-align: center;
+          /*border-bottom: 1px solid #B3000F;*/
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+
+        .activer,
+        .demo:hover {
+          opacity: 1;
+          background-color: #B3000F;
+          padding:10px;
+          border-radius: 10px;
+          color: #FFFFFF!important;
+        }
+        @media only screen and (max-width: 391px) {
+          .column {
+            float: left;
+            width:unset !important;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            /*border-bottom: 1px solid #B3000F;*/
+          }
+          .numbertext {
+            display: none;
+          }
+        }
+      </style>
+
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activer", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " activer";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+      </script>
 
       <script>jQuery(window).scroll(function() {
         var scroll = jQuery(window).scrollTop();

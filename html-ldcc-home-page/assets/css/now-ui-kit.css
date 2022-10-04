@@ -6871,8 +6871,17 @@ Created using IcoMoon - icomoon.io
     text-align: center;
 }
 
+.info_card {
+    max-width: 450px;
+    height: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid;
+}
+
 .info .image_detail {
-    width: 100px;
+    width: 60px;
     margin: auto;
 }
 
@@ -6965,7 +6974,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .info p {
-    color: #ebebeb;
+    color: #2c2c2c;
     padding: 0 15px;
     font-size: 1.1em;
 }
@@ -7993,12 +8002,13 @@ Created using IcoMoon - icomoon.io
 
 .card {
     border: 0;
+    height: 495px;
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     width: 100%;
     margin-bottom: 30px;
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card .author .avatar {
@@ -9478,7 +9488,7 @@ Created using IcoMoon - icomoon.io
 
 .section-image .title,
 .section-image .card-plain .card-title {
-    color: #FFFFFF;
+    color: #222222;
 }
 
 .section-image .nav-pills .nav-link {
@@ -9493,12 +9503,12 @@ Created using IcoMoon - icomoon.io
 .section-image .info-title,
 .section-image .info.info-horizontal .icon i,
 .section-image .card-pricing.card-plain ul li {
-    color: #FFFFFF;
+    color: #2c2c2c;
 }
 
 .section-image .description,
 .section-image .info .icon:not(.icon-circle) {
-    color: rgba(255, 255, 255, 0.8);
+    color:#222222;
 }
 
 .section-image .card:not(.card-plain) .info-title {
@@ -9533,7 +9543,7 @@ Created using IcoMoon - icomoon.io
     left: 0;
     top: 0;
     content: "";
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
 }
 
 .section-image .container {
@@ -10256,7 +10266,7 @@ Created using IcoMoon - icomoon.io
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 
 .features-7 .container,
@@ -10277,7 +10287,7 @@ Created using IcoMoon - icomoon.io
 
 .features-8 .title,
 .features-7 .title {
-    color: #FFFFFF;
+    color: #222222;
 }
 
 .features-8 .title+.description {
@@ -10289,7 +10299,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .features-7 .info-title {
-    color: #FFFFFF;
+    color: #222222;
 }
 
 .features-7 .info-horizontal {
@@ -10323,11 +10333,11 @@ Created using IcoMoon - icomoon.io
 }
 
 [class*="blogs-"] {
-    padding: 50px 0;
+    /*padding: 50px 0;*/
 }
 
 .blogs-1 .card {
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
 }
 
 .blogs-4 .card {

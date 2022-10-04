@@ -1142,35 +1142,75 @@
         font-weight: 500;
         }
       </style>
-      <div
-              class=sticky-space>
-        <div
-                class=sticky-container>
-          <div
-                  class="header section-careers-sticky">
-            <div
-                    class="textwidget custom-html-widget  careers-links">
-              <ul
-                      class=career_links_anchor>
-                <li class=is-active >
-                  <a class=services href="about_ldcc_page.html#overview" style="color: #2b2b2b!important;">OVERVIEW</a>
-                </li>
-                <li>
-                  <a class=cooperation href="about_ldcc_vision.html#vision">OUR VISION</a>
-                </li>
-                <li>
-                  <a class=whygroove href="about_ldcc_ceo.html#CEO">ABOUT CEO</a>
-                </li>
-                <li>
-                  <a class=example href="#history" style="color: #B3000F!important;">OUR HISTORY</a>
-                </li>
-                <li>
-                  <a class=faq href="about_ldcc_partnership.html#partnership">PARTNERSHIP</a>
-                </li>
-                <li>
-                  <a class=faq href="about_ldcc_newevent.html#new_event">NEW & EVENT</a>
-                </li>
-              </ul>
+      <div class=sticky-space  >
+        <div class=sticky-container >
+          <div class="header section-careers-sticky" style="display: flex;justify-content: center;margin-left: 0;padding: 10px">
+            <style>
+              .dropbtn_home {
+                padding: 10px;
+                position: relative;
+                display: inline-block;
+              }
+              .dropbtn {
+                /*background-color: #ffffff;*/
+                border-bottom: 1px solid #2b2b2b;
+                font-size: 16px;
+                padding: 10px;
+                margin: auto 0;
+                text-transform: unset;
+                cursor: pointer;
+              }
+              .dropdown {
+                padding: 10px;
+                position: relative;
+                display: inline-block;
+              }
+
+              .dropdown-content {
+                top:43px;
+                left: -5px;
+                display: none;
+                position: absolute;
+                background-color: #ffffff !important;
+                min-width: 200px;
+                width: 250px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 100;
+              }
+              .dropdown-content a {
+                color: #df0101;
+                padding: 16px;
+                text-decoration: none;
+                display: block;
+              }
+
+              .dropdown-content a:hover {
+                background-color: #f1f1f1
+              }
+
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+
+              .dropdown:hover .dropbtn {
+                background-color: whitesmoke;
+                color: #2b2b2b;
+              }
+            </style>
+            <div class="dropbtn_home">
+              <a class="dropbtn" href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+
+              <a class="dropbtn">Our History <i class='bx bx-chevron-down'></i></a>
+              <div class="dropdown-content">
+                <a href="about_ldcc_page.html#overview">Overview</a>
+                <a href="about_ldcc_vision.html#vision">Our Vision</a>
+                <a href="about_ldcc_ceo.html#CEO">CEO Message</a>
+                <a href="about_ldcc_history.html#history">Our History</a>
+                <a href="about_ldcc_partnership.html#partnership">Our partner</a>
+                <a href="about_ldcc_newevent.html#new_event">News and Events</a>
+              </div>
             </div>
           </div>
         </div>
@@ -1180,10 +1220,6 @@
         <div class="groove-container groove-column-gap-default">
           <div class=groove-row>
             <div class="groove-title-heading title-heading-center  wgl-double_heading">
-              <div
-                      class="dbl__subtitle ">
-                <span>ABOUT</span>
-              </div>
               <h2 class="dbl__title-wrapper education-title groove-headingtitle"><span>OUR HISTORY</span></h2>
               <p>Provision of foundation for global management.
               </p>
@@ -1230,14 +1266,13 @@
                       </ul>
 
                     </div>
-                    <div class="img_history">
+                    <!--<div class="img_history">
                       <img src="assets/image/About/history.jpg" alt="">
-                    </div>
+                    </div>-->
                     <span class="timeline02 sceneTrigger"></span>
-
                   </li>
                   <li class="point timeline01">
-                    <div class="spot_history">
+                    <div class="spot_history" style="border-right: 1px solid red!important;">
                       <strong>2010 - 2015</strong>
                       <ul>
                         <li> Announced the company’s second revised vision (Value Innovation)</li>
@@ -1246,10 +1281,10 @@
                         <li>Launched the Disaster Restoration Center</li>
                       </ul>
                     </div>
-                    <div class="img_history">
+                    <!--<div class="img_history">
                       <img src="assets/image/About/img_history_2014.png"
                            alt="Group Picture at the Ceremony for Self-driving Shuttle in Sejong City">
-                    </div>
+                    </div>-->
                     <span class="timeline01 sceneTrigger"></span>
                   </li>
 
@@ -1266,14 +1301,14 @@
                       </ul>
 
                     </div>
-                    <div class="img_history">
+                    <!--<div class="img_history">
                       <img src="assets/image/About/img_history_2009.png"
                            alt="Group Picture at the Ceremony for Self-driving Shuttle in Sejong City">
-                    </div>
+                    </div>-->
                     <span class="timeline01 sceneTrigger"></span>
                   </li>
                   <li class="point timeline01">
-                    <div class="spot_history">
+                    <div class="spot_history" style="border-right: 1px solid red">
                       <strong>1996 - 2004 </strong>
                       <ul>
                         <li>Established Lotte Data Communication and launched system management business and deployed MOIN services</li>
@@ -1281,13 +1316,10 @@
                       </ul>
 
                     </div>
-                    <div class="img_history">
+                    <!--<div class="img_history">
                       <img src="/img/pc/sub02/img_history_2022.jpg"
                            alt="Lotte_Information&Communication_CES2022_on-site">
-                    </div>
-                    <span class="timeline01 sceneTrigger">
-                      iii
-                    </span>
+                    </div>-->
                   </li>
                 </ul>
               </div>
@@ -1505,175 +1537,7 @@
                       </div>-->
             </div>
           </div>
-          <!--    <footer id="footer">
-              <div class="footer_inner">
-              <div class="footer_con">
-              <div class="footerMenu">
-              <div class="inner">
-              <div class="rightMenu mobile">
-              <span class="selectbox">
-              <label for="select">LOTTE Family</label>
-              <select id="select" class="family_site" title="LOTTE Family">
-              <option selected="selected">LOTTE Family</option>
-              <option value="http://www.lotte.co.kr">LOTTE</option>
-              <option value="http://www.LOTTEconf.co.kr/eng/">LOTTE Confectionery</option>
-              <option value="http://mall.LOTTEchilsung.co.kr/index.html">LOTTE Chilsung Beverage (Beverage BG)</option>
-              <option value="http://www.LOTTEliquor.com/">LOTTE Liquor</option>
-              <option value="http://www.LOTTEfoods.co.kr/eng/">LOTTE Foods</option>
-              <option value="http://store.LOTTEshopping.com/handler/AmbassaMain-StartEn">LOTTE Department Store</option>
-              <option value="http://company.lottemart.com/eng/?SITELOC=DG004">LOTTE Mart</option>
-              <option value="http://www.LOTTEsuper.co.kr/handler/Index-Start">LOTTE Super</option>
-              <option value="http://www.7-eleven.co.kr/">Korea Seven</option>
-              <option value="http://www.e-himart.co.kr/">LOTTE Hi-Mart</option>
-              <option value="http://www.LOTTEhomeshopping.com/user/main/index_en.LOTTE">LOTTE Home Shopping</option>
-              <option value="http://www.LOTTE.com">LOTTE SHOPPING e-commerce</option>
-              <option value="http://www.lohbs.co.kr/index.jsp">LOTTE LOHB's</option>
-              <option value="http://www.LOTTEcinema.co.kr/LCHS/Contents/ticketing/ticketing.aspx">LOTTE Cinema</option>
-              <option value="http://www.uniqlo.kr/">FRL Korea</option>
-              <option value="http://www.LOTTEcon.co.kr/eng/">LOTTE E&amp;C</option>
-              <option value="http://www.LOTTEcon.co.kr/eng">LOTTE CM Business Division</option>
-              <option value="https://www.LOTTEglogis.com/english/main">Global Logistics</option>
-              <option value="http://www.LOTTElem.co.kr/Eng/index.asp">LOTTE E&amp;M</option>
-              <option value="https://www.lotterentacar.net/eng/main/index.do">LOTTE Rental</option>
-              <option value="http://www.lottemembers.com">LOTTE Members</option>
-              <option value="http://en.LOTTEdfs.com/main">LOTTE Duty Free</option>
-              <option value="http://en.lottedfs.com/branchGuide/5/intro">LOTTE Duty Free Busan</option>
-              <option value="http://en.LOTTEdfs.com/branchGuide/6/intro">LOTTE Duty Free Jeju</option>
-              <option value="http://www.LOTTEpnd.com/en/main.do">LOTTE Property &amp; Development</option>
-              <option value="https://www.lottemuseum.com/en">LOTTE Museum of Art</option>
-              <option value="http://www.LOTTEbp.com/main.html">LOTTE BP</option>
-              <option value="http://csv.lotte.co.kr">LOTTE CSV</option>
-              <option value="http://www.LOTTEintl.co.kr/eng/index.asp">LOTTE International</option>
-              &lt;!&ndash; <option value="http://www.LOTTEins.co.kr/eng/">LOTTE Insurance</option> &ndash;&gt;
-              <option value="http://www.skyhill.co.kr/_eng/html/gimhae/main.jsp">LOTTE Skyhill CC</option>
-              <option value="http://www.asahibeerk.com/">LOTTE Asahi</option>
-              <option value="http://www.LOTTEal.co.kr/eng/main.asp">LOTTE Aluminum</option>
-              <option value="http://www.LOTTEmcc.com/eng/main/main.asp">LOTTE MCC</option>
-              <option value="http://www.LOTTEworld.com/gate.html">LOTTE WORLD</option>
-              <option value="https://www.LOTTElmsc.com/">LOTTElmsc</option>
-              <option value="http://www.LOTTEacademy.co.kr/">LOTTE Academy</option>
-              <option value="http://www.LOTTEdevelop.com/">LOTTE Asset Development</option>
-              <option value="https://www.giantsclub.com/eng/">LOTTE Giants</option>
-              <option value="http://www.LOTTEfinechem.com/en/main">LOTTE Fine Chemical</option>
-              <option value="https://www.ldcc.co.kr/en/index.asp">LOTTE Data Communication</option>
-              <option value="https://www.LOTTEjtb.net:59848/html/index.php">LOTTE JTB</option>
-              <option value="http://www.LOTTErnd.com/ENG/default.asp">LOTTE R&amp;D Center</option>
-              <option value="http://www.lottegrs.com/eng/main.jsp">LOTTE GRS</option>
-              <option value="https://www.lottegfr.co.kr/">LOTTE GFR</option>
-              <option value="http://job.lotte.co.kr">LOTTE job</option>
-              <option value="http://www.LOTTEadms.com/jsp/eng/index.jsp?CHECK=Y">LOTTE Advanced Materials</option>
-              &lt;!&ndash; <option value="https://www.LOTTEcard.co.kr/app/index_main.jsp">LOTTE Card</option> &ndash;&gt;
-              &lt;!&ndash; <option value="http://www.lottecap.com/eng/index_eng.jsp">LOTTE Capital</option> &ndash;&gt;
-              <option value="http://english.LOTTEchem.com/contents/main/main.asp">LOTTE Chemical</option>
-              <option value="http://www.lotteconcerthall.com/eng">LOTTE Concert Hall</option>
-              <option value="http://www.LOTTEhotel.com/global/en/Default.asp">LOTTE Hotel</option>
-              <option value="https://www.daehong.com/">Daehong Communications</option>
-              <option value="https://www.cashbee.co.kr/cb/service/FrgrUsGudEn.do">Mybi</option>
-              <option value="http://www.LOTTEhotel.com/busan/en/">LOTTE Hotel Busan</option>
-              <option value="https://www.cashbee.co.kr/cb/service/FrgrUsGudEn.do">EB Card</option>
-              <option value="https://kr.canon/main">Canon Korea</option>
-              <option value="http://www.fujifilm.co.kr/main/">Fuji Film Korea</option>
-              </select>
-              </span>
-              </div>
-              <h3 class="blind">�ϴ� �޴�</h3>
-              <ul class="leftMenu">
-              <li>
-              <a href="/en/tos/privacyPolicy" data-id="terms_personal"><b>Privacy Policy</b></a>
-              </li>
-              </ul>
-              <div class="rightMenu pc">
-              <span class="selectbox">
-             &lt;!&ndash; <select class="family_site" title="LOTTE Family">
-              <option selected="selected">LOTTE Family</option>
-              <option value="http://www.lotte.co.kr">LOTTE</option>
-              <option value="http://www.LOTTEconf.co.kr/eng/">LOTTE Confectionery</option>
-              <option value="http://mall.LOTTEchilsung.co.kr/index.html">LOTTE Chilsung Beverage (Beverage BG)</option>
-              <option value="http://www.LOTTEliquor.com/">LOTTE Liquor</option>
-              <option value="http://www.LOTTEfoods.co.kr/eng/">LOTTE Foods</option>
-              <option value="http://store.LOTTEshopping.com/handler/AmbassaMain-StartEn">LOTTE Department Store</option>
-              <option value="http://company.lottemart.com/eng/?SITELOC=DG004">LOTTE Mart</option>
-              <option value="http://www.LOTTEsuper.co.kr/handler/Index-Start">LOTTE Super</option>
-              <option value="http://www.7-eleven.co.kr/">Korea Seven</option>
-              <option value="http://www.e-himart.co.kr/">LOTTE Hi-Mart</option>
-              <option value="http://www.LOTTEhomeshopping.com/user/main/index_en.LOTTE">LOTTE Home Shopping</option>
-              <option value="http://www.LOTTE.com">LOTTE SHOPPING e-commerce</option>
-              <option value="http://www.lohbs.co.kr/index.jsp">LOTTE LOHB's</option>
-              <option value="http://www.LOTTEcinema.co.kr/LCHS/Contents/ticketing/ticketing.aspx">LOTTE Cinema</option>
-              <option value="http://www.uniqlo.kr/">FRL Korea</option>
-              <option value="http://www.LOTTEcon.co.kr/eng/">LOTTE E&amp;C</option>
-              <option value="http://www.LOTTEcon.co.kr/eng">LOTTE CM Business Division</option>
-              <option value="https://www.LOTTEglogis.com/english/main">Global Logistics</option>
-              <option value="http://www.LOTTElem.co.kr/Eng/index.asp">LOTTE E&amp;M</option>
-              <option value="https://www.lotterentacar.net/eng/main/index.do">LOTTE Rental</option>
-              <option value="http://www.lottemembers.com">LOTTE Members</option>
-              <option value="http://en.LOTTEdfs.com/main">LOTTE Duty Free</option>
-              <option value="http://en.lottedfs.com/branchGuide/5/intro">LOTTE Duty Free Busan</option>
-              <option value="http://en.LOTTEdfs.com/branchGuide/6/intro">LOTTE Duty Free Jeju</option>
-              <option value="http://www.LOTTEpnd.com/en/main.do">LOTTE Property &amp; Development</option>
-              <option value="https://www.lottemuseum.com/en">LOTTE Museum of Art</option>
-              <option value="http://www.LOTTEbp.com/main.html">LOTTE BP</option>
-              <option value="http://csv.lotte.co.kr">LOTTE CSV</option>
-              <option value="http://www.LOTTEintl.co.kr/eng/index.asp">LOTTE International</option>
-              &lt;!&ndash; <option value="http://www.LOTTEins.co.kr/eng/">LOTTE Insurance</option> &ndash;&gt;
-              <option value="http://www.skyhill.co.kr/_eng/html/gimhae/main.jsp">LOTTE Skyhill CC</option>
-              <option value="http://www.asahibeerk.com/">LOTTE Asahi</option>
-              <option value="http://www.LOTTEal.co.kr/eng/main.asp">LOTTE Aluminum</option>
-              <option value="http://www.LOTTEmcc.com/eng/main/main.asp">LOTTE MCC</option>
-              <option value="http://www.LOTTEworld.com/gate.html">LOTTE WORLD</option>
-              <option value="https://www.LOTTElmsc.com/">LOTTElmsc</option>
-              <option value="http://www.LOTTEacademy.co.kr/">LOTTE Academy</option>
-              <option value="http://www.LOTTEdevelop.com/">LOTTE Asset Development</option>
-              <option value="https://www.giantsclub.com/eng/">LOTTE Giants</option>
-              <option value="http://www.LOTTEfinechem.com/en/main">LOTTE Fine Chemical</option>
-              <option value="https://www.ldcc.co.kr/en/index.asp">LOTTE Data Communication</option>
-              <option value="https://www.LOTTEjtb.net:59848/html/index.php">LOTTE JTB</option>
-              <option value="http://www.LOTTErnd.com/ENG/default.asp">LOTTE R&amp;D Center</option>
-              <option value="http://www.lottegrs.com/eng/main.jsp">LOTTE GRS</option>
-              <option value="https://www.lottegfr.co.kr/">LOTTE GFR</option>
-              <option value="http://job.lotte.co.kr">LOTTE job</option>
-              <option value="http://www.LOTTEadms.com/jsp/eng/index.jsp?CHECK=Y">LOTTE Advanced Materials</option>
-              &lt;!&ndash; <option value="https://www.LOTTEcard.co.kr/app/index_main.jsp">LOTTE Card</option> &ndash;&gt;
-              &lt;!&ndash; <option value="http://www.lottecap.com/eng/index_eng.jsp">LOTTE Capital</option> &ndash;&gt;
-              <option value="http://english.LOTTEchem.com/contents/main/main.asp">LOTTE Chemical</option>
-              <option value="http://www.lotteconcerthall.com/eng">LOTTE Concert Hall</option>
-              <option value="http://www.LOTTEhotel.com/global/en/Default.asp">LOTTE Hotel</option>
-              <option value="https://www.daehong.com/">Daehong Communications</option>
-              <option value="https://www.cashbee.co.kr/cb/service/FrgrUsGudEn.do">Mybi</option>
-              <option value="http://www.LOTTEhotel.com/busan/en/">LOTTE Hotel Busan</option>
-              <option value="https://www.cashbee.co.kr/cb/service/FrgrUsGudEn.do">EB Card</option>
-              <option value="https://kr.canon/main">Canon Korea</option>
-              <option value="http://www.fujifilm.co.kr/main/">Fuji Film Korea</option>
-              </select>&ndash;&gt;
-              </span>
-              &lt;!&ndash; <div class="link_move">MOVE</div> &ndash;&gt;
-              <p class="btn-sns">
-              <a href="https://www.youtube.com/channel/UCn41TnmQX9Ccswo89wDBiyg" target="_blank"><img src="/img/pc/sub01/icon_youtube.png" alt=""></a>
-              <a href="https://blog.naver.com/ldcc_rnd" target="_blank"><img src="/img/pc/sub01/icon_sns.png" alt=""></a>
-              </p>
-              </div>
-              </div>
-              </div>
-              <div class="footerInfo onlyPc">
-              <div class="wa_mark lang_en"><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치" ><img src="https://www.ldcc.co.kr/img/common/pc/wa_mark.png" alt="Ministry of Science and Technology WEB ACCESSIBILITY Mark (Web Accessibility Quality Certification Mark)"></a></div>
-              <address>179, Gasan Digital 2-ro (533-2 Gasan-dong), Geumcheon-gu, Seoul, Korea LOTTE DATA COMMUNICATION CO.,LTD.</address>
-              <div class="copyright">Copyrightⓒ2019 LOTTE DATA COMMUNICATION CO.,LTD. All rights Reserved.</div>
-              </div>
-              <div class="footerInfo onlyMo">
-              <div class="wa_mark lang_en"><a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"><img src="https://www.ldcc.co.kr/img/common/pc/wa_mark.png" alt="Ministry of Science and Technology WEB ACCESSIBILITY Mark (Web Accessibility Quality Certification Mark)"></a></div>
-              <address>179, Gasan Digital 2-ro (533-2 Gasan-dong), Geumcheon-gu, Seoul,<br> LOTTE DATA COMMUNICATION CO.,LTD.</address>
-              <div class="copyright">Copyrightⓒ2019 LOTTE DATA COMMUNICATION CO.,LTD.<br> All rights Reserved.</div>
-              <p class="btn-sns">
-              <a href="https://www.youtube.com/channel/UCn41TnmQX9Ccswo89wDBiyg" target="_blank"><img src="/img/pc/sub01/icon_youtube.png" alt=""></a>
-              <a href="https://blog.naver.com/ldcc_rnd" target="_blank"><img src="/img/pc/sub01/icon_sns.png" alt=""></a>
-              </p>
-              </div>
-              <div class="loc_btn_top">
-              <button class="btn_top">Top</button>
-              </div>
-              </div>
-              </div>
-              </footer>-->
+
 
 
 
