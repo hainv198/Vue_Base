@@ -6935,7 +6935,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .info.info-hover:hover .icon.icon-primary+.info-title {
-    color: #f96332;
+    color: #B3000F;
 }
 
 .info.info-hover:hover .icon.icon-success+.info-title {
@@ -6949,6 +6949,7 @@ Created using IcoMoon - icomoon.io
 
 .info .icon>i {
     font-size: 3em;
+    color: #da291c;
 }
 
 .info .icon.icon-circle {
@@ -7012,7 +7013,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .icon.icon-primary {
-    color: #f96332;
+    color: #cc3100;
 }
 
 .icon.icon-primary.icon-circle {
@@ -8259,6 +8260,7 @@ Created using IcoMoon - icomoon.io
 .card-profile .card-body .card-title,
 .card-testimonial .card-body .card-title {
     margin-top: 0;
+    color: #B3000F;
 }
 
 .card-profile [class*=col-] .card-description,

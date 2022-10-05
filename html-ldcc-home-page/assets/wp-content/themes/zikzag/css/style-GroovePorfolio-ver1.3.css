@@ -291,8 +291,8 @@
     text-align: left;
 }
 .ft-reset-filters{
-    border: 1px solid #e60078;
-    color: #e60078;
+    border: 1px solid #B3000F;
+    color: #B3000F;
     border-radius: 8px;
     margin: 0 0px 0 8px;
     height: 54px;
@@ -307,7 +307,8 @@
     width: calc(16.66666% - 16px);
 }
 .ft-menu li:last-of-type {
-    padding-right: .6666666667rem;
+    /*padding-right: .6666666667rem;*/
+    width: 59px;
 }
 .ft-menu .ft-label {
     width: 100%;
@@ -358,7 +359,7 @@
     content: "\f531";
     position: absolute;
     right: 1.0666666667rem;
-    color: #e60078;
+    color: #B3000F;
     font-family: dashicons;
     font-size: 25px;
     line-height: 54px;
@@ -436,7 +437,7 @@
     background: #e5e5e5;
 }
 .ft-tags li:hover:after{
-    background: #E60078;
+    background: #B3000F;
     color: #fff;
 }
 .filter-active  .ft-label{

@@ -1196,9 +1196,10 @@ textarea {
     margin-top: 10px;
 }
 .page-header_content h5 {
-    display: inline-block;
+    /*display: inline-block;*/
     position: absolute;
     left: 39%;
+    display: none;
     top: 27px;
     max-width: 760px;
     font-size: 17px;
@@ -2383,7 +2384,7 @@ ol.mega-li > li:before {
     background: 0px 0px transparent !important;
 }
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li:nth-child(8) {
-    background: url(../../../uploads/2021/01/social-email%402x.png) !important;
+    background: url(../../../uploads/2021/01/social-linkedin%402x.png) !important;
     background-repeat: no-repeat;
     background-size: cover !important;
 }
