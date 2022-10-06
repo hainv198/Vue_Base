@@ -1082,73 +1082,99 @@
         font-weight: 500;
         }
       </style>
-      <div
-              class=sticky-space>
-        <div
-                class=sticky-container>
-          <div
-                  class="header section-careers-sticky">
-            <div
-                    class="textwidget custom-html-widget  careers-links">
-              <ul
-                      class=career_links_anchor>
-                <li class=is-active>
-                  <a class=services href="#api_gatewy">API GATEWAY</a>
-                </li>
-                <li>
-                  <a class=cooperation href="product_ldcc_saas.html#saas"> SAAS</a>
-                </li>
-                <li>
-                  <a href="product_ldcc_smart_bulling.html#building" class=whygroove>Smart building</a>
-                </li>
-                <li>
-                  <a href="product_ldcc_smart_parking.html#parking" class=example>Smart parking</a>
-                </li>
+      <div class=sticky-container>
+        <div class="header section-careers-sticky" style="display: flex;justify-content: center;margin-left: 0">
+          <style>
+            .dropbtn_home {
+              padding: 10px;
+              position: relative;
+              display: inline-block;
+            }
+            .dropbtn {
+              /*background-color: #ffffff;*/
+              border-bottom: 1px solid #2b2b2b;
+              font-size: 16px;
+              padding: 10px;
+              margin: auto 0;
+              text-transform: unset;
+              cursor: pointer;
+            }
+            .dropdown {
+              padding: 10px;
+              position: relative;
+              display: inline-block;
+            }
 
-              </ul>
+            .dropdown-content {
+              top:43px;
+              left: -5px;
+              display: none;
+              position: absolute;
+              background-color: #ffffff !important;
+              min-width: 200px;
+              width: 250px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 100;
+            }
+            .dropdown-content a {
+              color: #df0101;
+              padding: 16px;
+              text-decoration: none;
+              display: block;
+            }
+
+            .dropdown-content a:hover {
+              background-color: #f1f1f1
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+              background-color: whitesmoke;
+              color: #2b2b2b;
+            }
+          </style>
+          <div class="dropbtn_home">
+            <a class="dropbtn" href="service_ldcc_page.html">Services</a>
+          </div>
+          <div class="dropdown">
+
+            <a class="dropbtn">API GATEWAY <i class='bx bx-chevron-down'></i></a>
+            <div class="dropdown-content">
+              <a href="product_ldcc_page.html#api_getwy">API GATEWAY</a>
+              <a href="product_ldcc_saas.html#saas">SAAS</a>
+              <a href="product_ldcc_smart_bulling.html#building">Smart building</a>
+              <a href="product_ldcc_smart_parking.html#parking">Smart parking</a>
             </div>
           </div>
         </div>
+        <hr>
       </div>
-      <!--      API gateway (1/2)-->
 
 
 
-        <div class="scroll-page">
+        <div class="scroll-page mt-5">
           <div class="section section-home-banner">
-            <div class="bg">
-              <div class="container">
-                <div class="content">
-                  <div class="inner">
-                    <div class="txt t-h">
-                      <h2>The central hub of digital connections to drive up your operational efficiency</h2>
-                      <p>Seamless connections at your fingertips while saving up to 85% of your integration cost.</p>
-                      <div class="btn-action">
-                        <a href="#" title="Explore" class="btn"><span>Explore</span></a>
-                      </div>
-                    </div>
-                    <div class="img t-s">
-                      <img src="https://latg.lotte.vn/asset/images/img-1.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 class="title p-2 m-0">THE API CHALLENGE</h2>
+              <h4 class="description">Traditionally, a platform struggles to connect to external services using various combinations of connection methods and types .</h4>
             </div>
           </div>
           <div class="section section-2">
             <div class="container">
               <div class="block-content reverse-content">
                 <div class="intro t-h">
-                  <h2><span>The API challenge</span></h2>
-                  <p>A modern service or platform needs to be interfaced with various external services (e.g. Payment services, delivery services, membership services) by using multiple types of API.</p>
-                  <ul class="list-style f-type">
-                    <li><img src="https://latg.lotte.vn/asset/images/icon-1.svg" alt="">High initial configuration cost</li>
-                    <li><img src="https://latg.lotte.vn/asset/images/icon-1.svg" alt="">Require regular maintenance</li>
-                    <li><img src="https://latg.lotte.vn/asset/images/icon-1.svg" alt="">Potential cyber-security risks</li>
+                  <h2><span>Key issues</span></h2>
+                  <ul style="list-style: none">
+                    <li class="p-2"><img src="https://latg.lotte.vn/asset/images/icon-1.svg" alt="">High initial configuration cost</li>
+                    <li class="p-2"><img src="https://latg.lotte.vn/asset/images/icon-1.svg" alt="">Require regular maintenance</li>
+                    <li class="p-2"><img src="https://latg.lotte.vn/asset/images/icon-1.svg" alt="">Potential cyber-security risks</li>
                   </ul>
                 </div>
                 <div class="img t-s">
-                  <img src="https://latg.lotte.vn/asset/images/img-2.png" alt="The API challenge">
+                  <img src="assets/image/Product/Detail/Group%2023.svg" alt="The API challenge">
                 </div>
               </div>
             </div>
@@ -1158,429 +1184,50 @@
               <div class="block-content" id="oursolution">
                 <div class="intro t-h">
                   <h2><span>Our solution</span></h2>
-                  <p class="sub-title"><span class="red-color">LATG<sup>TM</sup></span> - Lotte API Transit Gateway</p>
-                  <p>Our platform allows client’s app/platform to connect with multiple external platforms with <strong>only one time of integration</strong>.</p>
+                  <p class="sub-title"><span class="red-color">LATG<sup>TM</sup></span> - <span class="red-color">L</span>otte <span class="red-color">A</span>PI <span class="red-color">T</span>ransit <span class="red-color">G</span>ateway</p>
+                  <p>Our LATG allows client app/platform to connect with multiple external platforms<span class="red-color"> with only one time of integration</span>, thus reduce any future cost related to AP integration .</p>
                   <ul class="list-style">
-                    <li><img src="https://latg.lotte.vn/asset/images/icon-2.svg" alt="">Cost-saving</li>
-                    <li><img src="https://latg.lotte.vn/asset/images/icon-2.svg" alt="">Enhanced cybersecurity capabilities</li>
-                    <li><img src="https://latg.lotte.vn/asset/images/icon-2.svg" alt="">Ease-of-use</li>
+                    <li>
+                      <img src="https://latg.lotte.vn/asset/images/icon-2.svg" alt="">Cost-saving <br>
+                      <i> Using LATG™'s various gateways, a company will save development and API configuration resources, also ensure a smoother operation</i>
+                    </li>
+
+                    <li><img src="https://latg.lotte.vn/asset/images/icon-2.svg" alt="">Risk mitigation <br>
+                      <i>Since there is no need to modify core of platform, the cybersecurity risk can be greatly reduced
+                      </i>
+                    </li>
                   </ul>
                 </div>
                 <div class="img t-s">
-                  <img src="https://latg.lotte.vn/asset/images/img-3.png" alt="Our solution">
+                  <img src="assets/image/Product/Detail/API%20getway%202.svg" alt="Our solution">
                 </div>
               </div>
             </div>
           </div>
           <div class="section section-4">
             <div class="container">
-              <div class="block-content">
-                <div class="intro t-h">
-                  <h2><span>All connections at your fingertips</span></h2>
-                  <p>Connect to all external services quickly and efficiently with only one time of integration. We will provide continuous support to ensure seamless linkages for you.</p>
+              <div class="block-content justify-content-center" style="gap: 50px">
+                <div class="row justify-content-center">
+                  <a href="case_studies_ldcc_page.html" class="btn  btn-round"> Explore our case studies</a>
                 </div>
-                <div class="img t-s">
-                  <img src="https://latg.lotte.vn/asset/images/img-4.png" alt="All connections at your fingertips">
+
+                <div class="row justify-content-center">
+                  <a href="https://latg.lotte.vn/" class="btn  btn-round">Explore further</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="section section-5">
             <div class="container">
-              <h2 class="text-center t-h"><span>Cost and time saving</span></h2>
-              <p class="text-center t-h">A client can <strong class="red-color">save up to 85%</strong> of cost by using LATG</p>
-              <div class="cost-content t-s">
-                <div class="inner left-content">
-                  <p class="text-center img"><img src="https://latg.lotte.vn/asset/images/img-5.svg" alt=""></p>
-                  <div class="item">
-                    <div class="txt"><span>Scenario</span></div>
-                    <p>Company A would like to connect directly to the system of
-                      <br>company B to exchange information</p>
-                  </div>
-                  <div class="item">
-                    <div class="txt"><span>Initial configuration cost &amp; time</span></div>
-                    <p class="blue-color"><strong>20.000 – 250.000</strong> <br>2 months – 4 months</p>
-                    <p>Depending on the complexity and <br>number of APIs to configure</p>
-                  </div>
-                  <div class="item">
-                    <div class="txt"><span>Annual Management cost</span></div>
-                    <p class="blue-color"><strong>10.000 – 20.000</strong></p>
-                    <p>Including server leasing and personnel cost <br>to host and manage the system</p>
-                  </div>
-                  <div class="item">
-                    <div class="txt"><span>Annual pricing</span></div>
-                    <p class="blue-color"><strong>N/A</strong></p>
-                    <p>Own servers and system, <br>thus do not need to pay any price</p>
-                  </div>
-                  <div class="item">
-                    <div class="txt bg-red"><span>Total cost for 5 years</span></div>
-                    <p class="cost-txt">70.000 – 350.000 USD</p>
-                  </div>
-                </div>
-                <div class="inner right-content">
-                  <p class="text-center img"><img src="https://latg.lotte.vn/asset/images/img-6.svg" alt=""></p>
-                  <div class="item">
-                    <p>Company A would like to connect to the system of
-                      <br>company B via LATG platform</p>
-                  </div>
-                  <div class="item">
-                    <p class="blue-color"><strong>0 – 20.000</strong> <br>0.01 month – 1 month</p>
-                    <p>Key APIs types are available on LATG platform, <br>thus allowing for quick configuration</p>
-                  </div>
-                  <div class="item">
-                    <p class="blue-color"><strong>N/A</strong></p>
-                    <p>No need to pay any maintenance cost for <br>hardware and personnel</p>
-                  </div>
-                  <div class="item">
-                    <p class="blue-color"><strong>2000 – 30.000</strong></p>
-                    <p>Depending on the number of transactions or <br>the purchase decision</p>
-                  </div>
-                  <div class="item">
-                    <p class="cost-txt">10.000 – 170.000 USD</p>
-                  </div>
-                </div>
-              </div>
-              <p class="txt-note"><strong>Note</strong>: Estimated numbers, actual may vary depending amount of transactions and complexity</p>
-            </div>
+
           </div>
           <div class="section section-6">
             <div class="container">
-              <h2 class="text-center t-h"><span>Secured and easy operations</span></h2>
-              <div class="tab-wrap t-s">
-                <ul class="nav nav-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tab1">Cybersecurity <span>risk mitigation</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tab2">All-on-cloud</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tab3">Ease of <span>control</span></a>
-                  </li>
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="tab1">
-                    <div class="block-content">
-                      <div class="intro">
-                        <h2 class="none-bg"><span>Enhanced cybersecurity performance</span></h2>
-                        <p>No need to the modify core of your system for integrations.</p>
-                        <p>LATG platform is protected with:</p>
-                        <ul class="list-style ls-m">
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">Amazon GuardDuty</li>
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">AWS Key Management Service</li>
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">AWS Network Firewall</li>
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">AWS Resource Access Manager</li>
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">AWS Shield and AWS WAF</li>
-                        </ul>
-                      </div>
-                      <div class="img">
-                        <img src="https://latg.lotte.vn/asset/images/img-6.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="tab2">
-                    <div class="block-content">
-                      <div class="intro">
-                        <h2 class="none-bg"><span>Completely available on AWS cloud</span></h2>
-                        <ul class="list-style ls-m">
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">Stable performance, always online</li>
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">Easy Access, everywhere</li>
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">Accommodate your peak demand easily</li>
-                        </ul>
-                      </div>
-                      <div class="img">
-                        <img src="https://latg.lotte.vn/asset/images/img-7.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="tab3">
-                    <div class="block-content">
-                      <div class="intro">
-                        <h2 class="none-bg"><span>EASE-OF-USE</span></h2>
-                        <ul class="list-style ls-m">
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">Quickly grasp your API performance with user-friendly and intuitive interfaces.</li>
-                          <li><img src="https://latg.lotte.vn/asset/images/icon-3.svg" alt="">Be informed of possible errors instantaneously.</li>
-                        </ul>
-                      </div>
-                      <div class="img">
-                        <img src="https://latg.lotte.vn/asset/images/img-8.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-   <!--   <section  class="section-about-groove frontpage-block-2 groove-section groove-section-boxed" id="frontpage-block-2">
-        <div class="groove-container groove-column-gap-default" id=mission style="padding: 60px">
-          <div id="api_gatewy" class=groove-row style="justify-content: center ">
-            <div class="groove-element groove-column groove-col-50 about-groove-nth1 only-pc">
-              <div class=groove-image  style="display: flex; justify-content: center" >
-                <img
-                        srcset="assets/image/Product/Detail/img-1.png"
-                        alt="Lotte Data Communication Vietnam."
-                        data-src=https://latg.lotte.vn/asset/images/img-1.png
-                        class=lazyload
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                <noscript>
-                  <img
-                          class=lazy
-                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20564%20564'%3E%3C/svg%3E"
-                          data-src=https://latg.lotte.vn/asset/images/img-1.png
-                          style=width:564px;height:513px; width=564 heigth=513
-                          alt="Lotte Data Communication Vietnam.">
-                </noscript>
-              </div>
-            </div>
-            <div class="groove-element groove-column groove-col-50 about-groove-nth1 only-mobile groove-align-center">
-              <div class=groove-image>
-                <img
-                        style=" width: auto;  object-fit: cover; " width=100%
-                        alt="Lotte Data Communication Vietnam."
-                        srcset="assets/image/Product/Detail/img-1.png"
-                        data-src=https://latg.lotte.vn/asset/images/img-1.png
-                        class=lazyload
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                <noscript><img
-                        class=lazy
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E"
-                        data-src=https://latg.lotte.vn/asset/images/img-1.png
-                        style=" width: auto; height: 350px; object-fit: cover; " width=100%
-                        alt="Lotte Data Communication Vietnam.">
-                </noscript>
-              </div>
-            </div>
-            <div class="groove-element groove-column groove-col-50 about-groove-nth2" >
-              <div class="groove-title-heading title-heading-left  wgl-double_heading">
-                <div class="dbl__subtitle " >
-                  <span>ABOUT API GATEWAY</span>
-                </div>
-                <h2 class="dbl__title-wrapper education-title groove-headingtitle dbl__title-wrapper-left"
-                    style="background-image: none !important;margin-bottom:0px;"><span>THE API CHALLENGE</span>
-                </h2>
-              </div>
-              <p>
-                A modern service or platform needs to be interfaced with various external services (e.g. Payment services, delivery services, membership services) by using multiple types of API.
-                <br>
-              <p>
-                <span ><i class='bx bxs-error' style="color: #FF9F29; font-size: 16px;padding: 10px;"></i>High initial configuration cost</span><br>
-                <span><i class='bx bxs-error'   style="color: #FF9F29; font-size: 16px;padding: 10px;"></i>Require regular maintenance</span><br>
-                <span><i class='bx bxs-error'   style="color: #FF9F29; font-size: 16px;padding: 10px;"></i>Potential cyber-security risks</span>
-              </p>
-
-              </p>
 
             </div>
           </div>
         </div>
-      </section>
-      &lt;!&ndash;      API gateway (2/2)&ndash;&gt;
-      <section class="section-our-culture frontpage-block-5 groove-section groove-section-boxed">
-        <div class="groove-container groove-column-gap-default" style="max-width: 1170px">
-          <div class=groove-row>
-            <div class="groove-title-heading title-heading-center  wgl-double_heading">
-              <div
-                      class="dbl__subtitle ">
 
-              </div>
-              <h2 class="dbl__title-wrapper education-title groove-headingtitle"><span>OUR SOLUTION</span></h2>
-              <p>Traditionally, a platform struggles to connect to external services using various combinations of
-                connection methods and types; with LATG, it needs to set connection method and type only once
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="groove-container groove-column-gap-default groove-paddingtop70" style="max-width: 1170px">
-          <div class=groove-row>
-            <div class="groove-element groove-column groove-col-50">
-              <div class="groove-element groove-infobox edu-block-4-infobox">
-                <div class=groove-info-box-left>
-                  <div
-                          class=groove-infobox-content>
-                    <h3 class="infobox-content-title">
-                      Cost-saving
-                    </h3>
-                    <p>Using LATG™'s various gateways, a company will save development and API configuration resources, also ensure a smoother operation</p>
-                  </div>
-                </div>
-                <div class=groove-info-box-left>
-                  <div
-                          class=groove-infobox-content>
-                    <h3 class="infobox-content-title">
-                      Enhanced cybersecurity capabilities
-                    </h3>
-                    <p>Since there is no need to modify core of platform, the cybersecurity risk can be greatly reduced
-                    </p>
-                  </div>
-                </div>
-                <div class=groove-info-box-left>
-
-                  <div
-                          class=groove-infobox-content>
-                    <h3 class="infobox-content-title">
-                      Ease-of-use
-                    </h3>
-                    <p>An API Gateways Provides flexibility to use completely independent protocols allowing your microservices to communicate among themselves with ease. They allow developers to access the functionality of a subset of architecture in many different ways, without ever exposing the endpoints publicly. It doesn’t matter if you are using microservices or serverless architecture or a public API, API Gateways have a lot of benefits to offer.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div
-                    class="groove-element groove-column groove-col-50">
-              <div class=groove-image>
-                <div class=groove-image>
-                  <noscript>
-                    <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20548%20548'%3E%3C/svg%3E"
-                            data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/right-img-1.png
-                            style=width:548px;height:533px; width=548 heigth=533
-                            class="culture-img-mobile only-pc lazy"
-                            srcset="assets/image/Product/Detail/img-3.png"
-                            alt="Lotte Data Communication Vietnam.">
-                  </noscript>
-                  <img
-                          style=width:315px;height:306px; width=315 heigth=306
-                          alt="Lotte Data Communication Vietnam."
-                          srcset="assets/image/Product/Detail/img-3.png"
-                          data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/right-img-1.png
-                          class="culture-img-mobile only-mobile lazyload"
-                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                  <noscript><img
-                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20315%20315'%3E%3C/svg%3E"
-                          data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/right-img-1.png
-                          style=width:315px;height:306px; width=315 heigth=306
-                          class="culture-img-mobile only-mobile lazy"
-                          alt="Lotte Data Communication Vietnam.">
-                  </noscript>
-                </div>
-                <div
-                        class="groove-animation groove-animation-1 only-pc">
-                  <div
-                          class=groove-widget-container>
-                    <div
-                            class=wgl-image-animate>
-                      <div
-                              class="img-layer_image-wrapper up_down">
-                        <div
-                                class="img-layer_image animation-img" style="animation-duration: 2s;">
-                          <img
-                                  style=width:649px;
-                                  alt="Lotte Data Communication Vietnam."
-                                  srcset="assets/image/Product/Detail/img-3.png"
-                                  data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/Path-1.png
-                                  class="mobile-80-center lazyload"
-                                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                          <noscript><img
-                                  class="mobile-80-center lazy" style=width:60px;height:119px;
-                                  width=60 heigth=119
-                                  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2060%2060'%3E%3C/svg%3E"
-                                  data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/Path-1.png
-                                  alt="Lotte Data Communication Vietnam.">
-                          </noscript>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section style="margin-bottom: 60px;" class="section-our-culture frontpage-block-5 groove-section groove-section-boxed">
-        <div class="groove-container groove-column-gap-default groove-paddingtop70" style="max-width: 1170px">
-          <div class=groove-row>
-            <div class="groove-element groove-column groove-col-50">
-              <div class="groove-element groove-infobox edu-block-4-infobox">
-                <div class=groove-info-box-left>
-                  <div
-                          class=groove-infobox-content>
-                    <h3 class="infobox-content-title">
-                      ALL CONNECTIONS AT YOUR FINGERTIPS
-                    </h3>
-                    <p>Connect to all external services quickly and efficiently with only one time of integration. We will provide continuous support to ensure seamless linkages for you.</p>
-                  </div>
-                </div>
-                <div class=groove-info-box-left>
-                  <div class=groove-infobox-content>
-                    <h3 class="infobox-content-title">
-                      Risk mitigation
-                    </h3>
-                    <p>Since there is no need to modify core of platform, the cybersecurity risk can be greatly reduced.
-                    </p>
-                    <div class="frontpage-button-container groove-container groove-column-gap-default">
-                      <div class="groove-container groove-column-gap-default">
-                        <div class=groove-row>
-                          <a class="btn-front-process groove-btn" href="https://latg.lotte.vn/" target=_blank>Explore our case study</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="groove-element groove-column groove-col-50">
-              <div class=groove-image>
-                <div class=groove-image>
-                  <noscript>
-                    <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20548%20548'%3E%3C/svg%3E"
-                            data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/right-img-1.png
-                            style=width:548px;height:533px; width=548 heigth=533
-                            class="culture-img-mobile only-pc lazy"
-                            srcset="assets/image/Product/Detail/img-4.png"
-                            alt="Lotte Data Communication Vietnam.">
-                  </noscript>
-                  <img
-                          style=width:315px;height:306px; width=315 heigth=306
-                          alt="Lotte Data Communication Vietnam."
-                          srcset="assets/image/Product/Detail/img-4.png"
-                          data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/right-img-1.png
-                          class="culture-img-mobile only-mobile lazyload"
-                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                  <noscript><img
-                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20315%20315'%3E%3C/svg%3E"
-                          data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/right-img-1.png
-                          style=width:315px;height:306px; width=315 heigth=306
-                          class="culture-img-mobile only-mobile lazy"
-                          alt="Lotte Data Communication Vietnam.">
-                  </noscript>
-                </div>
-                <div class="groove-animation groove-animation-1 only-pc" style="top:-70px;left: 150px">
-                  <div class=groove-widget-container>
-                    <div class=wgl-image-animate>
-                      <div class="img-layer_image-wrapper up_down">
-                        <div class="img-layer_image animation-img" style="animation-duration: 2s;">
-                          <img
-                                  style=width:430px;
-                                  alt="Lotte Data Communication Vietnam."
-                                  srcset="assets/image/Product/Detail/img-4.png"
-                                  data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/Path-1.png
-                                  class="mobile-80-center lazyload"
-                                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                          <noscript><img
-                                  class="mobile-80-center lazy" style=width:60px;height:119px;
-                                  width=60 heigth=119
-                                  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2060%2060'%3E%3C/svg%3E"
-                                  data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/Path-1.png
-                                  alt="Lotte Data Communication Vietnam.">
-                          </noscript>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
 
 
       <script>jQuery(window).scroll(function() {    

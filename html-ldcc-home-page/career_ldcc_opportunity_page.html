@@ -10,7 +10,6 @@
       min-height: 1px
     }</style>
 
-    <link rel="shortcut icon" href="https://www.vietnamworks.com/favicon.ico?v=1" type="image/x-icon">
     <meta name="format-detection" content="telephone=no">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           type="text/css">
@@ -1140,10 +1139,11 @@
         </div>
       </div>
       <div style="
-      background-image: url('https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/Cover_2_.jpg');
+      background-image: url('assets/image/Banner/img.png');
       background-position: 50% 100%;
       background-repeat: no-repeat;
       background-size: auto;
+      width: 100%;
       height: 500px;">
 
       </div>
@@ -1406,77 +1406,10 @@
               </div>
             </div>
           </div>
-          <div class="cp_tab_content cp_our_office_section" id="office">
-            <div class="row">
-              <div class="col-sm-12 cp_header_section">
-                <h2>Our Office<span class="cp_under_line" style="background-color: #e50000"></span></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 cp_container_section">
-                <div class="container">
-                  <div class="row">
-                    <ul class="cp_our_office">
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/Office_3_1_.jpg)">
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/OurOffice2.png)">
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/Office_1.jpg)">
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/OurOffice4.png)">
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_address-container"
-                             style="background-color: #e50000">
-                          <h3>ADDRESS</h3>
-                          <p>
-                          <p><b>Headquarter:</b></p>
-                          <p>11F, Petroland Tower, 12 Tan Trao Street, Tan Phu Ward, District 7,
-                            HCM city, Vietnam.</p>
-                          <p><b>Northern office:</b></p>
-                          <p>31F West Tower - Lotte Center Hanoi, 54 Lieu Giai, Cong Vi, Ba Dinh,
-                            Hanoi, Vietnam.</p>
-                          </p>
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/Lotte_Data-Office5.png)">
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/Office.jpg)">
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/Office1.jpg)">
-                        </div>
-                      </li>
-                      <li class="col-xs-12 col-sm-4 cp_office_item">
-                        <div class="cp_our_office_img cp_img-container"
-                             style="background: url(https://images02.vietnamworks.com//companyprofile/LotteDataCommunication/en/Office2.jpg)">
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="row justify-content-center" data-toggle=modal data-target=#myModal1 style="display: flex;justify-content: end">
+            <a class="btn btn-primary btn-round"> Submit your resume</a>
           </div>
+
         </div>
       </section>
 
@@ -1562,7 +1495,7 @@
                   </div>
                   <div class=g-infomation>
                     <p><label> Your Name <span
-                            class=mandatory>*</span><br>
+                            class=mandatory>* <span style="font-size: 11px">Imperative</span></span><br>
                       <span class="wpcf7-form-control-wrap your-name"><input
                               type=text name=your-name value size=40
                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1592,7 +1525,7 @@
                     </p>
                     <p>
                       <label> Your Company <span
-                              class=mandatory>*</span><br>
+                              class=mandatory>*<span style="font-size: 11px">Optional</span></span><br>
                         <span
                                 class="wpcf7-form-control-wrap your-companywebsite"><input
                                 type=text name=your-companywebsite value size=40
@@ -1613,8 +1546,6 @@
                                         </textarea>
                                     </span>
                     </label>
-                  </p>
-                  <p>
                     <input type=submit value="Send Message" class="wpcf7-form-control wpcf7-submit">
                   </p>
                   <div class=wpcf7-response-output role=alert aria-hidden=true>
@@ -1643,25 +1574,16 @@
             <div class=custom-contact-form>
               <div role=form class=wpcf7 id=wpcf7-f641-o3 lang=en-US dir=ltr>
                 <div class=screen-reader-response role=alert aria-live=polite></div>
-                <form
-                        action=# method=post class="wpcf7-form init"
+                <form action=# method=post class="wpcf7-form init"
                         enctype=multipart/form-data novalidate=novalidate>
-                  <div
-                          style="display: none;">
-                    <input
-                            type=hidden name=_wpcf7 value=641>
-                    <input
-                            type=hidden name=_wpcf7_version value=5.2>
-                    <input
-                            type=hidden name=_wpcf7_locale value=en_US>
-                    <input
-                            type=hidden name=_wpcf7_unit_tag value=wpcf7-f641-o3>
-                    <input
-                            type=hidden name=_wpcf7_container_post value=0>
-                    <input
-                            type=hidden name=_wpcf7_posted_data_hash value>
-                    <input
-                            type=hidden name=_wpcf7_recaptcha_response value></div>
+                  <div style="display: none;">
+                    <input type=hidden name=_wpcf7 value=641>
+                    <input type=hidden name=_wpcf7_version value=5.2>
+                    <input type=hidden name=_wpcf7_locale value=en_US>
+                    <input type=hidden name=_wpcf7_unit_tag value=wpcf7-f641-o3>
+                    <input type=hidden name=_wpcf7_container_post value=0>
+                    <input type=hidden name=_wpcf7_posted_data_hash value>
+                    <input type=hidden name=_wpcf7_recaptcha_response value></div>
                   <p><label> Your Name <span
                           class=mandatory>*</span><br>
                     <span
@@ -1678,14 +1600,28 @@
                             aria-required=true aria-invalid=false></span> </label></p>
                   <p
                           class=job_name>
-                    <label> Position to Apply <span
+                    <label> Phone Number <span
                             class=mandatory>*</span><br>
                       <span
                               class="wpcf7-form-control-wrap your-job"><input
-                              type=text name=your-job value size=40
+                              type=number name=your-job value size=40
                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                               aria-required=true aria-invalid=false></span> </label></p>
+                  <p>
+                    <label>Address
+                    <span
+                            class=mandatory>*</span></label>
+                    <select name="" id="">
+                      <option value="address">
+                        Ha Noi
+                      </option>
+                      <option>
+                        Ho Chi Minh
+                      </option>
+                    </select>
+                  </p>
                   <p><span>Your Resume</span><br>
+
                     <label
                             class=custom-file-upload><i></i>Drag file here or *<span
                             class=txt1>browser</span>*<span
@@ -1695,15 +1631,7 @@
                             accept=.jpg,.jpeg,.png,.pdf,.doc,.docx aria-invalid=false></span></label></p>
                   <p
                           id=file-upload-filename>
-                  <p><label> Message <span
-                          class=mandatory>*</span><br>
-                    <span
-                            class="wpcf7-form-control-wrap your-message"><textarea name=your-message cols=40
-                                                                                   rows=10
-                                                                                   class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                                                                   aria-required=true
-                                                                                   aria-invalid=false></textarea></span>
-                  </label></p>
+
                   <p><input
                           type=submit value=Submit class="wpcf7-form-control wpcf7-submit"></p>
                   <div
@@ -1715,79 +1643,7 @@
         </div>
       </div>
     </div>
-    <div id=myModal2 class="modal fade groove-modal-popupvideo" role=dialog>
-      <div class="modal-dialog groove-video-popup">
-        <div class=modal-content>
-          <div class=modal-body>
-            <iframe
-                    width=560 height=315 title="YouTube video player" frameborder=0
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen data-src=https://www.youtube.com/embed/6HjjDN2-zTQ class=lazyload
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div id=myModal3 class="modal fade groove-modal-popupvideo" role=dialog>
-      <div class="modal-dialog groove-video-popup">
-        <div class=modal-content>
-          <div class=modal-body>
-            <iframe
-                    width=560 height=315 title="YouTube video player" frameborder=0
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen data-src=https://www.youtube.com/embed/WzrdY1Yk1Q4 class=lazyload
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div id=myModal4 class="modal fade" role=dialog>
-      <div class=modal-dialog>
-        <div class=modal-content>
-          <div class=modal-header>
-            <div class=form-title>
-              <button type=button class=close data-dismiss=modal>&times;
-              </button>
-            </div>
-          </div>
-          <div class="modal-body modal-react">
-            <div class="groove-info-box-left groove-info-box">
-              <div class=modal-image id>
-                <img
-                        data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/reactnative/groove-technology-react-native-ios-contactimage.png
-                        class=lazyload
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                <noscript><img
-                        class=lazy
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                        data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/reactnative/groove-technology-react-native-ios-contactimage.png>
-                </noscript>
-              </div>
-              <div
-                      class=groove-infobox-content>
-                <img
-                        data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/reactnative/groove-technology-react-native-groovy-thing2.svg
-                        class="groovything-image lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                <noscript><img
-                        class="groovything-image lazy"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                        data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/reactnative/groove-technology-react-native-groovy-thing2.svg>
-                </noscript>
-                <p
-                        class=infobox-content-title>
-                  App demo request</p>
-                <p>If you want to experience this app on iOS, please contact us to be added to the test
-                  environment.</p>
-                <a
-                        href=contact-us/index.html class=groove-btn>Contact us</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class=alert-rotate style=display:none>
       <div class=alert-modal>
         <div class=groove-image>
