@@ -6977,7 +6977,7 @@ Created using IcoMoon - icomoon.io
 .info p {
     color: #2c2c2c;
     padding: 0 15px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .info-horizontal {
@@ -10315,10 +10315,10 @@ Created using IcoMoon - icomoon.io
 .features-7 .image-container {
     max-width: 1200px;
     position: relative;
-    height: 520px;
+    height: 420px;
     /*margin-top: 58px;*/
     display: flex;
-    width: 1000px;
+    width: 770px;
     justify-content: center;
 }
 

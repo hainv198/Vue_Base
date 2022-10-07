@@ -5,6 +5,13 @@
     <style>img.lazy {
         min-height: 1px
     }</style>
+<!--Style-->
+    <link href="assets/css/home/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/home/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+    <link href="assets/css/home/demo.css" rel="stylesheet" />
+
+
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1246,7 +1253,8 @@
                     display: flex !important;
                     flex-direction: row !important;
                     width: 100% !important;
-                    gap: 13.5px;
+                    justify-content: center;!important;
+                    gap: 10px;
                     position: absolute;
                     top: -100px;
                 }
@@ -1272,7 +1280,8 @@
                     padding: 8px 12px;
                     position: absolute;
                     left: 0 !important;
-                    top: 269px !important;
+                    width: 400px !important;
+                    top: 251px !important;
                     border-radius: 2px;
                 }
 
@@ -1360,12 +1369,16 @@
 
             .numbertext {
                 color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 background-color: #DA291C;
                 padding: 8px 12px;
                 position: absolute;
                 top: 305px;
                 left: 38px;
-                width: 430px;
+                width: 440px;
+                height: 82px;
                 font-size: 16px;
                 border-radius: 2px;
             }
@@ -1440,7 +1453,7 @@
                 ”We deliver well-rounded IT services”
             </h3>
         </div>
-        <div class="container_slider row" data-aos="fade-up" data-aos-duration="2000" >
+        <div class="container_slider row" data-aos="fade-up" data-aos-duration="1500" >
             <div class="row_slide  ">
                 <div class="column"  onclick="currentSlide(1)">
                     <div class="column_item demo cursor">
@@ -1519,10 +1532,10 @@
                     <div class="background" >
                         <img src="assets/image/image2.jpg" alt="" style=" border-radius: 20px;transition-duration: 300ms; opacity: 0.3;transform: translate3d(100px, -40px, 0px);">
                         <div style=" position: absolute">
-                            <img src="assets/image/image3.webp" style="border-radius: 20px;width:100%">
+                            <img src="assets/image/Home/security_11.jpg" style="border-radius: 20px;width:100%">
                         </div>
                         <div class="numbertext">
-                            WE build a reliable business environment with optimized convergence security services with a group of information protection expert.
+                            We build a reliable business environment with optimized convergence security services with a group of information protection expert.
                         </div>
                     </div>
 
@@ -1617,110 +1630,96 @@
         </script>
     </section>
 <!--  Products  -->
-    <section class="aboutus-block-3 groove-section groove-section-boxed" id=ourstory><div
-            class="groove-title-heading title-heading-center  wgl-double_heading">
-        <div
-            class="dbl__subtitle education--sub-title">
-        </div><h2 class="dbl__title-wrapper"data-aos="fade-down" data-aos-duration="1000"><span>Our products</span></h2><p
-            class="groove-align-center content-of-title"data-aos="fade-down" >Our products aim to drive up your operational efficiency </p></div><div
-            class="groove-container groove-column-gap-default groove-paddingtop70" style="max-width: 1170px"><div
-            class=groove-row>
-        <div class="groove-element groove-column groove-col-50"data-aos="fade-right" data-aos-duration="1500">
-            <div class="groove-element groove-infobox edu-block-4-infobox">
-                <div class=groove-info-box-left>
-                    <div class=groove-infobox-image>
-                        <div class=groove-image>
-                            <img
-                                    width="75"
-                                 srcset="assets/image/Product/icon/icons8-processor-100.png"
-                                 alt = "Groove Technology - About Us - 4" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/10/icon-1@2x.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                            <noscript>
-                                <img class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/10/icon-1@2x.png style=width:48px;height:48px; width=48 heigth=48 alt = "Groove Technology - About Us - 4">
-                            </noscript>
-                        </div>
-                    </div>
-                    <div class=groove-infobox-content>
-                        <h3 class="infobox-content-title">
-                            <a href="product_ldcc_page.html">API Gateway</a>
-                        </h3>
-                        <p>Our API Gatway allows client app/platform to connect with multiple external platforms with only one time of integration, thus reduce any future cost related to AP integration
-                        </p>
+    <div class="cd-section" id="headers">
+        <!--     *********     FEATURES 2      *********      -->
+        <div class="features-2">
+            <div class="container">
+                <div class="row"  data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">OUR PRODUCTS</h2>
+                        <p>Our products aim to drive up your operational efficiency.</p>
+                        <br/>
                     </div>
                 </div>
+                <div class="row" style="flex-wrap: wrap">
+                    <div class="col-md-3"  data-aos="fade-up" >
+                        <div class="card" data-background="image" style="background-image: url('https://www.ldcc.co.kr/img/pc/sub02/company_02.jpg')">
+                            <div class="card-body">
+                                <h6 class="card-category">
+                                    API Gateway</h6>
+                                <div class="card-icon">
+                                    <i class='bx bx-share-alt'></i>
+                                </div>
+                                <p class="card-description">
+                                    Our API Gatway allows client app/platform to connect with multiple external platforms with only one time of integration, thus reduce any future cost related to AP integration.
+                                </p>
 
-                <div class=groove-info-box-left>
-                    <div class=groove-infobox-image>
-                        <div class=groove-image>
-                            <img
-                                    width="75"
-                                    srcset="assets/image/Product/icon/icons8-workstation-100.png"
-                                 alt = "Groove Technology - About Us - 5" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/10/icon-2@2x.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                            <noscript>
-                                <img class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/10/icon-2@2x.png style=width:48px;height:40px; width=48 heigth=40 alt = "Groove Technology - About Us - 5">
-                            </noscript>
+                                <div class="card-footer">
+                                    <a href="product_ldcc_page.html" class="btn btn-link btn-neutral">
+                                        <i class='bx bx-detail' aria-hidden="true"></i> Show more
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class=groove-infobox-content>
-                        <h3 class="infobox-content-title"><a href="product_ldcc_saas.html#saas">SaaS</a></h3>
-                        <p>We offer an eco-system of software available via internet to help optimize operations of our clients
-                        </p>
-                    </div>
-                </div>
-                <div class=groove-info-box-left>
-                    <div class=groove-infobox-image>
-                        <div class=groove-image>
-                            <img
-                                    width="75"
-                                    srcset="assets/image/Product/icon/icons8-skyscrapers-100.png"
+                    <div class="col-md-3"  data-aos="fade-up" data-aos-duration="400">
+                        <div class="card" data-background="image" style="background-image: url('assets/image/Home/img_1.png')">
+                            <div class="card-body">
+                                <h6 class="card-category">
+                                    SaaS</h6>
+                                <div class="card-icon">
+                                    <i class="bx bx-task"></i>
+                                </div>
+                                <p class="card-description">We offer an eco-system of software available via internet to help optimize operations of our clients.</p>
 
-                                 alt = "Groove Technology - About Us - 5" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/10/icon-2@2x.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                            <noscript>
-                                <img class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/10/icon-2@2x.png style=width:48px;height:40px; width=48 heigth=40 alt = "Groove Technology - About Us - 5">
-                            </noscript>
+                                <div class="card-footer" style="padding-top: 60px;">
+                                    <a href="product_ldcc_saas.html" class="btn btn-link btn-neutral">
+                                        <i class='bx bx-detail' aria-hidden="true"></i> Show more
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class=groove-infobox-content>
-                        <h3 class="infobox-content-title">
-                            <a href="product_ldcc_smart_bulling.html">Smart Building management</a>
-                        </h3>
-                        <p>We offer cutting-edge IoT-based system for more efficient building management</p>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-duration="500">
+                        <div class="card" data-background="image" style="background-image: url('assets/image/Home/img_2.png')">
+                            <div class="card-body">
+                                <h6 class="card-category">Smart building </h6>
+                                <div class="card-icon">
+                                    <i class='bx bx-buildings'></i>
+                                </div>
+                                <p class="card-description">Cutting-edge IoT-based system for safer, more efficient building management.</p>
+
+                                <div class="card-footer" style="padding-top: 60px;">
+                                    <a href="product_ldcc_smart_bulling.html" class="btn btn-link btn-neutral">
+                                        <i class='bx bx-detail' aria-hidden="true"></i> Show more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-duration="600">
+                        <div class="card" data-background="image" style="background-image: url('assets/image/Home/p3.png')">
+                            <div class="card-body">
+                                <h6 class="card-category">Smart parking </h6>
+                                <div class="card-icon">
+                                    <i class='bx bx-home-smile'></i>
+                                </div>
+                                <p class="card-description">We create a new level of convenience for your life by using cutting-edge technology
+                                    in transportation, environment, housing, and business.</p>
+
+                                <div class="card-footer pt-4">
+                                    <a href="product_ldcc_smart_parking.html" class="btn btn-link btn-neutral">
+                                        <i class='bx bx-detail' aria-hidden="true"></i> Show more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="groove-element groove-column groove-col-50" data-aos="fade-left" data-aos-duration="1500">
-            <div class="groove-image padding-left-custom-abous">
-                <div class=groove-image>
-                    <img style=width:100%;height:100%; width=100% heigth=100%   alt = "Groove Technology - About Us - 6" data-src=https://www.ldcc.co.kr/img/pc/sub01/img_bpo3.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                    <noscript>
-                        <img class="only-pc lazy" style=width:100%;height:100%; width=455 heigth=443  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20455%20455'%3E%3C/svg%3E" data-src=https://www.ldcc.co.kr/img/pc/sub01/img_bpo3.jpg alt = "Groove Technology - About Us - 6">
-                    </noscript>
+    </div>
 
-                    <img   alt = "Groove Technology - About Us - 7" data-src=https://www.ldcc.co.kr/img/pc/sub01/img_bpo3.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                    <noscript>
-                        <img class="only-mobile lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20315%20315'%3E%3C/svg%3E" data-src=https://www.ldcc.co.kr/img/pc/sub01/img_bpo3.jpg alt = "Groove Technology - About Us - 7">
-                    </noscript>
-                </div>
-                <div
-            class="groove-animation groove-animation-1 only-pc"><div
-            class=groove-widget-container><div
-            class=wgl-image-animate><div
-            class="img-layer_image-wrapper up_down"><div
-            class="img-layer_image animation-img" style="animation-duration: 2s;">
-
-                    <noscript>
-                        <img
-            class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2060%2060'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/Path-1.png style=width:60px;height:119px; width=60 heigth=119 alt = "Groove Technology - About Us - 8"></noscript></div></div></div></div></div><div
-            class="groove-animation groove-animation-2 only-pc">
-                <div
-            class=groove-widget-container><div
-            class=wgl-image-animate><div
-            class="img-layer_image-wrapper up_down"><div
-            class="img-layer_image animation-img" style="animation-duration: 2.1s;">
-        <img
-                style=width:15px;height:38px; width=15 heigth=38 alt = "Groove Technology - About Us - 9" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/Path-2.png class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-            class=lazy src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2015%2015'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2020/07/Path-2.png style=width:15px;height:38px; width=15 heigth=38 alt = "Groove Technology - About Us - 9"></noscript></div></div></div></div></div></div></div></div></div>
-    </section>
     <!--    New Event    -->
     <section class="groove-section section-our-blog frontpage-block-6 groove-section-boxed only-pc" style="margin-bottom: 50px;">
         <div class="groove-title-heading title-heading-center  wgl-double_heading"data-aos="fade-down"data-aos-duration="1500">
@@ -1890,13 +1889,7 @@
                     </a></div>
             </div>
         </div>
-        <!--<div class="frontpage-button-container groove-container groove-column-gap-default">
-          <div class="groove-container groove-column-gap-default">
-            <div class=groove-row>
-              <a class="btn-front-process groove-btn" href=blog/index.html target=_blank>Read Our Event</a>
-            </div>
-          </div>
-        </div>-->
+
     </section>
     <section class="section-our-blog frontpage-block-6 groove-section-boxed only-mobile" style="margin-bottom: 50px;">
         <div class="groove-title-heading title-heading-center  wgl-double_heading">
