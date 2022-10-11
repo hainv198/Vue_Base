@@ -171,8 +171,7 @@
 .content {
     position: relative;
    /* margin: 736px auto 0;*/
-    background: url(https://www.ldcc.co.kr/img/pc/sub1/bg_ibs.jpg) no-repeat 50% 0 !important;
-    background-size: cover !important;
+    
     padding-bottom: 140px;
     background: #ffffff;
 }
