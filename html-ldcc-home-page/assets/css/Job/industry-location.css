@@ -1,0 +1,55 @@
+
+
+/*industry-location.css*/
+.industy-location {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px
+}
+
+.box-job-type h4 {
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 14.5px;
+}
+
+.box-job-type {
+    height: 100%;
+    background: rgba(147, 209, 254, 0.3);
+    border-radius: 5px;
+    padding: 20px 25px;
+}
+
+.box-job-type ul li a {
+    color: #666;
+    font-weight: normal;
+    font-size: 14.5px;
+}
+
+.box-job-type ul {
+    height: 270px;
+    overflow-y: auto;
+    margin-right: -25px;
+    scrollbar-width: thin;
+    scrollbar-color: #aaa #def1ff
+}
+
+.box-job-type ul::-webkit-scrollbar {
+    width: 6px;
+    background: none;
+}
+
+.box-job-type ul::-webkit-scrollbar-thumb {
+    background: #AAA;
+    border-radius: 6px;
+}
+
+.box-job-type ul li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.box-job-type ul li a:hover {
+    text-decoration: none;
+}
+
