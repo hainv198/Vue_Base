@@ -1208,7 +1208,7 @@ select:focus {
 }
 .about .box .inner-box {
   width: 100%;
-  height: 366px;
+  height: 385px;
   max-height: 420px;
   position: relative;
   z-index: 99;
@@ -1218,11 +1218,17 @@ select:focus {
 @media only screen and (max-width: 391px) {
   .about .list_card .card_item .box .inner-box {
     width: 100%;
-    height: 270px;
+    height: 330px;
     position: relative;
     z-index: 99;
     padding: 27px 25px 35px;
     transition: 0.3s ease-in;
+  }
+  .about .list_card .card_item .box .inner-box ul li span {
+    margin: unset!important;
+  }
+  .about .list_card .card_item .box .inner-box ul p span {
+    margin: unset!important;
   }
 }
 @media only screen and (max-width: 391px) {

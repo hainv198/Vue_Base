@@ -418,6 +418,7 @@
     line-height: 1.7;
     font-size: .9333333333rem;
     margin: 0;
+    width: 100%;
 }
 .ft-menu li {
     position: relative;

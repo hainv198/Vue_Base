@@ -5008,6 +5008,14 @@ p {
 .title {
     font-weight: 700;
     padding-top: 30px;
+
+}
+.title .cp_under_line {
+    border-bottom: 1px solid #B3000F;
+    width: 80px;
+}
+.title_border {
+
 }
 
 .title.title-up {
@@ -10293,7 +10301,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .features-8 .title+.description {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .features-7 {

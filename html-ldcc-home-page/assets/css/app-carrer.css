@@ -6793,7 +6793,7 @@ body{background-color: #ecf0f1}
 .cp_our_jobs_section{padding-bottom: 0px}
 .cp_our_jobs_section .panel-default > .panel-heading + .panel-collapse > .panel-body{border-top: 0;}
 .cp_header_section{width: 100%;clear: both;display: inline-block; text-align: center; padding: 30px 15px}
-.cp_header_section h2{font-size: 35px; font-weight: 300; text-transform: capitalize;}
+.cp_header_section h2{font-size: 35px; font-weight: 300;  text-transform: uppercase}
 .cp_header_section span.cp_under_line{width: 80px;height: 2px;display: block;clear: both;margin: 15px auto auto;}
 .cp_container_section{width: 100%;display: inline-block;clear: both;}
 .cp_mobile_icon_menu{display: none;}

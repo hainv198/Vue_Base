@@ -379,7 +379,7 @@ var {
     margin-bottom: 0;
 }
 .footer {
-    background-color: #15222a;
+    background-color: #373F54;
     position: relative;
     /* overflow: hidden; */
     z-index: 1;
@@ -816,7 +816,7 @@ body ol > li:before {
     background-position: center bottom;
     background-repeat: no-repeat;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
 }
 .wgl-double_heading .dbl__subtitle {
     font-size: 15px;
@@ -1975,7 +1975,7 @@ h4 span {
     font-size: 16px !important;
 }
 .mega-block-title {
-    font-size: 30px !important;
+    font-size: 24px !important;
     line-height: 40px !important;
     font-weight: 700 !important;
     font-family: 'Roboto', sans-serif;
@@ -2473,10 +2473,10 @@ ol.mega-li > li:before {
     width: 100%;
     margin-top: 45px;
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 395px) {
     .banner_reponsive {
         width: 100%;
-        margin-top: 100px;
+        margin-top: unset;
     }
 }
 .dbl__title-wrapper-left {
@@ -3886,7 +3886,7 @@ h2 a {
 
     font-weight: 600!important;
     font-size: 24px !important;
-    line-height: 30px !important;
+    line-height: 50px !important;
     margin-bottom: 15px;
 }
 .job-block-7 .dbl__title-wrapper span {
@@ -4286,7 +4286,7 @@ a.groove-btn {
 .dbl__title-wrapper span {
 
     font-weight: 600!important;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 40px;
 }
 .slick-list,
