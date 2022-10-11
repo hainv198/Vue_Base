@@ -171,8 +171,10 @@
 .content {
     position: relative;
    /* margin: 736px auto 0;*/
+    background: url(https://www.ldcc.co.kr/img/pc/sub1/bg_ibs.jpg) no-repeat 50% 0 !important;
+    background-size: cover !important;
     padding-bottom: 140px;
-    background: 0 0;
+    background: #ffffff;
 }
 .content.pd0 {
     padding-bottom: 0;
@@ -8475,12 +8477,12 @@ _:-ms-fullscreen,
     }
 
     .content {
-        margin-top: 18.93rem;
-        padding-bottom: 8.214rem;
+/*        margin-top: 18.93rem;
+        padding-bottom: 8.214rem;*/
     }
     .content_w1280,
     .content_w1440 {
-        padding: 0 1.429rem;
+        /*padding: 0 1.429rem;*/
     }
     .content_w1280.tab {
         padding: 0;
@@ -11091,7 +11093,7 @@ _:-ms-fullscreen,
         border-radius: 1.818rem;
     }
     .list_history {
-        margin-left: 1.273rem;
+        /*margin-left: 1.273rem;*/
     }
     .list_history li:nth-child(odd) .spot_history,
     .list_history li:nth-child(even) .img_history {
@@ -11105,7 +11107,7 @@ _:-ms-fullscreen,
         text-align: left;
     }
     .list_history > li {
-        overflow: inherit;
+        /*overflow: inherit;*/
     }
     .list_history > li:last-child:after {
         left: -0.2727rem;
@@ -11144,13 +11146,13 @@ _:-ms-fullscreen,
     }
     .list_history li.point .spot_history,
     .list_history li.point .img_history {
-        border-color: #e60012;
+        /*border-color: #e60012;*/
     }
     .spot_history,
     .img_history {
         width: inherit;
         min-height: inherit;
-        border-left: 1px solid #e5e5e5;
+        /*border-left: 1px solid #e5e5e5;*/
     }
     .img_history {
         padding: 1.455rem 0 5rem 2.727rem !important;
@@ -11160,8 +11162,8 @@ _:-ms-fullscreen,
         font-size: 2.857rem;
     }
     .spot_history li {
-        font-size: 0.8571rem;
-        letter-spacing: -0.09091rem;
+
+        letter-spacing: 0.01rem;
     }
 
     /* Location :: [�뚯궗�뚭컻] */

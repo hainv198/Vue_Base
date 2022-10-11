@@ -220,7 +220,7 @@ a:hover {
     color: inherit;
 }
 #main {
-    background-color: #f9fbfd;
+    /*background-color: #f9fbfd;*/
     position: relative;
     z-index: 3;
     overflow: hidden;
@@ -4522,7 +4522,7 @@ a.groove-btn {
         text-align: center;
     }
     .banner_reponsive .dbl__title-wrapper {
-        margin-top: 200px;
+        /*margin-top: 200px;*/
     }
     .wgl-double_heading .dbl__title-wrapper {
         margin-bottom: 10px;
