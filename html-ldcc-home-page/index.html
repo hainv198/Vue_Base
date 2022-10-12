@@ -932,7 +932,18 @@
             @media only screen and (max-width: 395px) {
                 .content {
                     margin-top: unset!important;
-                    left: 0!important;
+                    right: 0!important;
+                    text-align: center;
+                    line-height: 50px !important;
+                }
+                .t-s {
+                    font-size: 18px!important;
+                }
+            }
+            @media only screen and (max-width: 439px) {
+                .content {
+                    margin-top: 10px!important;
+                    right: 0!important;
                     text-align: center;
                     line-height: 50px !important;
                 }
@@ -943,7 +954,7 @@
 
         </style>
         <div class="container p-5" >
-            <div class="content" style="margin-top: 100px; position: absolute; top: 90px; left: 197px" >
+            <div class="content" style="margin-top: 100px; position: absolute; top: 50px; right: 300px" >
                 <div class="inner">
                     <h2 class="t-h text-light p-2" data-aos="fade-down" data-aos-duration="1000"  style="font-size: 40px!important;">
                         Create a valuable future with IT
@@ -1074,7 +1085,118 @@
                     box-sizing: content-box;
                 }
             }
+            @media only screen and (max-width: 439px) {
+                .container_slider {
+                    position: relative;
+                    margin-top: 120px !important;
+                    margin-bottom: 100px;
+                    display: block !important;
+                }
+                .column_item {
+                    display: flex;
+                    justify-content: flex-start;
+                    background-color: whitesmoke;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    padding: 6px!important;
+                    border-radius: 5px;
+                    margin-bottom: 5px!important;
+                    /*background-color: #DA291C;*/
+                }
 
+                .row_slide {
+                    display: flex !important;
+                    flex-direction: row !important;
+                    width: 100% !important;
+                    justify-content: center;!important;
+                    gap: 10px;
+                    position: absolute;
+                    top: -100px;
+                }
+                .column_item p {
+                    padding: 10px;
+                    margin: unset;
+                    display: none;
+                }
+                .mySlides {
+                    display: flex;
+                    justify-content:center ;
+                }
+
+                .cursor {
+                    cursor: pointer;
+                }
+
+
+                .numbertext {
+                    color: #ffffff;
+                    font-size: 12px;
+                    background-color: #DA291C;
+                    padding: 8px 12px;
+                    position: absolute;
+                    left: 0 !important;
+                    width: 400px !important;
+                    top: 251px !important;
+                    border-radius: 2px;
+                }
+
+                .row_slide:after {
+                    content: "";
+                    background-color:red ;
+                    display: table;
+                    clear: both;
+                }
+
+                /* Six columns side by side */
+                .column {
+                    float: left;
+                }
+                .column_item {
+                    display: flex;
+                    justify-content: flex-start;
+                    border: 1px solid #f30;
+                    padding: 6px;
+                    border-radius: 5px;
+                    margin-bottom: 5px;
+                    /*background-color: #DA291C;*/
+                }
+                .column_item p {
+                    padding: 10px;
+                    margin: unset;
+                }
+
+                .row_slider {
+                    width: 100%;
+                    padding: 5px !important;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                /* Add a transparency effect for thumnbail images */
+                .demo {
+                    opacity: 0.8;
+
+                }
+
+                .actives,
+                .demo:hover {
+                    opacity: 1;
+                    background-color: #da291c;
+                }
+                .background {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    display: -webkit-flex;
+                    display: -moz-box;
+                    display: flex;
+                    -webkit-transition-property: -webkit-transform;
+                    transition-property: -webkit-transform;
+                    transition-property: transform;
+                    transition-property: transform,-webkit-transform;
+                    -moz-box-sizing: content-box;
+                    box-sizing: content-box;
+                }
+            }
             .container_slider {
                 display: flex;
                 position: relative;
@@ -1108,7 +1230,7 @@
                 position: absolute;
                 top: 305px;
                 left: 38px;
-                width: 440px;
+                width: 100%!important;
                 height: 82px;
                 font-size: 16px;
                 border-radius: 2px;
@@ -1383,7 +1505,7 @@
                     <div class="col-md-3"  data-aos="fade-up" >
                         <div class="card" data-background="image" style="background-image: url('assets/image/Home/product_bg1.jpg')">
                             <div class="card-body">
-                                <h6 class="card-category">
+                                <h6 class="card-category" style="font-size: 1.3em">
                                     API Gateway</h6>
                                 <div class="card-icon">
                                     <i class='bx bx-share-alt'></i>
@@ -1403,7 +1525,7 @@
                     <div class="col-md-3"  data-aos="fade-up" data-aos-duration="400">
                         <div class="card" data-background="image" style="background-image: url('assets/image/Home/img_1.png')">
                             <div class="card-body">
-                                <h6 class="card-category">
+                                <h6 class="card-category" style="font-size: 1.3em">
                                     SaaS</h6>
                                 <div class="card-icon">
                                     <i class="bx bx-task"></i>
@@ -1421,7 +1543,7 @@
                     <div class="col-md-3" data-aos="fade-up" data-aos-duration="500">
                         <div class="card" data-background="image" style="background-image: url('assets/image/Home/img_2.png')">
                             <div class="card-body">
-                                <h6 class="card-category">Smart building </h6>
+                                <h6 class="card-category" style="font-size: 1.3em">Smart building </h6>
                                 <div class="card-icon">
                                     <i class='bx bx-buildings'></i>
                                 </div>
@@ -1438,7 +1560,7 @@
                     <div class="col-md-3" data-aos="fade-up" data-aos-duration="600">
                         <div class="card" data-background="image" style="background-image: url('assets/image/Home/p3.png')">
                             <div class="card-body">
-                                <h6 class="card-category">Smart parking </h6>
+                                <h6 class="card-category" style="font-size: 1.3em">Smart parking </h6>
                                 <div class="card-icon">
                                     <i class='bx bx-home-smile'></i>
                                 </div>
