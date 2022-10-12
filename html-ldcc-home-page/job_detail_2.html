@@ -969,8 +969,8 @@
                                 <a class="employer job-company-name">
                                     Floor 31, LOTTE Center, 54 Lieu Giai, Ba Dinh District, Hanoi</a>
                             </div>
-                            <div class="apply-now-btn ">
-                                <a href=""
+                            <div class="apply-now-btn " data-toggle=modal data-target=#myModal1>
+                                <a
                                    class="btn-gradient btnApplyClick">
                                     Apply Now
                                 </a>
@@ -1101,42 +1101,12 @@
                                 </div>
 
                                 <br>
-                                <div class="apply-now-right">
+                                <div class="apply-now-right" data-toggle=modal data-target=#myModal1>
                                     <div class="apply-now-btn  "> <a class="btn-gradient btnApplyClick"> APPLY NOW
                                     </a> </div>
                                 </div>
-                                <input type="hidden" id="salary_taskbar" name="salary_taskbar" value="0" />
-                                <input type="hidden" id="industry_taskbar" name="industry_taskbar"
-                                       value="19,59" />
-                                <input type="hidden" id="location_taskbar" name="location_taskbar" value="4" />
-                                <input type="hidden" id="keyword_taskbar" name="keyword_taskbar"
-                                       value="Chuyên viên Quản trị dữ liệu kinh doanh KHCN" />
-                                <input type="hidden" id="title_alert"
-                                       value="Chuyên viên Quản trị dữ liệu kinh doanh KHCN" />
-
-                                <script>
-                                    $(document).on('click', '.btnApplyClick', function ()
-                                    {
-
-                                        $('#apply_url').attr('href', "https://careerbuilder.vn/vi/jobseekers/jobs/apply?job_id=35BAB6C3&s=cbnon");
-                                        $('#span_title').html("Chuyên viên Quản trị dữ liệu kinh doanh KHCN");
-                                        $.fancybox.close('all');
-                                        $.fancybox.open($("#apply-job-modal"));
-
-                                    });
-                                </script>
-
-                                <div class="job-detail-bottom-banner " id="">
-                                    <div class="adsBannerOA" data-id="852"></div>
-                                </div>
-
-                                <script type="text/javascript">
-                                    $(document).ready(function () { loadBannerOA(); });
-                                </script>
-
 
                             </section>
-                            <script src="https://sp.zalo.me/plugins/sdk.js"></script>
                         </div>
                         <div class="tab-content" id="tab-2"></div>
                     </div>

@@ -8,6 +8,48 @@
       min-height: 1px
       }
     </style>
+    <!-- CSS Files -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function (event)
+      {
+        $('.boxselect').change(function ()
+        {
+          $this = $(this);
+          $('.components').hide();
+          $('.' + $this.val()).show();
+          console.log("showing " + $this.val() + " boxes_one");
+        });
+      });
+
+
+      $(document).ready(function (event)
+      {
+        $('.filter_box2').change(function ()
+        {
+          $this = $(this);
+          $('.components').hide();
+          $('.' + $this.val()).show();
+          console.log("showing " + $this.val() + " boxes_two");
+        });
+      });
+      $(document).ready(function (event)
+      {
+        $('.filter_box3').change(function ()
+        {
+          $this = $(this);
+          $('.components').hide();
+          $('.' + $this.val()).show();
+          console.log("showing " + $this.val() + " boxes_there");
+        });
+      });
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -125,6 +167,9 @@
       }
     </style>
   </head>
+
+
+
   <body class="page-template page-template-GroovePorfolio page-template-GroovePorfolio-php page page-id-7230 mega-menu-main-menu mega-menu-career-location page-case-studies zikzag elementor-default">
     <div id=preloader-wrapper  style=background-color:#ffffff;>
       <div id=prk_main_loader class="loader-inner ball-triangle-path">
@@ -913,290 +958,255 @@
     <main id=main class=site-main>
       <link rel=stylesheet href=assets/wp-content/themes/zikzag/css/style-GroovePorfolio-ver1.3.css>
       <link rel=stylesheet href=assets/wp-content/themes/zikzag/css/style-GrooveFrontpage-ver3.0.css>
+
       <section class="porfolio-block groove-section groove-section-boxed">
         <div class="groove-container groove-column-gap-default">
           <div class="groove-row blog-grid-custom">
-            <div id=filters>
-              <ul class=ft-menu>
-                <li class="ft-field ft-toggle-menu">
-                  <span class=ft-label>Filter by...</span>
-                </li>
-                <li class="ft-reset-filters menu-only-mobile-tablet">
-                  <span class="fancy-button left grey"></span>
-                </li>
-                <!--<li class=ft-field>
-                  <span class=ft-label>Technology</span>
-                  <div class=ft-panel>
-                  <ul class="ft-tags technology">
-                  <li class="cats-name " data-count>.NET Core</li>
-                  <li class="cats-name " data-count>Amazon Web Services</li>
-                  <li class="cats-name " data-count>AngularJS</li>
-                  <li class="cats-name " data-count>ASP.NET MVC</li>
-                  <li class="cats-name " data-count>BigCommerce</li>
-                  <li class="cats-name " data-count>Django</li>
-                  <li class="cats-name " data-count>Microsoft Azure</li>
-                  <li class="cats-name " data-count>MongoDB</li>
-                  <li class="cats-name " data-count>MySQL</li>
-                  <li class="cats-name " data-count>Node.JS</li>
-                  <li class="cats-name " data-count>Open EDX</li>
-                  <li class="cats-name " data-count>PowerBI</li>
-                  <li class="cats-name " data-count>Python</li>
-                  <li class="cats-name " data-count>React Native</li>
-                  <li class="cats-name " data-count>React.JS</li>
-                  <li class="cats-name " data-count>Shopify</li>
-                  <li class="cats-name " data-count>Snowflake</li>
-                  <li class="cats-name " data-count>SQL Server</li>
-                  <li class="cats-name " data-count>Tableau</li>
-                  <li class="cats-name " data-count>Wordpress</li>
-                  </ul>
-                  </div>
-                  </li>-->
-                <li class=ft-field>
-                  <span class=ft-label>Industry</span>
-                  <div class=ft-panel>
-                    <ul class="ft-tags industry" style="overflow:auto;max-height: 250px">
-                      <li class="cats-name e-Commerce" data-count>Tourism</li>
-                      <li class="cats-name Education" data-count>Financial service</li>
-                      <li class="cats-name Hospitality" data-count>Media</li>
-                      <li class="cats-name HR" data-count>IT</li>
-                      <li class="cats-name Legal" data-count>Ecommerce</li>
-                      <li class="cats-name Logistic" data-count>F&B</li>
-                      <li class="cats-name Marketing" data-count>Construction</li>
-                      <li class="cats-name Operation" data-count>Logistics</li>
-                      <li class="cats-name Real Estate" data-count>Food & Beverage</li>
-                      <li class="cats-name Retail" data-count>Retail</li>
-                      <li class="cats-name Sport" data-count>Property management</li>
-                      <li class="cats-name Sport" data-count>Real estate</li>
-                      <li class="cats-name Sport" data-count>Hospitality</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class=ft-field>
-                  <span class=ft-label>Service</span>
-                  <div class=ft-panel>
-                    <ul class="ft-tags service " style="overflow:auto;max-height: 250px">
-                      <li class=cats-name data-count>App development</li>
-                      <li class=cats-name data-count>Data Processing</li>
-                      <li class=cats-name data-count>System Management</li>
-                      <li class=cats-name data-count>Offshore</li>
-                      <li class=cats-name data-count>Data center</li>
-                      <li class=cats-name data-count>IT consulting</li>
-                      <li class=cats-name data-count>IBS</li>
-                      <li class=cats-name data-count>Retail</li>
-                      <li class=cats-name data-count>System Integration</li>
-                      <li class=cats-name data-count>API Gateway</li>
-                      <li class=cats-name data-count> NAPAS</li>
-                      <li class=cats-name data-count>Core banking</li>
-                      <li class=cats-name data-count>Cloud Transformation</li>
-                      <li class=cats-name data-count>Ecommerce Development</li>
-                      <li class=cats-name data-count>Application Development</li>
-                      <li class=cats-name data-count>ERP Implementation</li>
-                      <li class=cats-name data-count>Data warehouse</li>
-                      <li class=cats-name data-count>Microsoft Office 365</li>
-                    </ul>
-                  </div>
-                </li>
+            <div class="container row  p-5" >
+              <div>
+                <h3> Filter ...</h3>
+              </div>
+              <div class="col-md-3">
 
-                <li class="ft-reset-filters menu-hiden-tablet" style="width: 57px;">
-                  <span class="fancy-button left grey">.</span>
-                </li>
-              </ul>
+                <select name="boxes_one" class="boxselect form-control form-control-lg" id="exampleFormControlSelect1" style="border-radius: 5px !important;">
+                  <option value="all">Industry</option>
+                  <option value="Tourism">Tourism</option>
+                  <option value="Financial">Financial service</option>
+                  <option value="Media">Media</option>
+                  <option value="IT">IT</option>
+                  <option value="Ecommerce">Ecommerce</option>
+                  <option value="F&B">F&B</option>
+                  <option value="Construction">Construction</option>
+                  <option value="Logistics">Logistics</option>
+                  <option value="Food&Beverage">Food & Beverage</option>
+                  <option value="Retail">Retail</option>
+                  <option value="Property">Property management</option>
+                  <option value="Real">Real estate</option>
+                  <option value="Hospitality">Hospitality</option>
+                </select>
+              </div>
+              <div class="col-md-3" >
+                <select name="boxes_two" class="filter_box2 form-control form-control-lg" id="exampleFormControlSelect1" style="border-radius: 5px !important;">
+                  <option value="all">Service</option>
+                  <option value="App">App development</option>
+                  <option value="Web">Web development</option>
+                  <option value="Data">Data Processing</option>
+                  <option value="System">System Management</option>
+                  <option value="Offshore">Offshore</option>
+                  <option value="Data-center">Data center</option>
+                  <option value="IT-consulting">IT consulting</option>
+                  <option value="IBS">IBS</option>
+                  <option value="Retails">Retail</option>
+                  <option value="System-Integration">System Integration</option>
+                  <option value="API-Gateway">API Gateway</option>
+                  <option value="NAPAS">NAPAS</option>
+                  <option value="Core-banking">Core banking</option>
+                  <option value="Cloud-Transformation">Cloud Transformation</option>
+                  <option value="Ecommerce-Development">Ecommerce Development</option>
+                  <option value="Application-Development">Application Development</option>
+                  <option value="ERP-Implementation">ERP Implementation</option>
+                  <option value="Data-warehouse">Data warehouse</option>
+                  <option value="Microsoft">Microsoft Office 365</option>
+                  <option value="System-development">System development</option>
+                </select>
+              </div>
+
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API Bussiness Intelligent Database " data-type=" Mobile Web " data-technology=" MongoDB Node.JS Shopify "  data-industry=" e-Commerce Retail ">
+            <div class="components all Tourism Web groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
                     <a href=# rel=bookmark>
                       <img
-                        style=width:418px;height:281px;
-                        width=418 heigth=281
-                        srcset="assets/image/Case_Studies/Picture1.png"
-                        alt="Case Studies - Groove Technology - Case Studies"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;
+                              width=418 heigth=281
+                              srcset="assets/image/Case_Studies/Picture1.png"
+                              alt="Case Studies - Groove Technology - Case Studies"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture1.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg
-                        class="only-pc lazy" style=width:418px;height:281px;
-                        width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies">
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                                srcset="assets/image/Case_Studies/Picture1.png"
+                                data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg
+                                class="only-pc lazy" style=width:418px;height:281px;
+                                width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies">
                       </noscript>
                       <img
 
-                        style=width:100%;height:217px;object-fit:revert;
-                        width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"
-                        srcset="assets/image/Case_Studies/Picture1.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg
-                        class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:revert;
+                              width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"
+                              srcset="assets/image/Case_Studies/Picture1.png"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg
+                              class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture1.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg
-                        class="only-mobile lazy"
-                        style=width:100%;height:217px;object-fit:revert;
-                        width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies">
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                                srcset="assets/image/Case_Studies/Picture1.png"
+                                data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-flower-gift-box.jpg
+                                class="only-mobile lazy"
+                                style=width:100%;height:217px;object-fit:revert;
+                                width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies">
                       </noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a href=case_study_Tourism_detail%20.html >Tourism website renewal</a>
                     </div>
                     <a
-                      href=case_study_Tourism_detail%20.html class=button-read-more>Read More</a>
+                            href=case_study_Tourism_detail%20.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" e-Learning " data-type=" Web " data-technology=" Amazon Web Services Django MongoDB Open EDX Python React.JS "  data-industry=" Education ">
+            <div class="components all Financial System-Integration NAPAS groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
                     <a href=case_study_Linkage_Banking_detail%20.html rel=bookmark>
                       <img
-                        style=width:418px;height:281px;
-                        srcset="assets/image/Case_Studies/Picture2.png"
-                        width=418 heigth=281
-                        alt="Case Studies - Groove Technology - Case Studies"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;
+                              srcset="assets/image/Case_Studies/Picture2.png"
+                              width=418 heigth=281
+                              alt="Case Studies - Groove Technology - Case Studies"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
-                        style=width:100%;height:217px;
-                        width=100% heigth=217
-                        srcset="assets/image/Case_Studies/Picture2.png"
-                        alt="Case Studies - Groove Technology - Case Studies"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg
-                        class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;
+                              width=100% heigth=217
+                              srcset="assets/image/Case_Studies/Picture2.png"
+                              alt="Case Studies - Groove Technology - Case Studies"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg
+                              class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture2.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                                srcset="assets/image/Case_Studies/Picture2.png"
+                                data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Powerful-and-feature-rich-learning-management-platforms-implemented-for-customers-all-over-Asia-Pacific-and-Europe-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Linkage_Banking_detail%20.html >
+                              href=case_study_Linkage_Banking_detail%20.html >
                         Linkage solution to State Bank of Vietnam</a>
                     </div>
                     <a
-                      href=case_study_Linkage_Banking_detail%20.html class=button-read-more>Read More</a>
+                            href=case_study_Linkage_Banking_detail%20.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" e-Learning " data-type=" Mobile " data-technology=" MongoDB Open EDX Python React Native SQL Server "  data-industry=" Education Logistic ">
+            <div class="components all Financial System-Integration Microsoft groove-element groove-column groove-col-33  blog-style-standard show ">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Microsoft_detail.html rel=bookmark>
+                            href=case_study_Microsoft_detail.html rel=bookmark>
                       <img
-                        style=width:418px;height:281px;object-fit:contain
-                        width=418 heigth=281
-                        srcset="assets/image/Case_Studies/Picture3.png"
-                        alt="Case Studies - Groove Technology - Case Studies"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
-                        class="only-pc lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;object-fit:contain
+                              width=418 heigth=281
+                              srcset="assets/image/Case_Studies/Picture3.png"
+                              alt="Case Studies - Groove Technology - Case Studies"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
+                              class="only-pc lazyload"
+                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture3.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
-                        class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                              srcset="assets/image/Case_Studies/Picture3.png"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
+                              class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
-                        style=width:100%;height:217px;object-fit:contain;
-                        width=100% heigth=217
-                        srcset="assets/image/Case_Studies/Picture3.png"
-                        alt="Case Studies - Groove Technology - Case Studies"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
-                        class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain;
+                              width=100% heigth=217
+                              srcset="assets/image/Case_Studies/Picture3.png"
+                              alt="Case Studies - Groove Technology - Case Studies"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
+                              class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture3.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
-                        class="only-mobile lazy" style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                              srcset="assets/image/Case_Studies/Picture3.png"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/learning.jpg
+                              class="only-mobile lazy" style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Microsoft_detail.html>
+                              href=case_study_Microsoft_detail.html>
                         Microsoft Office 365 implementation</a>
                     </div>
                     <a
-                      href=case_study_Microsoft_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Microsoft_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API Bussiness Intelligent Database " data-type=" Mobile Web " data-technology=" MongoDB Node.JS Shopify "  data-industry=" e-Commerce Retail ">
+            <div class="components all Financial System-Integration Data-warehouse groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Data_warehouse_detail.html rel=bookmark>
+                            href=case_study_Data_warehouse_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture4.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture4.png"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture4.png"
-                        style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture4.png"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-mobile lazy" style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-clothing-brand.jpg class="only-mobile lazy" style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Data_warehouse_detail.html >
+                              href=case_study_Data_warehouse_detail.html >
                         Data warehouse implementation for financial institutions</a>
                     </div>
                     <a
-                      href=case_study_Data_warehouse_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Data_warehouse_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API " data-type=" Mobile " data-technology=" React Native "  data-industry=" Marketing ">
+            <div class="components all Financial System-Integration Core-banking groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Deliver_detail.html rel=bookmark>
+                            href=case_study_Deliver_detail.html rel=bookmark>
                       <img
-                        style=width:418px;height:281px;object-fit:contain
-                        srcset="assets/image/Case_Studies/Picture5.png"
-                        width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/Groovy-things-web-portfolio-585-393.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;object-fit:contain
+                              srcset="assets/image/Case_Studies/Picture5.png"
+                              width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/Groovy-things-web-portfolio-585-393.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture5.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/Groovy-things-web-portfolio-585-393.jpg
-                        class="only-pc lazy" style=width:418px;height:281px;object-fit:contain
-                        width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies">
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                                srcset="assets/image/Case_Studies/Picture5.png"
+                                data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/Groovy-things-web-portfolio-585-393.jpg
+                                class="only-pc lazy" style=width:418px;height:281px;object-fit:contain
+                                width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies">
                       </noscript>
                       <img
-                        style=width:100%;height:217px;object-fit:contain
-                        srcset="assets/image/Case_Studies/Picture5.png"
-                        width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/Groovy-things-web-portfolio-585-393.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain
+                              srcset="assets/image/Case_Studies/Picture5.png"
+                              width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/Groovy-things-web-portfolio-585-393.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture5.png"
                               src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
@@ -1206,127 +1216,127 @@
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Deliver_detail.html >
+                              href=case_study_Deliver_detail.html >
                         Deliver Core Banking systems</a>
                     </div>
                     <a
-                      href=case_study_Deliver_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Deliver_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Bussiness Intelligent Database " data-type=" Desktop " data-technology=" ASP.NET MVC Microsoft Azure SQL Server "  data-industry=" Logistic ">
+            <div class="components all Media System-Integration ERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_SAPB1_lead_media_detail.html rel=bookmark>
+                            href=case_study_SAPB1_lead_media_detail.html rel=bookmark>
                       <img
-                        style=width:418px;height:281px;object-fit:contain
-                        width=418 heigth=281
-                        srcset="assets/image/Case_Studies/Picture6.png"
-                        alt="Case Studies - Groove Technology - Case Studies"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg
-                        class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;object-fit:contain
+                              width=418 heigth=281
+                              srcset="assets/image/Case_Studies/Picture6.png"
+                              alt="Case Studies - Groove Technology - Case Studies"
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg
+                              class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture6.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg
-                        class="only-pc lazy" style=width:418px;height:281px;object-fit:contain
-                        width=418 heigth=281
-                        alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                                srcset="assets/image/Case_Studies/Picture6.png"
+                                data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg
+                                class="only-pc lazy" style=width:418px;height:281px;object-fit:contain
+                                width=418 heigth=281
+                                alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img style=width:100%;height:217px;object-fit:contain
-                        srcset="assets/image/Case_Studies/Picture6.png"
-                        width=100% heigth=217
-                        alt="Case Studies - Groove Technology - Case Studies"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                           srcset="assets/image/Case_Studies/Picture6.png"
+                           width=100% heigth=217
+                           alt="Case Studies - Groove Technology - Case Studies"
+                           data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture6.png"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg
-                        class="only-mobile lazy"
-                        style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                                srcset="assets/image/Case_Studies/Picture6.png"
+                                data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Warehouse-and-transport-management-systems-for-our-logistics-customers-based-in-the-United-Kingdom-2.jpg
+                                class="only-mobile lazy"
+                                style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_SAPB1_lead_media_detail.html >
+                              href=case_study_SAPB1_lead_media_detail.html >
                         SAP B1 implementation for a leading media company
                       </a>
                     </div>
                     <a
-                      href=case_study_SAPB1_lead_media_detail.html class=button-read-more>Read More</a>
+                            href=case_study_SAPB1_lead_media_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database " data-type=" Web " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce ">
+            <div class="components all IT System-Integration ERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_SAPB1_lead_IT_detail.html rel=bookmark>
+                            href=case_study_SAPB1_lead_IT_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture7.png"
-                        style=width:418px;height:281px;object-fit:contain;
-                        width=418 heigth=281;
-                        alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;object-fit:contain;
+                              width=418 heigth=281;
+                              alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture7.png"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture7.png"
-                        style=width:100%;height:217px;object-fit:contain width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture7.png"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-mobile lazy" style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-A-BEDDING-BRAND.jpg class="only-mobile lazy" style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_SAPB1_lead_IT_detail.html >
+                              href=case_study_SAPB1_lead_IT_detail.html >
                         SAP B1 implementation for a leading IT company in Vietnam
                       </a>
                     </div>
                     <a
-                      href=case_study_SAPB1_lead_IT_detail.html class=button-read-more>Read More</a>
+                            href=case_study_SAPB1_lead_IT_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API Database SaaS Platform " data-type=" Desktop Mobile " data-technology=" MongoDB Node.JS React Native "  data-industry=" Retail ">
+            <div class="components all IT System-Integration ERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_SAPB1_real-estate_detail.html rel=bookmark>
+                            href=case_study_SAPB1_real-estate_detail.html rel=bookmark>
                       <img
-                        style=width:418px;height:281px;
-                        srcset="assets/image/Case_Studies/Picture8.png"
-                        width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-02.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;
+                              srcset="assets/image/Case_Studies/Picture8.png"
+                              width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-02.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                              srcset="assets/image/Case_Studies/Picture8.png"
+                                srcset="assets/image/Case_Studies/Picture8.png"
 
-                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-02.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-02.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture8.png"
                               style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-02.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
@@ -1336,823 +1346,823 @@
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_SAPB1_real-estate_detail.html >
+                              href=case_study_SAPB1_real-estate_detail.html >
                         SAP B1 implementation for a real-estate company</a>
                     </div>
                     <a
-                      href=case_study_SAPB1_real-estate_detail.html class=button-read-more>Read More</a>
+                            href=case_study_SAPB1_real-estate_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database e-Learning " data-type=" Desktop Mobile Web " data-technology=" MongoDB MySQL Open EDX Python React Native SQL Server "  data-industry=" Education HR ">
-              <div
-                class="blog-post format-standard-image">
+            <div class="components all Ecommerce Application-Development Ecommerce-Development Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show">
+              <div class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_ecommerce_platform_detail.html rel=bookmark>
+                            href=case_study_ecommerce_platform_detail.html rel=bookmark>
                       <img srcset="assets/image/Case_Studies/Picture9.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/11/groove-technology-case-studies-online-training-platform-for-a-franchise-company.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                           style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/11/groove-technology-case-studies-online-training-platform-for-a-franchise-company.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                              srcset="assets/image/Case_Studies/Picture9.png"
+                                srcset="assets/image/Case_Studies/Picture9.png"
 
-                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/11/groove-technology-case-studies-online-training-platform-for-a-franchise-company.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/11/groove-technology-case-studies-online-training-platform-for-a-franchise-company.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture9.png"
                               style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/11/groove-technology-case-studies-online-training-platform-for-a-franchise-company.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript>
                         <img
-                              srcset="assets/image/Case_Studies/Picture9.png"
-                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/11/groove-technology-case-studies-online-training-platform-for-a-franchise-company.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                                srcset="assets/image/Case_Studies/Picture9.png"
+                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/11/groove-technology-case-studies-online-training-platform-for-a-franchise-company.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_ecommerce_platform_detail.html >
+                              href=case_study_ecommerce_platform_detail.html >
                         Ecommerce platform development</a>
                     </div>
                     <a
-                      href=case_study_ecommerce_platform_detail.html class=button-read-more>Read More</a>
+                            href=case_study_ecommerce_platform_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database " data-type=" Web " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce ">
+            <div class="components all Ecommerce Application-Development Ecommerce-Development Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show ">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
                     <a href=case_study_ecommerce_application_detail.html rel=bookmark>
                       <img
-                        style=width:418px;height:281px;
-                        srcset="assets/image/Case_Studies/Picture10.png"
-                        width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;
+                              srcset="assets/image/Case_Studies/Picture10.png"
+                              width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
-                        srcset="assets/image/Case_Studies/Picture10.png"
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E"
+                              srcset="assets/image/Case_Studies/Picture10.png"
 
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
-                        style=width:100%;height:217px;
-                        srcset="assets/image/Case_Studies/Picture10.png"
-                        width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-AN-EYEWEAR-BRAND.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;
+                              srcset="assets/image/Case_Studies/Picture10.png"
+                              width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-AN-EYEWEAR-BRAND.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture10.png"
                               src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-AN-EYEWEAR-BRAND.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_ecommerce_application_detail.html >
+                              href=case_study_ecommerce_application_detail.html >
                         Ecommerce application enhancement</a>
                     </div>
                     <a
-                      href=case_study_ecommerce_application_detail.html class=button-read-more>Read More</a>
+                            href=case_study_ecommerce_application_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API Bussiness Intelligent Database " data-type=" Mobile Web " data-technology=" MongoDB Node.JS BigCommerce "  data-industry=" e-Commerce Retail ">
+            <div class="components all F&B Application-Development Ecommerce-Development Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Customer-centric_detail.html rel=bookmark>
+                            href=case_study_Customer-centric_detail.html rel=bookmark>
                       <img
-                        style=width:418px;height:281px;
-                        srcset="assets/image/Case_Studies/Picture11.png"
-                        width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;
+                              srcset="assets/image/Case_Studies/Picture11.png"
+                              width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture11.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture11.png"
 
-                        style=width:100%;height:217px;
-                        width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;
+                              width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture11.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/05/Groove-Technology-Case-Studies-E-commerce-electric-household-appliances.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Customer-centric_detail.html >
+                              href=case_study_Customer-centric_detail.html >
                         Customer-centric system development
                       </a>
                     </div>
                     <a
-                      href=case_study_Customer-centric_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Customer-centric_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" SaaS Platform " data-type=" Mobile Web " data-technology=" Amazon Web Services MongoDB Node.JS React Native "  data-industry=" Education ">
+            <div class="components all Construction Real Application-Development Web Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Construct_12_detail.html
-                              srcset="assets/image/Case_Studies/Picture12.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                            href=case_study_Construct_12_detail.html>
+                            <img
+                            srcset="assets/image/Case_Studies/Picture12.png"
+                            style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture12.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture12.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture12.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/liaisonapp.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Construct_12_detail.html >
+                              href=case_study_Construct_12_detail.html >
                         Construct an user-friendly website
                       </a>
                     </div>
                     <a
-                      href="case_study_Construct_12_detail.html" class=button-read-more>Read More</a>
+                            href="case_study_Construct_12_detail.html" class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Bussiness Intelligent Database " data-type=" Web " data-technology=" PowerBI Tableau "  data-industry=" Operation ">
+            <div class="components all F&B API-Gateway System-development groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_API_gateway_13_detail.html rel=bookmark>
+                            href=case_study_API_gateway_13_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture13.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture13.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture13.png"
 
-                        style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture13.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Business-Intelligence-dashboards-for-customers-from-all-industries-based-all-around-the-world-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_API_gateway_13_detail.html >
+                              href=case_study_API_gateway_13_detail.html >
                         API gateway for a global leading F&B
                       </a>
                     </div>
                     <a
-                      href="case_study_API_gateway_13_detail.html" class=button-read-more>Read More</a>
+                            href="case_study_API_gateway_13_detail.html" class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Bussiness Intelligent Database " data-type=" Web " data-technology=" .NET Core AngularJS Microsoft Azure PowerBI SQL Server "  data-industry=" Sport ">
+            <div class="components all Media API-Gateway System-development groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Membership_14_detail.html rel=bookmark>
+                            href=case_study_Membership_14_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture14.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture14.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture14.png"
 
-                        style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture14.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Sports-statistic-modelling-...-United-Kingdom-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Membership_14_detail.html >
+                              href=case_study_Membership_14_detail.html >
                         Membership integration
                       </a>
                     </div>
                     <a
-                      href=case_study_Membership_14_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Membership_14_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API Database IoT " data-type=" Desktop Web " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce Retail ">
+            <div class="components all Financial Core-banking System-Integration groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Revolving_System_15_detail.html rel=bookmark>
+                            href=case_study_Revolving_System_15_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture15.png"
-                        style=width:418px;height:281px;object-fit:contain  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;object-fit:contain  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture15.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture15.png"
 
-                        style=width:100%;height:217px;object-fit:contain   width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain   width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture15.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-e-commerce-site-for-a-dinnerware-brand-case-studies-01.png class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Revolving_System_15_detail.html >
+                              href=case_study_Revolving_System_15_detail.html >
                         Revolving System Implementation</a>
                     </div>
                     <a
-                      href=case_study_Revolving_System_15_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Revolving_System_15_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database " data-type=" Web " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce ">
+            <div class="components all Financial Core-banking System-Integration NAPAS groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Napas_16_detail.html rel=bookmark>
+                            href=case_study_Napas_16_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture16.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture16.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture16.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture16.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-SITE-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Napas_16_detail.html >Napas Card Implementation
+                              href=case_study_Napas_16_detail.html >Napas Card Implementation
                       </a>
                     </div>
                     <a
-                      href=case_study_Napas_16_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Napas_16_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API Database " data-type=" Desktop Mobile Web " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce ">
+            <div class="components all Logistics System-Integration groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_New_warehouse_17_detail.html rel=bookmark>
+                            href=case_study_New_warehouse_17_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture17.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture17.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture17.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture17.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/12/rsz_case-studies-pictures-01.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_New_warehouse_17_detail.html >
+                              href=case_study_New_warehouse_17_detail.html >
                         New warehouse management system
                       </a>
                     </div>
                     <a
-                      href=case_study_New_warehouse_17_detail.html class=button-read-more>Read More</a>
+                            href=case_study_New_warehouse_17_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Dedicated Team " data-type=" Mobile " data-technology=" React Native "  data-industry=" Sport ">
+            <div class="components all Food&Beverage System-Integration API-Gateway App groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Renew_POS_18_detail.html rel=bookmark>
+                            href=case_study_Renew_POS_18_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture18.png"
-                        style=width:418px;height:281px;object-fit:contain  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;object-fit:contain  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture18.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture18.png"
 
-                        style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;object-fit:contain  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture18.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-case-studies-building-a-fitness-app-with-react-native.png class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Renew_POS_18_detail.html >
+                              href=case_study_Renew_POS_18_detail.html >
                         Renew POS system
                       </a>
                     </div>
                     <a
-                      href=case_study_Renew_POS_18_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Renew_POS_18_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database IoT SaaS Platform Dedicated Team " data-type=" Desktop Web " data-technology=" .NET Core ASP.NET MVC SQL Server "  data-industry=" Retail ">
+            <div class="components all Retail System groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Perform_regular_19_detail.html rel=bookmark>
+                            href=case_study_Perform_regular_19_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture19.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture19.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture19.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture19.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20372'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/02/20220119-case-studies-web.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Perform_regular_19_detail.html >
+                              href=case_study_Perform_regular_19_detail.html >
                         Perform regular management of IT infrastructure network
                       </a>
                     </div>
                     <a
-                      href=case_study_Perform_regular_19_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Perform_regular_19_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Bussiness Intelligent Database " data-type=" Desktop " data-technology=" .NET Core AngularJS Microsoft Azure "  data-industry=" Logistic ">
+            <div class="components all Ecommerce App System-Integration groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Development_20_detail.html rel=bookmark>
+                            href=case_study_Development_20_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture20.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture20.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture20.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture20.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Highly-complex-freight-management-and-tracking-systems-for-our-logistics-customers-based-in-Hong-Kong-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Development_20_detail.html >
+                              href=case_study_Development_20_detail.html >
                         Development of mobile topup and buy card
                       </a>
                     </div>
                     <a
-                      href=case_study_Development_20_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Development_20_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database SaaS Platform " data-type=" Mobile " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce ">
+            <div class="components all Ecommerce App System-Integration Retail groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_New_online_21_detail.html rel=bookmark>
+                            href=case_study_New_online_21_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture21.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture21.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture21.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture21.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-HOUSEHOLD-STORAGE-SUPPLIER.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_New_online_21_detail.html >
+                              href=case_study_New_online_21_detail.html >
                         New online retail development
                       </a>
                     </div>
                     <a
-                      href=case_study_New_online_21_detail.html class=button-read-more>Read More</a>
+                            href=case_study_New_online_21_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" SaaS Platform " data-type=" Web " data-technology=" Amazon Web Services Node.JS React.JS SQL Server "  data-industry=" e-Commerce ">
+            <div class="components all IBS Property Retail System groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_IBS_22_detail.html rel=bookmark>
+                            href=case_study_IBS_22_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture22.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture22.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture22.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture22.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-SAAS-based-price-comparison-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_IBS_22_detail.html >
+                              href=case_study_IBS_22_detail.html >
                         IBS system management
                       </a>
                     </div>
                     <a
-                      href=case_study_IBS_22_detail.html class=button-read-more>Read More</a>
+                            href=case_study_IBS_22_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" API Database IoT " data-type=" Desktop Web " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce Retail ">
+            <div class="components all Real IT-consulting System groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_IT_consulting_23_detail.html rel=bookmark>
+                            href=case_study_IT_consulting_23_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture23.png"
-                        style=width:418px;height:281px;
-                        width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;
+                              width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture23.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture23.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture23.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/03/groove-technology-online-onboarding-training-platform-for-a-tourism-company.png class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_IT_consulting_23_detail.html >
+                              href=case_study_IT_consulting_23_detail.html >
                         IT consulting
                       </a>
                     </div>
                     <a
-                      href=case_study_IT_consulting_23_detail.html class=button-read-more>Read More</a>
+                            href=case_study_IT_consulting_23_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Bussiness Intelligent Database " data-type=" Web " data-technology=" .NET Core AngularJS Microsoft Azure SQL Server "  data-industry=" Legal ">
+            <div class="components all Data-center Hospitality System Property Retail groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Data_center_24_detail.html rel=bookmark>
+                            href=case_study_Data_center_24_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture24.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture24.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture24.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture24.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/SAAS-based-Legal-workflow-management-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Data_center_24_detail.html >
+                              href=case_study_Data_center_24_detail.html >
                         Data center service
                       </a>
                     </div>
                     <a
-                      href=case_study_Data_center_24_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Data_center_24_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database " data-type=" Mobile Web " data-technology=" Amazon Web Services MongoDB Node.JS React Native React.JS "  data-industry=" e-Commerce ">
+            <div class="components all Logistics System Offshore groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_PDA_25_detail.html rel=bookmark>
+                            href=case_study_PDA_25_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture25.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture25.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture25.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture25.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/food.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_PDA_25_detail.html >
+                              href=case_study_PDA_25_detail.html >
                         PDA delivery project</a>
                     </div>
                     <a
-                      href=case_study_PDA_25_detail.html class=button-read-more>Read More</a>
+                            href=case_study_PDA_25_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database Dedicated Team " data-type=" Desktop Mobile " data-technology=" .NET Core Microsoft Azure React Native "  data-industry=" Logistic ">
+            <div class="components all App Offshore IT groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Recipe_app_26_detail.html rel=bookmark>
+                            href=case_study_Recipe_app_26_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture26.png"
-                        style=width:418px;height:281px;object-fit:contain  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;object-fit:contain  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture26.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20825%20525'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20825%20525'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture26.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture26.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20825%20525'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20825%20525'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/06/groove-technology-team-augmentation-for-a-payment-app-development.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Recipe_app_26_detail.html >
+                              href=case_study_Recipe_app_26_detail.html >
                         Recipe app project
                       </a>
                     </div>
                     <a
-                      href=case_study_Recipe_app_26_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Recipe_app_26_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" Database " data-type=" Mobile " data-technology=" MongoDB Node.JS React Native Shopify "  data-industry=" e-Commerce ">
+            <div class="components all Ecommerce Offshore Data groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Ecommerce_Content_27_detail.html rel=bookmark>
+                            href=case_study_Ecommerce_Content_27_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture27.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture27.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture27.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture27.png"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/08/E-COMMERCE-MOBILE-APPLICATION-DEVELOPMENT-FOR-AN-EYEWEAR-BRAND.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Ecommerce_Content_27_detail.html >
+                              href=case_study_Ecommerce_Content_27_detail.html >
                         Ecommerce content project
                       </a>
                     </div>
                     <a
-                      href=case_study_Ecommerce_Content_27_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Ecommerce_Content_27_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="groove-element groove-column groove-col-33  blog-style-standard show" data-service=" IoT " data-type=" Web " data-technology=" Amazon Web Services Node.JS React.JS SQL Server "  data-industry=" Real Estate ">
+            <div class="components all IT Offshore System groove-element groove-column groove-col-33  blog-style-standard show">
               <div
-                class="blog-post format-standard-image">
+                      class="blog-post format-standard-image">
                 <div
-                  class=blog-post_wrapper>
+                        class=blog-post_wrapper>
                   <div
-                    class=blog-post_media style="text-align: center;">
+                          class=blog-post_media style="text-align: center;">
                     <a
-                      href=case_study_Website_28_detail.html rel=bookmark>
+                            href=case_study_Website_28_detail.html rel=bookmark>
                       <img
                               srcset="assets/image/Case_Studies/Picture28.png"
-                        style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture28.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-pc lazy" style=width:418px;height:281px;  width=418 heigth=281 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                       <img
                               srcset="assets/image/Case_Studies/Picture28.png"
 
-                        style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                              style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                       <noscript><img
                               srcset="assets/image/Case_Studies/Picture28.png"
 
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20585%20393'%3E%3C/svg%3E" data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Multi-tenanted-IOT-bluetooth-beacon-asset-tracking-platform-for-our-customer-in-Australia-2.jpg class="only-mobile lazy" style=width:100%;height:217px;  width=100% heigth=217 alt="Case Studies - Groove Technology - Case Studies"></noscript>
                     </a>
                   </div>
                   <div
-                    class=blog-post_content>
+                          class=blog-post_content>
                     <div
-                      class=blog-post_title>
+                            class=blog-post_title>
                       <a
-                        href=case_study_Website_28_detail.html >
+                              href=case_study_Website_28_detail.html >
                         Website maintenance project</a>
                     </div>
                     <a
-                      href=case_study_Website_28_detail.html class=button-read-more>Read More</a>
+                            href=case_study_Website_28_detail.html class=button-read-more>Read More</a>
                   </div>
                 </div>
               </div>

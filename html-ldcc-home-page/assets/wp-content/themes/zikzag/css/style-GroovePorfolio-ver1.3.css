@@ -282,7 +282,7 @@
     text-transform: capitalize;
     text-align: left;
     font-size: 1.3333333333rem;
-    font-family: museo-sans-rounded,sans-serif;
+    /*font-family: museo-sans-rounded,sans-serif;*/
     cursor: pointer;
     outline: 0;
     text-decoration: none;
@@ -419,6 +419,7 @@
     font-size: .9333333333rem;
     margin: 0;
     width: 100%;
+    font-family: Poppins ;
 }
 .ft-menu li {
     position: relative;
@@ -427,7 +428,7 @@
     background: #e5e5e5;
 }
 .ft-menu .ft-tags .ft-highlight:after {
-    background: #E60078;
+    background: #D31027;
     color: #fff;
 }
 .ft-menu .ft-tags li, .ft-menu .ft-tags li:after {
@@ -461,7 +462,7 @@
     background: #e5e5e5;
 }
 .ft-menu .ft-tags .filter-selected:after{
-    background: #E60078;
+    background: #D31027;
     color: #fff;
     content: "x";
 }
