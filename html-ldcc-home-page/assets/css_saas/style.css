@@ -1215,6 +1215,8 @@ select:focus {
   padding: 27px 21px 35px;
   transition: 0.3s ease-in;
 }
+
+
 @media only screen and (max-width: 391px) {
   .about .list_card .card_item .box .inner-box {
     width: 100%;
