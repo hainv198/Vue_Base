@@ -5,12 +5,11 @@
     <style>img.lazy {
         min-height: 1px
     }</style>
+
 <!--Style-->
     <link href="assets/css/home/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/home/paper-kit.css?v=2.1.0" rel="stylesheet"/>
     <link href="assets/css/home/demo.css" rel="stylesheet" />
-
-
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -205,19 +204,20 @@
                                 </div>
                             </div>
                         </div>
-                        <ul id=mega-menu-main_menu class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+
+                        <ul id=mega-menu-main_menu class="navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                             data-event=hover data-effect=fade_up data-effect-speed=200 data-effect-mobile=disabled
                             data-effect-speed-mobile=0 data-panel-width=body data-panel-inner-width=1140px
                             data-mobile-force-width=false data-second-click=go data-document-click=collapse
                             data-vertical-behaviour=standard data-breakpoint=768 data-unbind=true
                             data-mobile-state=collapse_all data-hover-intent-timeout=300
                             data-hover-intent-interval=100>
-                            <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                                <a class=mega-menu-link href=index.html tabindex=0>Home</a>
+                            <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
+                                <a class="mega-menu-link link_header" href=index.html tabindex=0>Home</a>
                             </li>
                             <!--                            About    -->
-                            <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                                <a class="dashicons-arrow-down mega-menu-link"
+                            <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
+                                <a class="dashicons-arrow-down mega-menu-link link_header"
                                    href=about_ldcc_page.html aria-haspopup=true
                                    aria-expanded=false tabindex=0
                                 >
@@ -228,7 +228,7 @@
                                 <ul
                                         class=mega-sub-menu>
                                     <li
-                                            class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
+                                            class=' mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
                                             id=mega-menu-item-text-10>
                                         <div
                                                 class=textwidget>
@@ -908,6 +908,7 @@
 </header>
 <main id=main class=site-main>
     <link rel=stylesheet href=assets/wp-content/themes/zikzag/css/style-GrooveFrontpage-ver3.0.css>
+
     <section class="section-header-fronpage frontpage-block-1 groove-section groove-section-boxed"
              style="
                 min-height: 700px;
@@ -928,7 +929,7 @@
                     font-size: 18px!important;
                 }
             }
-            @media only screen and (max-width: 439px) {
+            @media only screen and (max-width: 438px) {
                 .content {
                     margin-top: 10px!important;
                     right: 0!important;
@@ -939,10 +940,30 @@
                     font-size: 18px!important;
                 }
             }
+            @media only screen and (max-width: 1400px) {
+                .content {
+                    right: 100px!important;
+                    text-align: center;
+                    line-height: 50px !important;
+                }
+                .t-s {
+                    font-size: 18px!important;
+                }
+            }
+            @media only screen and (max-width: 1266px) {
+                .content {
+                    right: 45px!important;
+                    text-align: center;
+
+                }
+                .t-s {
+                    font-size: 18px!important;
+                }
+            }
 
         </style>
         <div class="container p-5" >
-            <div class="content" style="margin-top: 100px; position: absolute; top: 50px; right: 300px" >
+            <div class="content" style="margin-top: 80px; position: absolute; top: 50px; right: 300px" >
                 <div class="inner">
                     <h2 class="t-h text-light p-2" data-aos="fade-down" data-aos-duration="1000"  style="font-size: 40px!important;">
                         Create a valuable future with IT
@@ -954,12 +975,9 @@
         </div>
     </section>
 
-
-
     <!--Service -->
     <section class="service_pc diff-block-2 groove-section groove-section-boxed" id=longterm style="max-width: 1110px;margin: auto">
         <style>
-
 
             @media only screen and (max-width: 395px) {
                 .container_slider {
@@ -1255,7 +1273,7 @@
                 width: 100%;
                 padding: 70px;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
             }
             /* Add a transparency effect for thumnbail images */
             .demo {
@@ -1289,7 +1307,7 @@
 
         <div data-aos="fade-down" data-aos-duration="1000"  class="groove-title-heading  title-heading-center  wgl-double_heading banner_reponsive">
             <h2 class="dbl__title-wrapper groove-headingtitle">
-                <span style="color: #B3000F;font-size: 24px!important;">Our services</span> <br>
+                <span style="font-size: 24px!important;">Our services</span> <br>
                 <span class="cp_under_line" style="background-color: #e50000;width: 80px;height: 2.5px; display: block;clear: both;margin: 4px auto auto;"></span>
 
             </h2>
@@ -1584,12 +1602,12 @@
                         <div class="blog-post format-standard-image">
                             <div class=blog-post_wrapper>
                                 <div class=blog-post_media>
-                                    <a href=about_ldcc_new_event_detail_1.html rel=bookmark
+                                    <a href=https://en.vietnamplus.vn/president-suggests-lotte-group-invest-more-in-vietnam/236597.vnp rel=bookmark
                                        target=_blank>
                                         <img
                                                 style=width:340px;height:214px; width=60 heigth=119
                                                 alt="Lotte Data Communication Vietnam."
-                                                srcset="assets/image/About/Detail/event1.jpg"
+                                                srcset="assets/image/Home/event1.jpg"
                                                 data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-react-native-vs-native-which-one-to-choose-for-app-development-intro.png
                                                 class=lazyload
                                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
@@ -1604,8 +1622,8 @@
                                 </div>
                                 <span
                                         class=post_date>
-                                <span> Sep </span>
-                                <span> 22 </span>
+                                <span> Aug </span>
+                                <span> 31 </span>
                                 <span>2022</span>
                           </span>
                                 <span class=post_meta-categories>
@@ -1613,13 +1631,13 @@
                           </span>
                                 <div class=blog-post_content>
                                     <div class=blog-post_title>
-                                        <a href=about_ldcc_new_event_detail_1.html
+                                        <a href=https://en.vietnamplus.vn/president-suggests-lotte-group-invest-more-in-vietnam/236597.vnp
                                            target=_blank>
-                                            LDCC has acquired ISO14001 certificates </a>
-                                        <p>We will realize right corporate value by reinforcing sustainable management</p>
+                                            President suggests Lotte Group invest more in Vietnam </a>
+                                        <p>President Nguyen Xuan Phuc welcomed Lotte Group’s investment of nearly 5 billion USD in Vietnam...</p>
                                     </div>
                                     <a
-                                            href=about_ldcc_new_event_detail_1.html
+                                            href=https://en.vietnamplus.vn/president-suggests-lotte-group-invest-more-in-vietnam/236597.vnp
                                             target=_blank class=button-read-more>Read More</a>
                                     <span
                                             class="span-reading-time rt-reading-time"><span
@@ -1628,17 +1646,18 @@
                                             class="rt-label rt-postfix">min read</span></span></div>
                             </div>
                         </div>
-                    </a></div>
+                    </a>
+                </div>
                 <div class="groove-element groove-column groove-col-33">
-                    <a href=about_ldcc_new_event_detail_2.html target=_blank>
+                    <a href=https://www.koreatimes.co.kr/www/tech/2022/09/129_335538.html target=_blank>
                         <div class="blog-post format-standard-image">
                             <div class=blog-post_wrapper>
                                 <div class=blog-post_media>
-                                    <a href=about_ldcc_new_event_detail_2.html rel=bookmark
+                                    <a href=https://www.koreatimes.co.kr/www/tech/2022/09/129_335538.html rel=bookmark
                                        target=_blank>
                                         <img
                                                 style=width:340px;height:214px; width=60 heigth=119
-                                                srcset="assets/image/About/Detail/event2.jpg"
+                                                srcset="assets/image/Home/event2.jpg"
                                                 alt="Lotte Data Communication Vietnam."
                                                 data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-ecommerce-mobile-app-development-guide-explained-in-brief-intro.jpg
                                                 class=lazyload
@@ -1654,7 +1673,7 @@
                                 <span
                                         class=post_date>
 <span> Aug </span>
-<span> 19 </span>
+<span> 05 </span>
                       <span>2022</span>
 </span>
                                 <span
@@ -1666,12 +1685,13 @@
                                     <div
                                             class=blog-post_title>
                                         <a
-                                                href=about_ldcc_new_event_detail_2.html
+                                                href=https://www.koreatimes.co.kr/www/tech/2022/09/129_335538.html
                                                 target=_blank>
-                                            'HeyNana' participated in Seoul Pet Show  </a>
-                                        <p>We have been expending B2C platform by UGC (User Generated Contents) application</p></div>
+                                            Lotte starts Vietnam's eco smart city landmark project </a>
+                                        <p>Lotte Group Chairman Shin Dong-bin, right, shakes hands with Ho Chi Minh City People's Committee Chairman Phan Van Mai...
+                                        </p></div>
                                     <a
-                                            href=about_ldcc_new_event_detail_2.html target=_blank
+                                            href=https://www.koreatimes.co.kr/www/tech/2022/09/129_335538.html target=_blank
                                             class=button-read-more>Read More</a>
                                     <span
                                             class="span-reading-time rt-reading-time"><span
@@ -1682,7 +1702,7 @@
                         </div>
                     </a></div>
                 <div class="groove-element groove-column groove-col-33">
-                    <a href=about_ldcc_new_event_detail_3.html target=_blank>
+                    <a href=https://vir.com.vn/lotte-data-communication-vietnam-enables-successful-business-transformation-with-aws-90628.html  target=_blank>
                         <div
                                 class="blog-post format-standard-image">
                             <div
@@ -1690,7 +1710,7 @@
                                 <div
                                         class=blog-post_media>
                                     <a
-                                            href=about_ldcc_new_event_detail_3.html rel=bookmark
+                                            href=https://vir.com.vn/lotte-data-communication-vietnam-enables-successful-business-transformation-with-aws-90628.html  rel=bookmark
                                             target=_blank>
                                         <img
                                                 style=width:340px;height:214px; width=60 heigth=119
@@ -1723,12 +1743,12 @@
                                     <div
                                             class=blog-post_title>
                                         <a
-                                                href=about_ldcc_new_event_detail_3.html target=_blank>
-                                            Early payment of KRW 25 billion </a>
+                                                href=https://vir.com.vn/lotte-data-communication-vietnam-enables-successful-business-transformation-with-aws-90628.html  target=_blank>
+                                            Lotte Data Communication Vietnam enables successful business transformation with AWS </a>
                                         <P>We will continue to make effort to coexist and develop with partners together</P>
                                     </div>
                                     <a
-                                            href=about_ldcc_new_event_detail_3.html target=_blank
+                                            href=https://vir.com.vn/lotte-data-communication-vietnam-enables-successful-business-transformation-with-aws-90628.html  target=_blank
                                             class=button-read-more>Read More</a>
                                     <span
                                             class="span-reading-time rt-reading-time"><span
@@ -1737,16 +1757,15 @@
                                             class="rt-label rt-postfix">min read</span></span></div>
                             </div>
                         </div>
-                    </a></div>
+                    </a>
+                </div>
             </div>
         </div>
 
     </section>
     <section class="section-our-blog frontpage-block-6 groove-section-boxed only-mobile" style="margin-bottom: 50px;">
         <div class="groove-title-heading title-heading-center  wgl-double_heading">
-            <div class="dbl__subtitle ">
-                <span>Latest News</span></div>
-            <h2 class="dbl__title-wrapper education-title groove-headingtitle"><span>FROM OUR NEW AND EVENTS</span></h2></div>
+            <h2 class="dbl__title-wrapper education-title groove-headingtitle"><span> NEW AND EVENTS</span></h2></div>
         <div class="groove-container groove-column-gap-default blog-slider">
             <div class=groove-row>
                 <div class="groove-element groove-column groove-col-100">
@@ -1771,10 +1790,10 @@
                                                                         <div
                                                                                 class=blog-post_media_part>
                                                                             <a
-                                                                                    href=about_ldcc_new_event_detail_1.html
+                                                                                    href=https://en.vietnamplus.vn/president-suggests-lotte-group-invest-more-in-vietnam/236597.vnp
                                                                                     rel=bookmark target=_blank>
                                                                                 <img
-                                                                                        srcset="assets/image/About/Detail/event1.jpg"
+                                                                                        srcset="assets/image/Home/event1.jpg"
                                                                                         alt="Lotte Data Communication Vietnam."
                                                                                         data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-react-native-vs-native-which-one-to-choose-for-app-development-intro-350x200.png
                                                                                         class=lazyload
@@ -1793,13 +1812,57 @@
                                                                                 class=blog-post_content><h3
                                                                                 class="blog-post_title">
                                                                             <a
-                                                                                    href=about_ldcc_new_event_detail_1.html
+                                                                                    href=https://en.vietnamplus.vn/president-suggests-lotte-group-invest-more-in-vietnam/236597.vnp
                                                                                     rel=bookmark target=_blank>
-                                                                                LDCC has acquired ISO14001 certificates </a></h3>
+                                                                                President suggests Lotte Group invest more in Vietnam </a></h3>
                                                                             <div
                                                                                     class=blog-post_text>
                                                                                 <div
-                                                                                        class=blog-post_text><p>We will realize right corporate value by reinforcing sustainable management</p></div>
+                                                                                        class=blog-post_text><p>President Nguyen Xuan Phuc welcomed Lotte Group’s investment of nearly 5 billion USD in Vietnam...</p></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <div class=swiper-slide>
+                                                    <figure class=swiper-slide-inner>
+                                                        <div class="blog-post format-standard-image">
+                                                            <div class="container-grid row blog_carousel blog-style-standard">
+                                                                <div class=blog-post_wrapper>
+                                                                    <div class=blog-post_media>
+                                                                        <div class=blog-post_media_part>
+                                                                            <a href=https://www.koreatimes.co.kr/www/tech/2022/09/129_335538.html
+                                                                                    rel=bookmark target=_blank>
+                                                                                <img
+                                                                                        alt="Lotte Data Communication Vietnam."
+                                                                                        srcset="assets/image/Home/event2.jpg"
+                                                                                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-ecommerce-mobile-app-development-guide-explained-in-brief-intro-350x200.jpg
+                                                                                        class=lazyload
+                                                                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                                                <noscript><img
+                                                                                        class=lazy
+                                                                                        srcset="assets/image/Home/event2.jpg"
+                                                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20200'%3E%3C/svg%3E"
+                                                                                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-ecommerce-mobile-app-development-guide-explained-in-brief-intro-350x200.jpg
+                                                                                        alt="Lotte Data Communication Vietnam.">
+                                                                                </noscript>
+                                                                            </a></div>
+                                                                    </div>
+                                                                    <div
+                                                                            class=blog_post-meta_content>
+                                                                        <div
+                                                                                class=blog-post_content><h3
+                                                                                class="blog-post_title">
+                                                                            <a
+                                                                                    href=https://www.koreatimes.co.kr/www/tech/2022/09/129_335538.html
+                                                                                    rel=bookmark target=_blank>
+                                                                                Lotte starts Vietnam's eco smart city landmark project </a></h3>
+                                                                            <div
+                                                                                    class=blog-post_text>
+                                                                                <div class=blog-post_text><p>Lotte Group Chairman Shin Dong-bin, right, shakes hands with Ho Chi Minh City People's Committee Chairman Phan Van Mai...</p></div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1822,59 +1885,7 @@
                                                                         <div
                                                                                 class=blog-post_media_part>
                                                                             <a
-                                                                                    href=about_ldcc_new_event_detail_2.html
-                                                                                    rel=bookmark target=_blank>
-                                                                                <img
-                                                                                        alt="Lotte Data Communication Vietnam."
-                                                                                        srcset="assets/image/About/Detail/event2.jpg"
-                                                                                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-ecommerce-mobile-app-development-guide-explained-in-brief-intro-350x200.jpg
-                                                                                        class=lazyload
-                                                                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                                                                <noscript><img
-                                                                                        class=lazy
-                                                                                        srcset="assets/image/About/Detail/event2.jpg"
-                                                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20200'%3E%3C/svg%3E"
-                                                                                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2022/08/groove-technology-ecommerce-mobile-app-development-guide-explained-in-brief-intro-350x200.jpg
-                                                                                        alt="Lotte Data Communication Vietnam.">
-                                                                                </noscript>
-                                                                            </a></div>
-                                                                    </div>
-                                                                    <div
-                                                                            class=blog_post-meta_content>
-                                                                        <div
-                                                                                class=blog-post_content><h3
-                                                                                class="blog-post_title">
-                                                                            <a
-                                                                                    href=about_ldcc_new_event_detail_2.html
-                                                                                    rel=bookmark target=_blank>
-                                                                                'HeyNana' participated in Seoul Pet Show  </a></h3>
-                                                                            <div
-                                                                                    class=blog-post_text>
-                                                                                <div
-                                                                                        class=blog-post_text><p>We have been expending B2C platform by UGC (User Generated Contents) application</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </figure>
-                                                </div>
-                                                <div class=swiper-slide>
-                                                    <figure
-                                                            class=swiper-slide-inner>
-                                                        <div
-                                                                class="blog-post format-standard-image">
-                                                            <div
-                                                                    class="container-grid row blog_carousel blog-style-standard">
-                                                                <div
-                                                                        class=blog-post_wrapper>
-                                                                    <div
-                                                                            class=blog-post_media>
-                                                                        <div
-                                                                                class=blog-post_media_part>
-                                                                            <a
-                                                                                    href=about_ldcc_new_event_detail_3.html
+                                                                                    href=https://vir.com.vn/lotte-data-communication-vietnam-enables-successful-business-transformation-with-aws-90628.html
                                                                                     rel=bookmark target=_blank>
                                                                                 <img
                                                                                         alt="Lotte Data Communication Vietnam."
@@ -1896,9 +1907,9 @@
                                                                                 class=blog-post_content><h3
                                                                                 class="blog-post_title">
                                                                             <a
-                                                                                    href=about_ldcc_new_event_detail_3.html
+                                                                                    href=https://vir.com.vn/lotte-data-communication-vietnam-enables-successful-business-transformation-with-aws-90628.html
                                                                                     rel=bookmark target=_blank>
-                                                                                Early payment of KRW 25 billion </a></h3>
+                                                                                Lotte Data Communication Vietnam enables successful business transformation with AWS </a></h3>
                                                                             <div
                                                                                     class=blog-post_text>
                                                                                 <div
@@ -2313,7 +2324,7 @@
                                     <a target=_blank class=career-footer-link>
                                         <img
                                                 style=" width: 88px;border: 1px solid #FFFFFF;border-radius: 5px "
-                                                srcset="https://d2908q01vomqb2.cloudfront.net/77de68daecd823babbb58edb1c8e14d7106e83bb/2018/01/04/APN-logo_dark-background.jpg"
+                                                srcset="assets/image/Home/logo_footer.jpg"
                                                 class="career-footer-certificate-padding lazyload"
                                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         <noscript><img

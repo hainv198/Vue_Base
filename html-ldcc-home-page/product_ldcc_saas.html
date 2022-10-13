@@ -308,14 +308,27 @@
     <!--End Logo  -->
     <header class=wgl-theme-header id="header" style="display: block!important;">
       <!--    Start Navbar    -->
-
       <div class=wgl-site-header>
         <div class="container-wrapper menu-container-wrapper">
           <div class="groove-row row-menu">
             <div class="groove-element groove-column groove-col-menu-1">
               <div class=groove-image>
                 <div class=wgl-logotype-container>
-                  <a href=index.html>
+                  <a id="logo_changle" href=index.html>
+                    <img width=150 heigth=53 alt
+                         data-src=https://www.ldcc.co.kr/img/common/pc/logo.png
+                         class="default_logo lazyload"
+                         srcset="assets/image/logo_eng_w.png"
+                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                    <noscript>
+                      <img
+                              class="default_logo lazy" width=150 heigth=53
+                              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"
+                              data-src=https://www.ldcc.co.kr/img/common/pc/logo.png
+                              alt>
+                    </noscript>
+                  </a>
+                  <a id="logo_fix" style="display: none" href=index.html>
                     <img width=150 heigth=53 alt
                          data-src=https://www.ldcc.co.kr/img/common/pc/logo.png
                          class="default_logo lazyload"
@@ -329,6 +342,22 @@
                               alt>
                     </noscript>
                   </a>
+                  <script >
+                    window.onscroll = function () {
+                      scrollFunction()
+                    }
+                    function  scrollFunction() {
+                      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                        document.getElementById("logo_changle").style.display='none';
+                        document.getElementById("logo_fix").style.display = "block";
+
+                      } else  {
+                        document.getElementById("logo_changle").style.display = "block";
+                        document.getElementById("logo_fix").style.display='none';
+                      }
+
+                    }
+                  </script>
                 </div>
               </div>
             </div>
@@ -356,31 +385,31 @@
                     </div>
                   </div>
                 </div>
-                <ul id=mega-menu-main_menu class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+
+                <ul id=mega-menu-main_menu class="navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                     data-event=hover data-effect=fade_up data-effect-speed=200 data-effect-mobile=disabled
                     data-effect-speed-mobile=0 data-panel-width=body data-panel-inner-width=1140px
                     data-mobile-force-width=false data-second-click=go data-document-click=collapse
                     data-vertical-behaviour=standard data-breakpoint=768 data-unbind=true
                     data-mobile-state=collapse_all data-hover-intent-timeout=300
                     data-hover-intent-interval=100>
-                  <li
-                          class='mega-menu-homepage mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-home mega-current-menu-item mega-page_item mega-page-item-1222 mega-current_page_item mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-menu-item-3512 menu-homepage'
-                          id=mega-menu-item-3512><a
-                          class=mega-menu-link href=index.html tabindex=0>Home</a>
+                  <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
+                    <a class="mega-menu-link link_header" href=index.html tabindex=0>Home</a>
                   </li>
                   <!--                            About    -->
-                  <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
-                      id=mega-menu-item-4576>
-                    <a class="dashicons-arrow-down mega-menu-link"
+                  <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
+                    <a class="dashicons-arrow-down mega-menu-link link_header"
                        href=about_ldcc_page.html aria-haspopup=true
-                       aria-expanded=false tabindex=0>
+                       aria-expanded=false tabindex=0
+                    >
                       About
                       <span class=mega-indicator></span>
+
                     </a>
                     <ul
                             class=mega-sub-menu>
                       <li
-                              class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
+                              class=' mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
                               id=mega-menu-item-text-10>
                         <div
                                 class=textwidget>
@@ -390,36 +419,30 @@
                             <p>We lead business innovation for our customers by providing differentiated IT platforms and services for all industries, including food, retail, customer service, and chemicals.</p></div>
                         </div>
                       </li>
-                      <li
-                              class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-11'
-                              id=mega-menu-item-text-11>
-                        <div
-                                class=textwidget>
-                          <div
-                                  class=mega-menu-block-2>
+                      <li class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-11'>
+                        <div class=textwidget>
+                          <div class=mega-menu-block-2>
                             <div
                                     class="custom-mega-menu mega-border"><p
                                     style="margin-bottom: 15px;">
                               <a href=about_ldcc_page.html#overview
                                  target=_blank rel=noopener>
-                                <b>Overview</b>
+                                Overview
                               </a>
                             </p>
                             </div>
-                            <div
-                                    class="custom-mega-menu mega-border"><p
+                            <div class="custom-mega-menu mega-border"><p
                                     class=proces-anchor style="margin-bottom: 15px;"><a
                                     href=about_ldcc_vision.html#vision>
-                              <b>
-                                Vision
-                              </b>
+
+                              Vision
                             </a>
                             </p>
                             </div>
                             <div class=custom-mega-menu>
                               <p class=proces-anchor style="margin-bottom: 15px;">
                                 <a href=about_ldcc_ceo.html#CEO>
-                                  <b>CEO message</b>
+                                  CEO message
                                 </a>
                               </p>
                             </div>
@@ -432,18 +455,20 @@
                             <div class="custom-mega-menu mega-border">
                               <p class=proces-anchor style="margin-bottom: 15px;">
                                 <a href=about_ldcc_history.html#history>
-                                  <b>Our history</b>
+                                  Our history
                                 </a>
                               </p>
                             </div>
-                            <div
-                                    class="custom-mega-menu mega-border"><p
-                                    class=proces-anchor style="margin-bottom: 15px;"><a
-                                    href=about_ldcc_partnership.html#partnership><b>Partnership</b></a></p></div>
-                            <div
-                                    class=custom-mega-menu><p
-                                    class=proces-anchor style="margin-bottom: 15px;"><a
-                                    href=about_ldcc_newevent.html#new_event><b>News & Events</b></a></p></div>
+                            <div class="custom-mega-menu mega-border">
+                              <p class=proces-anchor style="margin-bottom: 15px;">
+                                <a href=about_ldcc_partnership.html#partnership>Partnership</a>
+                              </p>
+                            </div>
+                            <div class=custom-mega-menu>
+                              <p class=proces-anchor style="margin-bottom: 15px;">
+                                <a href=about_ldcc_newevent.html#new_event>News & Events</a>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </li>
@@ -474,47 +499,49 @@
                           id=mega-menu-item-text-8>
                         <div class=textwidget>
                           <div class=mega-menu-block-2>
-
-                            <div class=custom-mega-menu>
+                            <div class="custom-mega-menu mega-border">
                               <p class=services-anchor style="margin-bottom: 15px;">
                                 <a href=service_ldcc_page.html#application
-                                   target=_blank rel=noopener>Application development & integration</a></p>
-                              <p style="margin-bottom: 15px;" >
-                                <a
-                                        href=service_ldcc_System.html#System target=_blank
-                                        rel=noopener>System management</a></p>
-                              <p style="margin-bottom: 15px;"><a
-                                      href=service_ldcc_offshore.html#offshore
-                                      target=_blank rel=noopener>IT offshore</a></p>
-
-                              <p><a
-                                      href=service_ldcc_ERP.html#ERP
-                                      target=_blank rel=noopener>ERP
-                                implementation</a>
+                                   target=_blank rel=noopener>Application development & integration</a>
                               </p>
                             </div>
+                            <div class="custom-mega-menu mega-border">
+                              <p style="margin-bottom: 15px;" >
+                                <a href=service_ldcc_System.html#System target=_blank rel=noopener>System management</a>
+                              </p>
+                            </div>
+                            <div class="custom-mega-menu mega-border">
+                              <p style="margin-bottom: 15px;">
+                                <a href=service_ldcc_offshore.html#offshore target=_blank rel=noopener>IT offshore</a>
+                              </p>
+                            </div>
+                            <p>
+                              <a href=service_ldcc_ERP.html#ERP target=_blank rel=noopener>ERP implementation</a>
+                            </p>
                           </div>
                         </div>
                       </li>
-                      <li
-                              class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-9'
-                              id=mega-menu-item-text-9>
-                        <div
-                                class=textwidget>
+                      <li class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-9'
+                          id=mega-menu-item-text-9>
+                        <div class=textwidget>
                           <div class=mega-menu-block-3>
-                            <div class=custom-mega-menu>
+                            <div class="custom-mega-menu mega-border">
                               <p class=services-anchor style="margin-bottom: 15px;">
                                 <a href="service_ldcc_Cloud.html#Cloud" target=_blank rel=noopener>
                                   Cloud transformation
                                 </a>
                               </p>
-                              <p><a
-                                      href=service_ldcc_Data.html#Data target=_blank
-                                      rel=noopener>Data center</a></p>
-                              <p><a
-                                      href=service_ldcc_Security.html#Secuity target=_blank
-                                      rel=noopener>Security</a></p>
                             </div>
+                            <div class="custom-mega-menu mega-border">
+                              <p>
+                                <a href=service_ldcc_Data.html#Data target=_blank rel=noopener>Data center</a>
+                              </p>
+                            </div>
+                            <p><a
+                                    href=service_ldcc_Security.html#Secuity target=_blank
+                                    rel=noopener>Security</a></p>
+
+
                           </div>
                         </div>
                       </li>
@@ -538,7 +565,7 @@
                                 class=textwidget>
                           <div
                                   class=mega-menu-block-1><p
-                                  class=mega-block-title>OUR Products</p>
+                                  class=mega-block-title>OUR PRODUCTS</p>
                             <p>We solve market challenges and build all varieties of custom and
                               platform-based frameworks and provide comprehensive end-to-end
                               software development and IT services.</p></div>
@@ -631,12 +658,12 @@
                           id=mega-menu-item-text-15>
                         <div class=textwidget>
                           <div class=mega-menu-block-2>
-
-                            <div class=custom-mega-menu><p
-                                    class=services-anchor style="margin-bottom: 15px;">
-                              <a href=case_studies_ldcc_page.html target=_blank
-                                 rel=noopener><b> Overview of our case studies</b>
-                              </a>
+                            <div class="custom-mega-menu mega-border">
+                              <p class=proces-anchor style="margin-bottom: 15px;">
+                                <a href=case_studies_ldcc_page.html target=_blank
+                                   rel=noopener> Overview of our case studies
+                                </a>
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -659,7 +686,7 @@
                           id=mega-menu-item-text-10>
                         <div class=textwidget>
                           <div class=mega-menu-block-1>
-                            <p class=mega-block-title>Career</p>
+                            <p class=mega-block-title>CARRER</p>
                             <p>
                               Our people-oriented culture fosters employees' competencies to create an ideal environment for innovative work
                               and software development career paths. Inspire and be inspired at Lotte</p></div>
@@ -680,14 +707,14 @@
                             <div class="custom-mega-menu mega-border">
                               <p class=proces-anchor style="margin-bottom: 15px;">
                                 <a href=career_ldcc_page.html>
-                                  <b>Our culture</b>
+                                  Our culture
                                 </a>
                               </p>
                             </div>
                             <div class="custom-mega-menu mega-border">
                               <p class=proces-anchor style="margin-bottom: 15px;">
                                 <a href=career_ldcc_opportunity_page.html>
-                                  <b>Career opportunity</b>
+                                  Career opportunity
                                 </a>
                               </p>
                             </div>
@@ -713,7 +740,7 @@
                                 class=textwidget>
                           <div
                                   class=mega-menu-block-1><p
-                                  class=mega-block-title>Language</p>
+                                  class=mega-block-title>LANGUAGE</p>
                             <p>
                               You can change the language if you want to learn and experience more of our services and vision. Hope it helps you find what you are looking for.
                               <br> Best regards.</p></div>
@@ -740,7 +767,7 @@
                                        width="40"
                                        height="40"
                                   >
-                                  <b>Korea</b>
+                                  Korea
                                 </a>
                               </p>
                             </div>
@@ -754,7 +781,7 @@
                                        height="35"
                                        style="margin-left: 30px"
                                   >
-                                  <b>Việt Nam</b>
+                                  Việt Nam
                                 </a>
                               </p>
                             </div>
@@ -768,7 +795,7 @@
                                        height="40"
                                        style="margin-left: 15px"
                                   >
-                                  <b>English</b>
+                                  English
                                 </a>
                               </p>
                             </div>
@@ -950,71 +977,71 @@
                 <a href=case_studies_ldcc_page.html>
                   <img src="assets/image/Mobile/icons8-case-study-64.png" alt="" width="30"height="30">
                 </a>
-                <div class=more-show>
-                  <h3>Case Study</h3>
-                  <ul>
-                    <div class="wgl-accordion icon-custom" data-type=toggle>
-                      <div class=wgl-accordion_panel>
-                        <div class="wgl-accordion_header groove-accordion_header">
-                          <li class="childmenu menu-services-tab2">
-                            <a href=software-development-services/index.html#professional_services>
-                              <span class=menu-icon></span><span>Products</span>
-                            </a>
-                          </li>
-                          <i class="wgl-accordion_icon flaticon flaticon-next contact-flaticon-next"></i>
+                <!--<div class=more-show>
+                    <h3>Case Study</h3>
+                    <ul>
+                        <div class="wgl-accordion icon-custom" data-type=toggle>
+                            <div class=wgl-accordion_panel>
+                                <div class="wgl-accordion_header groove-accordion_header">
+                                    <li class="childmenu menu-services-tab2">
+                                        <a href=software-development-services/index.html#professional_services>
+                                            <span class=menu-icon></span><span>Products</span>
+                                        </a>
+                                    </li>
+                                    <i class="wgl-accordion_icon flaticon flaticon-next contact-flaticon-next"></i>
+                                </div>
+                                <div class=wgl-accordion_content style=display:none;>
+                                    <div class data-element_type=widget data-widget_type=image-box.default>
+                                        <a class="menu-child overview"
+                                           href=software-development-services/index.html#professional_services>API Gateway</a>
+                                        <a class="menu-child software-consultancy"
+                                           href=software-consultancy/index.html>Smart building management</a>
+                                        <a class="menu-child team-augmentation-full-team-outsourcing"
+                                           href=team-augmentation-full-team-outsourcing/index.html>SaaS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=wgl-accordion_panel>
+                                <div class="wgl-accordion_header groove-accordion_header">
+                                    <li class="childmenu menu-services-tab1">
+                                        <a href=software-development-services/index.html#custom_software_development>
+                                            <span class=menu-icon>
+                                                <i class='bx bx-server'></i>
+                                            </span>
+                                            <span>Services</span>
+                                        </a>
+                                    </li>
+                                    <i class="wgl-accordion_icon flaticon flaticon-next contact-flaticon-next"></i>
+                                </div>
+                                <div class=wgl-accordion_content style=display:none;>
+                                    <div class data-element_type=widget data-widget_type=image-box.default>
+                                        <a class="menu-child overview"
+                                           href=software-development-services/index.html#custom_software_development>
+                                            Application development & integration</a>
+                                        <a class="menu-child build-ios-android"
+                                           href=build-react-native-ios-android-mobile-app/index.html>ERP implementation
+                                        </a>
+                                        <a
+                                                class="menu-child react-native"
+                                                href=react-native-mobile-app-development/index.html>Security</a>
+                                        <a
+                                                class="menu-child custom-app"
+                                                href=custom-application-development/index.html>
+                                            System management</a>
+                                        <a
+                                                class="menu-child web-app"
+                                                href=web-application-development/index.html>Cloud transformation</a>
+                                        <a
+                                                class="menu-child product-dev"
+                                                href=product-development/index.html>IT offshore</a>
+                                        <a
+                                                class="menu-child iot-page"
+                                                href=internet-of-things-iot/index.html>Data Center</a></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class=wgl-accordion_content style=display:none;>
-                          <div class data-element_type=widget data-widget_type=image-box.default>
-                            <a class="menu-child overview"
-                               href=software-development-services/index.html#professional_services>API Gateway</a>
-                            <a class="menu-child software-consultancy"
-                               href=software-consultancy/index.html>Smart building management</a>
-                            <a class="menu-child team-augmentation-full-team-outsourcing"
-                               href=team-augmentation-full-team-outsourcing/index.html>SaaS</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class=wgl-accordion_panel>
-                        <div class="wgl-accordion_header groove-accordion_header">
-                          <li class="childmenu menu-services-tab1">
-                            <a href=software-development-services/index.html#custom_software_development>
-                                                    <span class=menu-icon>
-                                                        <i class='bx bx-server'></i>
-                                                    </span>
-                              <span>Services</span>
-                            </a>
-                          </li>
-                          <i class="wgl-accordion_icon flaticon flaticon-next contact-flaticon-next"></i>
-                        </div>
-                        <div class=wgl-accordion_content style=display:none;>
-                          <div class data-element_type=widget data-widget_type=image-box.default>
-                            <a class="menu-child overview"
-                               href=software-development-services/index.html#custom_software_development>
-                              Application development & integration</a>
-                            <a class="menu-child build-ios-android"
-                               href=build-react-native-ios-android-mobile-app/index.html>ERP implementation
-                            </a>
-                            <a
-                                    class="menu-child react-native"
-                                    href=react-native-mobile-app-development/index.html>Security</a>
-                            <a
-                                    class="menu-child custom-app"
-                                    href=custom-application-development/index.html>
-                              System management</a>
-                            <a
-                                    class="menu-child web-app"
-                                    href=web-application-development/index.html>Cloud transformation</a>
-                            <a
-                                    class="menu-child product-dev"
-                                    href=product-development/index.html>IT offshore</a>
-                            <a
-                                    class="menu-child iot-page"
-                                    href=internet-of-things-iot/index.html>Data Center</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
+                    </ul>
+                </div>-->
               </li>
 
               <!--                    Mobile   -->
@@ -1026,16 +1053,16 @@
                   <h3>More</h3>
                   <ul>
                     <li class=menu-about-us>
-                      <a href=about_ldcc_page.html>
+                      <a href=career_ldcc_page.html>
                         <span class=menu-icon></span>
-                        <span>About Us</span>
+                        <span>Our culture</span>
                       </a>
                     </li>
-                    <!-- <li class=menu-wmud>
-                         <a href=what-makes-us-different/index.html>
-                             <span class=menu-icon></span><span>What Makes Us Different?</span>
-                         </a>
-                     </li>-->
+                    <li class=menu-wmud>
+                      <a href=career_ldcc_opportunity_page.html>
+                        <span class=menu-icon></span><span>Career opportunity</span>
+                      </a>
+                    </li>
                     <li class=menu-contact-us>
                       <a href=contact_us_ldcc_page.html>
                         <span class=menu-icon></span>
@@ -1156,7 +1183,7 @@
               }
             </style>
             <div class="dropbtn_home">
-              <a class="dropbtn" href="service_ldcc_page.html">Services</a>
+              <a class="dropbtn" href="product_ldcc_page.html">Products</a>
             </div>
             <div class="dropdown">
 

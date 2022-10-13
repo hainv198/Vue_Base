@@ -220,7 +220,7 @@ a:hover {
     color: inherit;
 }
 #main {
-    /*background-color: #f9fbfd;*/
+    background-color: #f9fbfd;
     position: relative;
     z-index: 3;
     overflow: hidden;
