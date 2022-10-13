@@ -14,39 +14,29 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <script>
       $(document).ready(function (event)
       {
-        $('.boxselect').change(function ()
-        {
+        $('.boxselect').change(function () {
           $this = $(this);
           $result = $this.val();
-          $('.components').hide();
-          $('.' + $result)
-          console.log("showing " + $this.val() + " boxes_one");
         });
 
-        $('.filter_box2').change(function ()
-        {
+        $('.filter_box2').change(function () {
           $thi = $(this);
           $sum = $this.val()  + $thi.val()
           $('.components').hide();
           $('.' + $sum ).show();
-          console.log("showing " + $sum + " boxes_two");
         });
 
       });
 
-
       $(document).ready(function (e) {
-        /*$('.filter_box2').change(function ()
-        {
+        $('.filter_box3').click(function () {
           $this = $(this);
           $('.components').hide();
           $('.' + $this.val()).show();
-          console.log("showing " + $this.val() + " boxes_two");
-        });*/
+        });
       });
 
     </script>
@@ -1036,9 +1026,18 @@
                   <option value="System-development">System development</option>
                 </select>
               </div>
+              <div>
+                <button style="margin:unset; padding: unset; width: 100px;height: 36px"
+                        class="filter_box3 btn btn-primary"
+                        name="box_3"
+                        value="all"
+                >
+                  Refresh
+                </button>
+              </div>
 
             </div>
-            <div class="components all Tourism Web  groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Tourism Web TourismWeb groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
@@ -1087,7 +1086,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Financial TourismWeb System-Integration NAPAS groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Financial  FinancialSystem-Integration FinancialNAPAS groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
@@ -1127,7 +1126,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Financial System-Integration Microsoft groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all Financial FinancialSystem-Integration FinancialMicrosoft groove-element groove-column groove-col-33  blog-style-standard show ">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
@@ -1174,7 +1173,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Financial System-Integration Data-warehouse groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Financial FinancialSystem-Integration FinancialData-warehouse groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
@@ -1208,7 +1207,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Financial System-Integration Core-banking groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Financial FinancialSystem-Integration FinancialCore-banking groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1255,7 +1254,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Media System-Integration ERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Media MediaSystem-Integration MediaERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1308,7 +1307,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all IT System-Integration ERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all IT ITSystem-Integration ITERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1348,7 +1347,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all IT System-Integration ERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all IT ITSystem-Integration ITERP-Implementation groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
@@ -1385,7 +1384,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Ecommerce Application-Development Ecommerce-Development Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Ecommerce EcommerceApplication-Development EcommerceEcommerce-Development EcommerceCloud-Transformation EcommerceSystem groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div
                         class=blog-post_wrapper>
@@ -1423,7 +1422,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Ecommerce Application-Development Ecommerce-Development Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all Ecommerce EcommerceApplication-Development EcommerceEcommerce-Development EcommerceCloud-Transformation EcommerceSystem groove-element groove-column groove-col-33  blog-style-standard show ">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
@@ -1460,7 +1459,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all FB Application-Development Ecommerce-Development Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all FB FBApplication-Development FBEcommerce-Development FBCloud-Transformation FBSystem groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1503,7 +1502,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Construction Real Application-Development Web Cloud-Transformation System groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Construction Real ConstructionApplication-Development ConstructionWeb ConstructionCloud-Transformation ConstructionSystem RealApplication-Development RealWeb RealCloud-Transformation RealSystem groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1544,7 +1543,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all FB API-Gateway System-development groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all FB FBAPI-Gateway FBSystem-development groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1585,7 +1584,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Media API-Gateway System-development groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Media MediaAPI-Gateway MediaSystem-development groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1626,7 +1625,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Financial Core-banking System-Integration groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Financial FinancialCore-banking FinancialSystem-Integration groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1666,7 +1665,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Financial Core-banking System-Integration NAPAS groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all Financial FinancialCore-banking FinancialSystem-Integration FinancialNAPAS groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1706,7 +1705,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Logistics System-Integration groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all Logistics LogisticsSystem-Integration groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1747,7 +1746,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all FoodBeverage System-Integration API-Gateway App groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all FoodBeverage FoodBeverageSystem-Integration FoodBeverageAPI-Gateway FoodBeverageApp groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1788,7 +1787,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Retail System groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Retail RetailSystem groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1829,7 +1828,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Ecommerce App System-Integration groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Ecommerce EcommerceApp EcommerceSystem-Integration groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1870,7 +1869,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Ecommerce App System-Integration Retail groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Ecommerce EcommerceApp EcommerceSystem-Integration EcommerceRetail groove-element groove-column groove-col-33  blog-style-standard show">
               <div class="blog-post format-standard-image">
                 <div class=blog-post_wrapper>
                   <div class=blog-post_media style="text-align: center;">
@@ -1908,7 +1907,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all IBS Property Retail System groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Property Retail RetailIBS RetailSystem PropertyIBS PropertySystem groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1949,7 +1948,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Real IT-consulting System groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Real RealIT-consulting RealSystem groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -1991,7 +1990,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Data-center Hospitality System Property Retail groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Property Retail Hospitality RetailData-center RetailSystem HospitalityData-center HospitalitySystem PropertyData-center PropertySystem groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -2032,7 +2031,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Logistics System Offshore groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Logistics LogisticsSystem LogisticsOffshore groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -2072,7 +2071,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all App Offshore IT groove-element groove-column groove-col-33  blog-style-standard show ">
+            <div class="components all ITApp ITOffshore IT groove-element groove-column groove-col-33  blog-style-standard show ">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -2113,7 +2112,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all Ecommerce Offshore Data groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all Ecommerce EcommerceOffshore EcommerceData groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div
@@ -2153,7 +2152,7 @@
                 </div>
               </div>
             </div>
-            <div class="components all IT Offshore System groove-element groove-column groove-col-33  blog-style-standard show">
+            <div class="components all IT ITOffshore ITSystem groove-element groove-column groove-col-33  blog-style-standard show">
               <div
                       class="blog-post format-standard-image">
                 <div

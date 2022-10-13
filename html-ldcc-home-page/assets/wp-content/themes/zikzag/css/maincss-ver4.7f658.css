@@ -2699,7 +2699,7 @@ ol.mega-li > li:before {
 .page-what-makes-us-different .footer .footer_top-area ul li.menu-about-us a,
 .single.single-format-standard .footer .footer_top-area ul li.blog-posts a,
 .single.single-job_listing .footer .footer_top-area ul li.career-posts a {
-    color: #DA291C !important;
+    /*color: #DA291C !important;*/
 }
 .footer-block-1 {
     border-bottom: solid 0.5px #2f495a;
