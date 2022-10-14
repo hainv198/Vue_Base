@@ -18,8 +18,7 @@
 
       // filter category case study
 
-      $(document).ready(function (event)
-      {
+      $(document).ready(function (event) {
         $('.boxselect').change(function () {
           $this = $(this);
           $result = $this.val();
@@ -34,7 +33,7 @@
 
           $sum = $this.val()  + $thi.val()
           $('.components').hide();
-          $('.' + $this.val()).show();
+          $('.' + $sum).show();
         });
       });
       // clear
