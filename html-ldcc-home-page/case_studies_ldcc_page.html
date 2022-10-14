@@ -15,6 +15,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+
+      // filter category case study
+
       $(document).ready(function (event)
       {
         $('.boxselect').change(function () {
@@ -24,15 +27,19 @@
 
         $('.filter_box2').change(function () {
           $thi = $(this);
-          $sum = $this.val()  + $thi.val()
-          $('.components').hide();
-          $('.' + $sum ).show();
+          $result2 = $thi.val();
         });
 
-      });
-
-      $(document).ready(function (e) {
         $('.filter_box3').click(function () {
+
+          $sum = $this.val()  + $thi.val()
+          $('.components').hide();
+          $('.' + $this.val()).show();
+        });
+      });
+      // clear
+      $(document).ready(function (e) {
+        $('.filter_box4').click(function () {
           $this = $(this);
           $('.components').hide();
           $('.' + $this.val()).show();
@@ -1027,12 +1034,22 @@
                 </select>
               </div>
               <div>
-                <button style="margin:unset; padding: unset; width: 100px;height: 36px"
-                        class="filter_box3 btn btn-primary"
+                <button style="margin:unset; padding: unset; width: 100px;height: 36px;background-color: #1e7e34"
+                        class="filter_box3 btn btn-outline-primary"
                         name="box_3"
                         value="all"
                 >
                   Refresh
+                </button>
+              </div>
+              <br>
+              <div class="pl-2">
+                <button style="margin:unset; padding: unset; width: 50px;height: 36px"
+                        class="filter_box4 btn btn-primary"
+                        name="box_4"
+                        value="all"
+                >
+                  <i class='bx bx-reply-all'></i>
                 </button>
               </div>
 
