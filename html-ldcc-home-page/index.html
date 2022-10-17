@@ -10,12 +10,12 @@
     <link href="assets/css/home/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/home/paper-kit.css?v=2.1.0" rel="stylesheet"/>
     <link href="assets/css/home/demo.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/Poppins/Poppins-Light.ttf">
     <link rel=preload href=assets/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js as=script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -24,9 +24,7 @@
     if (typeof WebFontConfig === "undefined") {
         WebFontConfig = new Object();
     }
-    /* WGL CUSTOM TYPOGRAPHY FIX */
-    WebFontConfig['google'] = {families: ['Nunito:400,700,300,600,700,800,400']};
-    /* \ WGL CUSTOM TYPOGRAPHY FIX */
+
 
     (function () {
         var wf = document.createElement('script');
@@ -95,13 +93,9 @@
     <link rel=stylesheet id=jquery-swipebox-css href='assets/wp-content/themes/zikzag/js/swipebox/css/swipebox.minf658.css' type=text/css media=all>
     <script src='assets/wp-includes/js/jquery/jquery.minaf6c.js' id=jquery-core-js></script>
     <script src='assets/wp-includes/js/jquery/jquery-migrate.mind617.js' id=jquery-migrate-js></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <link rel=shortlink href=index.html>
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
     <link rel="stylesheet" href="assets/css/no-js-layyload.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
     <link rel=icon href="https://ldcc.vn/sites/default/files/logo.png">
     <style title=dynamic-css class=options-output>
         #side-panel .side-panel_sidebar {
@@ -206,6 +200,7 @@
                             </div>
                         </div>
 
+
                         <ul id=mega-menu-main_menu class=" navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                             data-event=hover data-effect=fade_up data-effect-speed=200 data-effect-mobile=disabled
                             data-effect-speed-mobile=0 data-panel-width=body data-panel-inner-width=1140px
@@ -222,7 +217,7 @@
                                    href=about_ldcc_page.html aria-haspopup=true
                                    aria-expanded=false tabindex=0
                                 >
-                                        About
+                                        About us
                                     <span class=mega-indicator></span>
 
                                 </a>
@@ -281,7 +276,7 @@
                                                 </div>
                                                 <div class="custom-mega-menu mega-border">
                                                     <p class=proces-anchor style="margin-bottom: 15px;">
-                                                        <a href=about_ldcc_partnership.html#partnership>Partnership</a>
+                                                        <a href=about_ldcc_partnership.html#partnership>Our partner</a>
                                                     </p>
                                                 </div>
                                                 <div class=custom-mega-menu>
@@ -322,7 +317,7 @@
                                                 <div class="custom-mega-menu mega-border">
                                                     <p class=services-anchor style="margin-bottom: 15px;">
                                                         <a href=service_ldcc_page.html#application
-                                                           target=_blank rel=noopener>Application development & integration</a>
+                                                           target=_blank rel=noopener>Application development</a>
                                                     </p>
                                                 </div>
                                                 <div class="custom-mega-menu mega-border">
@@ -848,7 +843,7 @@
 
     <section class="section-header-fronpage frontpage-block-1 groove-section groove-section-boxed"
              style="
-                min-height: 700px;
+                min-height: 1000px;
                 background: url(assets/image/Banner/1.jpg) 50% 50% no-repeat;
                 background-size: cover;
                 height: 100vh;
@@ -880,7 +875,7 @@
             @media only screen and (max-width: 1400px) {
                 .content {
                     right: 100px!important;
-                    text-align: center;
+                    /*text-align: center;*/
                     line-height: 50px !important;
                 }
                 .t-s {
@@ -890,7 +885,7 @@
             @media only screen and (max-width: 1266px) {
                 .content {
                     right: 45px!important;
-                    text-align: center;
+                    /*text-align: center;*/
 
                 }
                 .t-s {
@@ -910,11 +905,16 @@
                     </p>
                 </div>
             </div>
+            <div style="width: 1040px; display: block; position: absolute; z-index: 5;top: 76%;">
+                <a href="#longterm" class="d-flex justify-content-center" >
+                    <i class='bx bx-down-arrow-alt bx-fade-down' style="color: #ffffff; font-size: 3rem; font-weight: 400" ></i>
+                </a>
+            </div>
         </div>
     </section>
 
     <!--Service -->
-    <section class="service_pc diff-block-2 groove-section groove-section-boxed" id=longterm style="max-width: 1110px;margin: auto">
+    <section class="service_pc diff-block-2 groove-section groove-section-boxed" style="max-width: 1110px;margin: auto">
         <style>
 
             @media only screen and (max-width: 395px) {
@@ -1244,7 +1244,7 @@
         </style>
 
         <div data-aos="fade-down" data-aos-duration="1000"  class="groove-title-heading  title-heading-center  wgl-double_heading banner_reponsive">
-            <h2 class="dbl__title-wrapper groove-headingtitle">
+            <h2  id=longterm  class="dbl__title-wrapper groove-headingtitle">
                 <span style="font-size: 24px!important;">Our services</span> <br>
                 <span class="cp_under_line" style="background-color: #e50000;width: 80px;height: 2.5px; display: block;clear: both;margin: 4px auto auto;"></span>
 
@@ -1672,7 +1672,7 @@
                                         <a
                                                 href=about_ldcc_new_event_detail_3.html  target=_blank>
                                             Lotte Data Communication Vietnam enables successful business transformation with AWS </a>
-                                        <P>We will continue to make effort to coexist and develop with partners together</P>
+                                        <P>Has the pandemic changed the way LDCV does business in Vietnam and ...</P>
                                     </div>
                                     <a
                                             href=about_ldcc_new_event_detail_3.html  target=_blank
@@ -1867,7 +1867,7 @@
                     <div role=form class=wpcf7 id=wpcf7-f5724-o2 lang=en-US dir=ltr>
                         <div class=screen-reader-response role=alert aria-live=polite></div>
                         <form action=# method=post class="wpcf7-form init"
-                                novalidate=novalidate>
+                              novalidate=novalidate>
                             <div style="display: none;">
                                 <input type=hidden name=_wpcf7 value=5724>
                                 <input type=hidden name=_wpcf7_version value=5.2>
@@ -1879,7 +1879,7 @@
                             </div>
                             <div class=g-infomation>
                                 <p><label> Your Name <span
-                                        class=mandatory>* <span style="font-size: 11px">Imperative</span></span><br>
+                                        class=mandatory>* <span style="font-size: 11px">Required</span></span><br>
                                     <span class="wpcf7-form-control-wrap your-name"><input
                                             type=text name=your-name value size=40
                                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1901,20 +1901,20 @@
                                     <label> Your Email
                                         <span class=mandatory>*</span>
                                         <br>
-                                    <span
-                                            class="wpcf7-form-control-wrap your-email"><input
-                                            type=email name=your-email value size=40
-                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                            aria-required=true aria-invalid=false></span> </label>
+                                        <span
+                                                class="wpcf7-form-control-wrap your-email"><input
+                                                type=email name=your-email value size=40
+                                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                aria-required=true aria-invalid=false></span> </label>
                                 </p>
                                 <p>
                                     <label> Your Company <span
-                                        class=mandatory>*<span style="font-size: 11px">Optional</span></span><br>
-                                    <span
-                                            class="wpcf7-form-control-wrap your-companywebsite"><input
-                                            type=text name=your-companywebsite value size=40
-                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                            aria-required=true aria-invalid=false></span> </label>
+                                            class=mandatory>*<span style="font-size: 11px; color: #5ff681!important;">Optional</span></span><br>
+                                        <span
+                                                class="wpcf7-form-control-wrap your-companywebsite"><input
+                                                type=text name=your-companywebsite value size=40
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                aria-required=true aria-invalid=false></span> </label>
                                 </p>
                             </div>
                             <p>
@@ -1925,8 +1925,8 @@
 
                                         <textarea name=your-message
                                                   style="height: 150px"
-                                          class="wpcf7-form-control wpcf7-textarea"
-                                          aria-invalid=false>
+                                                  class="wpcf7-form-control wpcf7-textarea"
+                                                  aria-invalid=false>
                                         </textarea>
                                     </span>
                                 </label>
@@ -1944,124 +1944,122 @@
     </div>
 </div>
 <div id=myModal1 class="modal fade" role=dialog>
-        <div class=modal-dialog>
-            <div class=modal-content>
-                <div class=modal-header>
-                    <div class=form-title>
-                        <button type=button class=close data-dismiss=modal>&times;
-                        </button>
-                        <div class=modal-title>START YOUR NEW <br> CAREER AT LOTTE DATA COMMUNICATION
-                        </div>
-                        <p class=groove-align-center>If you have any questions, our team is happy to support!</p></div>
-                </div>
-                <div class=modal-body>
-                    <div class=custom-contact-form>
-                        <div role=form class=wpcf7 id=wpcf7-f641-o3 lang=en-US dir=ltr>
-                            <div class=screen-reader-response role=alert aria-live=polite></div>
-                            <form
-                                    action=# method=post class="wpcf7-form init"
-                                    enctype=multipart/form-data novalidate=novalidate>
-                                <div
-                                        style="display: none;">
-                                    <input
-                                            type=hidden name=_wpcf7 value=641>
-                                    <input
-                                            type=hidden name=_wpcf7_version value=5.2>
-                                    <input
-                                            type=hidden name=_wpcf7_locale value=en_US>
-                                    <input
-                                            type=hidden name=_wpcf7_unit_tag value=wpcf7-f641-o3>
-                                    <input
-                                            type=hidden name=_wpcf7_container_post value=0>
-                                    <input
-                                            type=hidden name=_wpcf7_posted_data_hash value>
-                                    <input
-                                            type=hidden name=_wpcf7_recaptcha_response value></div>
-                                <p><label> Your Name <span
+    <div class=modal-dialog>
+        <div class=modal-content>
+            <div class=modal-header>
+                <div class=form-title>
+                    <button type=button class=close data-dismiss=modal>&times;
+                    </button>
+                    <div class=modal-title>START YOUR NEW <br> CAREER AT LOTTE DATA COMMUNICATION
+                    </div>
+                    <p class=groove-align-center>If you have any questions, our team is happy to support!</p></div>
+            </div>
+            <div class=modal-body>
+                <div class=custom-contact-form>
+                    <div role=form class=wpcf7 id=wpcf7-f641-o3 lang=en-US dir=ltr>
+                        <div class=screen-reader-response role=alert aria-live=polite></div>
+                        <form
+                                action=# method=post class="wpcf7-form init"
+                                enctype=multipart/form-data novalidate=novalidate>
+                            <div
+                                    style="display: none;">
+                                <input
+                                        type=hidden name=_wpcf7 value=641>
+                                <input
+                                        type=hidden name=_wpcf7_version value=5.2>
+                                <input
+                                        type=hidden name=_wpcf7_locale value=en_US>
+                                <input
+                                        type=hidden name=_wpcf7_unit_tag value=wpcf7-f641-o3>
+                                <input
+                                        type=hidden name=_wpcf7_container_post value=0>
+                                <input
+                                        type=hidden name=_wpcf7_posted_data_hash value>
+                                <input
+                                        type=hidden name=_wpcf7_recaptcha_response value></div>
+                            <p><label> Your Name <span
+                                    class=mandatory>*</span><br>
+                                <span
+                                        class="wpcf7-form-control-wrap your-name"><input
+                                        type=text name=your-name value size=40
+                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                        aria-required=true aria-invalid=false></span> </label></p>
+                            <p><label> Your Email <span
+                                    class=mandatory>*</span><br>
+                                <span
+                                        class="wpcf7-form-control-wrap email-111"><input
+                                        type=email name=email-111 value size=40
+                                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                        aria-required=true aria-invalid=false></span> </label></p>
+                            <p
+                                    class=job_name>
+                                <label> Position to Apply <span
                                         class=mandatory>*</span><br>
                                     <span
-                                            class="wpcf7-form-control-wrap your-name"><input
-                                            type=text name=your-name value size=40
+                                            class="wpcf7-form-control-wrap your-job"><input
+                                            type=text name=your-job value size=40
                                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                             aria-required=true aria-invalid=false></span> </label></p>
-                                <p><label> Your Email <span
-                                        class=mandatory>*</span><br>
-                                    <span
-                                            class="wpcf7-form-control-wrap email-111"><input
-                                            type=email name=email-111 value size=40
-                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                            aria-required=true aria-invalid=false></span> </label></p>
-                                <p
-                                        class=job_name>
-                                    <label> Position to Apply <span
-                                            class=mandatory>*</span><br>
-                                        <span
-                                                class="wpcf7-form-control-wrap your-job"><input
-                                                type=text name=your-job value size=40
-                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                aria-required=true aria-invalid=false></span> </label></p>
-                                <p><span>Your Resume</span><br>
-                                    <label
-                                            class=custom-file-upload><i></i>Drag file here or *<span
-                                            class=txt1>browser</span>*<span
-                                            class=txt-2>Support: .jpf, .jpg, .jpeg, .png, .pdf, .docx</span><span
-                                            class="wpcf7-form-control-wrap cv-file"><input
-                                            type=file name=cv-file size=40 class="wpcf7-form-control wpcf7-file"
-                                            accept=.jpg,.jpeg,.png,.pdf,.doc,.docx aria-invalid=false></span></label></p>
-                                <p
-                                        id=file-upload-filename>
-                                <p><label> Message <span
-                                        class=mandatory>*</span><br>
-                                    <span
-                                            class="wpcf7-form-control-wrap your-message"><textarea name=your-message cols=40
-                                                                                                   rows=10
-                                                                                                   class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                                                                                   aria-required=true
-                                                                                                   aria-invalid=false></textarea></span>
-                                </label></p>
-                                <p><input
-                                        type=submit value=Submit class="wpcf7-form-control wpcf7-submit"></p>
-                                <div
-                                        class=wpcf7-response-output role=alert aria-hidden=true></div>
-                            </form>
-                        </div>
+                            <p><span>Your Resume</span><br>
+                                <label
+                                        class=custom-file-upload><i></i>Drag file here or *<span
+                                        class=txt1>browser</span>*<span
+                                        class=txt-2>Support: .jpf, .jpg, .jpeg, .png, .pdf, .docx</span><span
+                                        class="wpcf7-form-control-wrap cv-file"><input
+                                        type=file name=cv-file size=40 class="wpcf7-form-control wpcf7-file"
+                                        accept=.jpg,.jpeg,.png,.pdf,.doc,.docx aria-invalid=false></span></label></p>
+                            <p
+                                    id=file-upload-filename>
+                            <p><label> Message <span
+                                    class=mandatory>*</span><br>
+                                <span
+                                        class="wpcf7-form-control-wrap your-message"><textarea name=your-message cols=40
+                                                                                               rows=10
+                                                                                               class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                                                               aria-required=true
+                                                                                               aria-invalid=false></textarea></span>
+                            </label></p>
+                            <p><input
+                                    type=submit value=Submit class="wpcf7-form-control wpcf7-submit"></p>
+                            <div
+                                    class=wpcf7-response-output role=alert aria-hidden=true></div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class=alert-rotate style=display:none>
-        <div class=alert-modal>
-            <div class=groove-image>
-                <img
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Group-7.svg class=lazyload
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                <noscript><img
-                        class=lazy
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                        data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Group-7.svg></noscript>
-            </div>
-            <div
-                    class=alert-close>
-                Refresh Page
-            </div>
-            <p>Please rotate your screen horizontally for the best experience.</p></div>
-    </div>
-    <div class=contact-messenger  data-toggle=modal data-target=#myModal>
-        <div class=static>
-            <img data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-contact-us-logo.svg
-                 class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-            <noscript>
-                <img
-                        class=lazy
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                        data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-contact-us-logo.svg>
-            </noscript>
+</div>
+<div class=alert-rotate style=display:none>
+    <div class=alert-modal>
+        <div class=groove-image>
+            <img
+                    data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Group-7.svg class=lazyload
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <noscript><img
+                    class=lazy
+                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
+                    data-src=https://cdn.groovetechnology.com/wp-content/uploads/2021/04/Group-7.svg></noscript>
         </div>
-        <div class=pulsation></div>
-        <div class=pulsation></div>
+        <div
+                class=alert-close>
+            Refresh Page
+        </div>
+        <p>Please rotate your screen horizontally for the best experience.</p></div>
+</div>
+<div class=contact-messenger data-toggle=modal data-target=#myModal>
+    <div class=static>
+        <img data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-contact-us-logo.svg
+             class=lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        <noscript>
+            <img class=lazy
+                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
+                 data-src=https://cdn.groovetechnology.com/wp-content/themes/zikzag/img/groove-technology-contact-us-logo.svg>
+        </noscript>
     </div>
+    <div class=pulsation></div>
+    <div class=pulsation></div>
+</div>
 <script>
     jQuery(document).ready(function () {
         if (jQuery(window).width() < 768) {
@@ -2139,7 +2137,7 @@
                                         <li id=menu-item-6713
                                                 class="menu-services menu-item menu-item-type-post_type menu-item-object-page menu-item-6713">
                                             <a
-                                                    href=about_ldcc_page.html>About</a></li>
+                                                    href=about_ldcc_page.html>About us</a></li>
                                         <li
                                                 id=menu-item-6714
                                                 class="menu-process menu-item menu-item-type-post_type menu-item-object-page menu-item-6714">
@@ -2266,13 +2264,6 @@
             data-src="https://www.googletagmanager.com/ns.html?id=GTM-MFJ74XJ" class=lazyload
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe>
 </noscript>
-<!--<script id=contact-form-7-js-extra>var wpcf7 = {
-    "apiSettings": {
-        "root": "https:\/\/groovetechnology.com\/wp-json\/contact-form-7\/v1",
-        "namespace": "contact-form-7\/v1"
-    }, "cached": "1"
-};</script>-->
-
 <script src='assets/wp-content/plugins/wp-smush-pro/app/assets/js/smush-lazy-load.mina767.js?ver=3.6.3' id=smush-lazy-load-js>
 
 </script>
@@ -2299,9 +2290,7 @@ lazySizes.init();
 <script src='assets/wp-content/plugins/elementor/assets/lib/slick/slick.minc245.js?ver=1.8.1'
         id=jquery-slick-js></script>
 <script id=wgl_custom_footer_js></script>
-<!--
 <script src=assets/wp-content/themes/zikzag/js/groovePopup.js></script>
--->
 <script>function copyToClipboard(element) {
     const elem = document.createElement('textarea');
     elem.value = element;

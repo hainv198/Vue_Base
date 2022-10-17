@@ -45,6 +45,13 @@
         });
       });
 
+      $('#select1').on('change', function() {
+        var value = $(this).val();
+        $('#select1, #select2').find('option[value!=""]').removeAttr('disabled').removeAttr('hidden');
+        $(this).find('option[value="' + value + '"]').attr('disabled', 'disabled');
+        $('#select2').find('option[value="' + value + '"]').attr('hidden', 'hidden');
+      })
+
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -990,8 +997,8 @@
               </div>
               <div class="col-md-3">
 
-                <select name="boxes_one" class="boxselect form-control form-control-lg" id="exampleFormControlSelect1" style="border-radius: 5px !important;">
-                  <option value="all">Industry</option>
+                <select  name="boxes_one" class="boxselect form-control form-control-lg" id="select1" required style="border-radius: 5px !important;">
+                  <option value="all" selected disabled hidden>Industry</option>
                   <option value="Tourism">Tourism</option>
                   <option value="Financial">Financial service</option>
                   <option value="Media">Media</option>
@@ -1008,8 +1015,8 @@
                 </select>
               </div>
               <div class="col-md-3" >
-                <select name="boxes_two" class="filter_box2 form-control form-control-lg" id="exampleFormControlSelect1" style="border-radius: 5px !important;">
-                  <option value="all">Service</option>
+                <select name="boxes_two" required class="filter_box2 form-control form-control-lg" id="exampleFormControlSelect1 select2" style="border-radius: 5px !important;">
+                  <option value="all" selected disabled hidden>Service</option>
                   <option value="App">App development</option>
                   <option value="Web">Web development</option>
                   <option value="Data">Data Processing</option>
@@ -1048,7 +1055,7 @@
                         name="box_4"
                         value="all"
                 >
-                  <i class='bx bx-reply-all'></i>
+                  <i class='bx bx-reply-all' style="font-size: 1.4rem"></i>
                 </button>
               </div>
 
