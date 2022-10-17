@@ -44,7 +44,7 @@
           $('.' + $this.val()).show();
         });
       });
-
+// remove option
       $('#select1').on('change', function() {
         var value = $(this).val();
         $('#select1, #select2').find('option[value!=""]').removeAttr('disabled').removeAttr('hidden');

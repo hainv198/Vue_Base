@@ -10,6 +10,10 @@
       min-height: 1px
     }</style>
 
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
     <!-- CSS Files -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
@@ -231,7 +235,9 @@
         padding-right:50px;
         padding-bottom:40px;
         padding-left:50px;
-      }</style>
+      }
+    </style>
+
     <script></script>
 
     <script defer src=https://cdn.jsdelivr.net/npm/typed.js@2.0.11></script> <script>(function(c,l,a,r,i,t,y){
@@ -239,7 +245,8 @@
       t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "bnzt977yvi");
-    </script> 
+    </script>
+
   </head>
   <body class="page-template page-template-GrooveApplicationSupport page-template-GrooveApplicationSupport-php page page-id-8112 page-child parent-pageid-4162 mega-menu-main-menu mega-menu-career-location page-application-support-and-maintenance zikzag elementor-default">
     <div id=preloader-wrapper  style=background-color:#ffffff;>
@@ -333,31 +340,58 @@
                   </div>
                 </div>
 
-                <ul id=mega-menu-main_menu class="navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+                <script>
+                  $(document).ready(function () {
+                    $(".top_menu .nav-items .link_items").click(function (e) {
+                      $(".top_menu .nav-items.active_ss").removeClass("active_ss");
+
+                      var $parent = $(this).parent();
+                      $parent.addClass("active_ss");
+                      // e.preventDefault();
+                    });
+                  });
+                </script>
+                <style>
+                  .active_ss .link_items {
+                    color: #d07575 !important;
+                  }
+                </style>
+
+                <ul id=mega-menu-main_menu class="top_menu navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                     data-event=hover data-effect=fade_up data-effect-speed=200 data-effect-mobile=disabled
                     data-effect-speed-mobile=0 data-panel-width=body data-panel-inner-width=1140px
                     data-mobile-force-width=false data-second-click=go data-document-click=collapse
                     data-vertical-behaviour=standard data-breakpoint=768 data-unbind=true
                     data-mobile-state=collapse_all data-hover-intent-timeout=300
                     data-hover-intent-interval=100>
-                  <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                    <a class=mega-menu-link href=index.html tabindex=0>Home</a>
+
+
+                  <li class=' nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                      id="mega-menu-item-3512">
+                    <a class="link_items dashicons-arrow-down mega-menu-link btn mega-menu-link link_header"
+                       href=index.html
+                       aria-haspopup=true
+                       aria-expanded=false
+                       tabindex=0>Home
+                    </a>
                   </li>
                   <!--                            About    -->
-                  <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                    <a class="dashicons-arrow-down mega-menu-link"
-                       href=about_ldcc_page.html aria-haspopup=true
-                       aria-expanded=false tabindex=0
+                  <li class='nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                      id=mega-menu-item-4360>
+                    <a class="link_items dashicons-arrow-down mega-menu-link link_header"
+                       href=about_ldcc_page.html
+                       aria-haspopup=true
+                       aria-expanded=false
+                       tabindex=0
                     >
-                      About
+                      About us
                       <span class=mega-indicator></span>
-
                     </a>
                     <ul
                             class=mega-sub-menu>
                       <li
                               class=' mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
-                              id=mega-menu-item-text-10>
+                      >
                         <div
                                 class=textwidget>
                           <div
@@ -408,7 +442,7 @@
                             </div>
                             <div class="custom-mega-menu mega-border">
                               <p class=proces-anchor style="margin-bottom: 15px;">
-                                <a href=about_ldcc_partnership.html#partnership>Partnership</a>
+                                <a href=about_ldcc_partnership.html#partnership>Our partner</a>
                               </p>
                             </div>
                             <div class=custom-mega-menu>
@@ -422,10 +456,12 @@
                     </ul>
                   </li>
                   <!--                            Services       -->
-                  <li class='mega-menu-services mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4360 menu-services'
-                      id=mega-menu-item-4360>
-                    <a class="dashicons-arrow-down mega-menu-link"
-                       href=service_ldcc_page.html aria-haspopup=true aria-expanded=false
+                  <li class='nav-items mega-menu-services mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4360 menu-services'
+                      id=mega-menu-item-4576>
+                    <a class="link_items dashicons-arrow-down mega-menu-link"
+                       href=service_ldcc_page.html
+                       aria-haspopup=true
+                       aria-expanded=false
                        tabindex=0>
                       Services
                       <span class=mega-indicator></span>
@@ -438,7 +474,6 @@
                             <p>We solve challenging market challenges and build all varieties of
                               custom and platform-based frameworks and provide comprehensive
                               end-to-end software development and IT services.</p>
-
                           </div>
                         </div>
                       </li>
@@ -449,7 +484,7 @@
                             <div class="custom-mega-menu mega-border">
                               <p class=services-anchor style="margin-bottom: 15px;">
                                 <a href=service_ldcc_page.html#application
-                                   target=_blank rel=noopener>Application development & integration</a>
+                                   target=_blank rel=noopener>Application development</a>
                               </p>
                             </div>
                             <div class="custom-mega-menu mega-border">
@@ -496,18 +531,16 @@
                   </li>
                   <!--                            Services   End    -->
                   <!--                            Products       -->
-                  <li
-                          class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
-                          id=mega-menu-item-4576><a
-                          class="dashicons-arrow-down mega-menu-link"
-                          href=product_ldcc_page.html aria-haspopup=true
-                          aria-expanded=false tabindex=0>Products<span
-                          class=mega-indicator></span></a>
-                    <ul
-                            class=mega-sub-menu>
-                      <li
-                              class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
-                              id=mega-menu-item-text-10>
+                  <li class='nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                      id=mega-menu-item-5584>
+                    <a
+                            class="link_items dashicons-arrow-down mega-menu-link"
+                            href=product_ldcc_page.html aria-haspopup=true
+                            aria-expanded=false tabindex=0>Products<span
+                            class=mega-indicator></span></a>
+                    <ul class=mega-sub-menu>
+                      <li class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
+                          id=mega-menu-item-text-10>
                         <div
                                 class=textwidget>
                           <div
@@ -579,12 +612,12 @@
                   </li>
 
                   <!--                               Case study     -->
-                  <li
-                          class='mega-menu-about-us mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-5584 menu-about-us'
-                          id=mega-menu-item-5584><a
-                          class="dashicons-arrow-down mega-menu-link" href=case_studies_ldcc_page.html
-                          aria-haspopup=true aria-expanded=false tabindex=0>Case study<span
-                          class=mega-indicator></span></a>
+                  <li class='nav-items mega-menu-about-us mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-5584 menu-about-us'
+                      id=mega-menu-item-3513>
+                    <a
+                            class="link_items dashicons-arrow-down mega-menu-link" href=case_studies_ldcc_page.html
+                            aria-haspopup=true aria-expanded=false tabindex=0>Case study<span
+                            class=mega-indicator></span></a>
                     <ul
                             class=mega-sub-menu>
                       <li
@@ -619,7 +652,7 @@
                     </ul>
                   </li>
                   <!--                            Carerr  -->
-                  <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                  <li class='nav-item mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
                       id=mega-menu-item-4576>
                     <a class="dashicons-arrow-down mega-menu-link"
                        href=career_ldcc_page.html aria-haspopup=true
@@ -671,7 +704,7 @@
                     </ul>
                   </li>
                   <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
-                      id=mega-menu-item-4576>
+                      id=mega-menu-item-9904>
                     <a class="dashicons-arrow-down mega-menu-link"
                        href= aria-haspopup=true
                        aria-expanded=false tabindex=0>
@@ -1065,11 +1098,11 @@
               }
             </style>
             <div class="dropbtn_home">
-              <a class="dropbtn" href="index.html">Home</a>
+              <a class="dropbtn" href="about_ldcc_page.html">About Us</a>
             </div>
             <div class="dropdown ">
 
-              <a class="dropbtn"> About us <i class='bx bx-chevron-down'></i></a>
+              <a class="dropbtn"> Overview <i class='bx bx-chevron-down'></i></a>
               <div class="dropdown-content">
                 <a href="about_ldcc_page.html#overview">Overview</a>
                 <a href="about_ldcc_vision.html#vision">Our Vision</a>

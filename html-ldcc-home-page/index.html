@@ -7,10 +7,14 @@
     }</style>
 
 <!--Style-->
+    <link rel="stylesheet" href="assets/css/base.css">
     <link href="assets/css/home/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/home/paper-kit.css?v=2.1.0" rel="stylesheet"/>
     <link href="assets/css/home/demo.css" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +76,8 @@
         };
         dataLayer.push(dataLayer_content);</script>
     <script data-cfasync=false>/*<![CDATA[*/
-    (function (w, d, s, l, i) {
+    (function (w, d, s, l, i)
+    {
         w[l] = w[l] || [];
         w[l].push({
             'gtm.start':
@@ -84,8 +89,11 @@
         j.src =
             '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MFJ74XJ');/*]]>*/</script>
-    <link rel=stylesheet id=contact-form-7-css href='assets/wp-content/plugins/contact-form-7/includes/css/styles5fba.css' type=text/css media=all>
+    })(window, document, 'script', 'dataLayer', 'GTM-MFJ74XJ');/*]]>*/
+    </script>
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel=stylesheet id=contact-form-7-css href='./assets/wp-content/plugins/contact-form-7/includes/css/styles5fba.css' type=text/css media=all>
     <link rel=stylesheet id=wp-job-manager-frontend-css href='assets/wp-content/plugins/wp-job-manager/assets/css/frontendaf9b.css' type=text/css media=all>
     <link rel=stylesheet id=zikzag-flaticon-css href='assets/wp-content/themes/zikzag/fonts/flaticon/flaticon1.0f658.css' type=text/css media=all>
     <link rel=stylesheet id=zikzag-main-css href='assets/wp-content/themes/zikzag/css/maincss-ver4.7f658.css' type=text/css media=all>
@@ -105,6 +113,19 @@
             padding-left: 50px;
         }
     </style>
+
+    <script>
+        console.log('hai nv')
+        function myFunction() {
+            const myNodelist = document.querySelectorAll(".nav-items");
+            for (let i = 0; i < myNodelist.length; i++) {
+                myNodelist[i].addEventListener("click", function() {
+                    this.classList.add("active");
+                });
+            }
+        }
+    </script>
+
 </head>
 <body style=" font-family: 'Poppins', sans-serif !important;"
         class="home page-template page-template-GrooveHome page-template-GrooveHome-php page page-id-1222 mega-menu-main-menu mega-menu-career-location page-home-page zikzag elementor-default">
@@ -200,32 +221,58 @@
                             </div>
                         </div>
 
+                        <script>
+                            $(document).ready(function () {
+                                $(".top_menu .nav-items .link_items").click(function (e) {
+                                    $(".top_menu .nav-items.active_ss").removeClass("active_ss");
 
-                        <ul id=mega-menu-main_menu class=" navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+                                    var $parent = $(this).parent();
+                                    $parent.addClass("active_ss");
+                                    // e.preventDefault();
+                                });
+                            });
+                        </script>
+                        <style>
+                            .active_ss {
+                                color: #0051ff !important;
+                            }
+                        </style>
+
+                        <ul id=mega-menu-main_menu class="top_menu navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                             data-event=hover data-effect=fade_up data-effect-speed=200 data-effect-mobile=disabled
                             data-effect-speed-mobile=0 data-panel-width=body data-panel-inner-width=1140px
                             data-mobile-force-width=false data-second-click=go data-document-click=collapse
                             data-vertical-behaviour=standard data-breakpoint=768 data-unbind=true
                             data-mobile-state=collapse_all data-hover-intent-timeout=300
                             data-hover-intent-interval=100>
-                            <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                                <a class="btn mega-menu-link link_header" href=index.html tabindex=0>Home</a>
+
+
+                            <li class='active_ss nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                                id="mega-menu-item-3512">
+                                <a class="link_items dashicons-arrow-down mega-menu-link btn mega-menu-link link_header"
+                                   href=index.html
+                                   aria-haspopup=true
+                                   aria-expanded=false
+                                   tabindex=0>Home
+                                </a>
                             </li>
                             <!--                            About    -->
-                            <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                                <a class=" dashicons-arrow-down mega-menu-link link_header"
-                                   href=about_ldcc_page.html aria-haspopup=true
-                                   aria-expanded=false tabindex=0
+                            <li class='nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                                id=mega-menu-item-4360>
+                                <a class="link_items dashicons-arrow-down mega-menu-link link_header"
+                                   href=about_ldcc_page.html
+                                   aria-haspopup=true
+                                   aria-expanded=false
+                                   tabindex=0
                                 >
-                                        About us
+                                    About us
                                     <span class=mega-indicator></span>
-
                                 </a>
                                 <ul
                                         class=mega-sub-menu>
                                     <li
                                             class=' mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
-                                            id=mega-menu-item-text-10>
+                                            >
                                         <div
                                                 class=textwidget>
                                             <div
@@ -290,10 +337,12 @@
                                 </ul>
                             </li>
                             <!--                            Services       -->
-                            <li class='mega-menu-services mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4360 menu-services'
-                                id=mega-menu-item-4360>
-                                <a class="dashicons-arrow-down mega-menu-link"
-                                   href=service_ldcc_page.html aria-haspopup=true aria-expanded=false
+                            <li class='nav-items mega-menu-services mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4360 menu-services'
+                                id=mega-menu-item-4576>
+                                <a class="link_items dashicons-arrow-down mega-menu-link"
+                                   href=service_ldcc_page.html
+                                   aria-haspopup=true
+                                   aria-expanded=false
                                    tabindex=0>
                                     Services
                                     <span class=mega-indicator></span>
@@ -306,7 +355,6 @@
                                                 <p>We solve challenging market challenges and build all varieties of
                                                     custom and platform-based frameworks and provide comprehensive
                                                     end-to-end software development and IT services.</p>
-
                                             </div>
                                         </div>
                                     </li>
@@ -364,17 +412,15 @@
                             </li>
                             <!--                            Services   End    -->
                             <!--                            Products       -->
-                            <li
-                                    class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
-                                    id=mega-menu-item-4576><a
-                                    class="dashicons-arrow-down mega-menu-link"
+                            <li class='nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                                    id=mega-menu-item-5584>
+                                <a
+                                    class="link_items dashicons-arrow-down mega-menu-link"
                                     href=product_ldcc_page.html aria-haspopup=true
                                     aria-expanded=false tabindex=0>Products<span
                                     class=mega-indicator></span></a>
-                                <ul
-                                        class=mega-sub-menu>
-                                    <li
-                                            class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
+                                <ul class=mega-sub-menu>
+                                    <li class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
                                             id=mega-menu-item-text-10>
                                         <div
                                                 class=textwidget>
@@ -447,10 +493,10 @@
                             </li>
 
                             <!--                               Case study     -->
-                            <li
-                                    class='mega-menu-about-us mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-5584 menu-about-us'
-                                    id=mega-menu-item-5584><a
-                                    class="dashicons-arrow-down mega-menu-link" href=case_studies_ldcc_page.html
+                            <li class='nav-items mega-menu-about-us mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-5584 menu-about-us'
+                                    id=mega-menu-item-3513>
+                                <a
+                                    class="link_items dashicons-arrow-down mega-menu-link" href=case_studies_ldcc_page.html
                                     aria-haspopup=true aria-expanded=false tabindex=0>Case study<span
                                     class=mega-indicator></span></a>
                                 <ul
@@ -487,7 +533,7 @@
                                 </ul>
                             </li>
                             <!--                            Carerr  -->
-                            <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                            <li class='nav-item mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
                                 id=mega-menu-item-4576>
                                 <a class="dashicons-arrow-down mega-menu-link"
                                    href=career_ldcc_page.html aria-haspopup=true
@@ -539,7 +585,7 @@
                                 </ul>
                             </li>
                             <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
-                                id=mega-menu-item-4576>
+                                id=mega-menu-item-9904>
                                 <a class="dashicons-arrow-down mega-menu-link"
                                    href= aria-haspopup=true
                                    aria-expanded=false tabindex=0>
@@ -843,7 +889,7 @@
 
     <section class="section-header-fronpage frontpage-block-1 groove-section groove-section-boxed"
              style="
-                min-height: 1000px;
+                min-height: 900px;
                 background: url(assets/image/Banner/1.jpg) 50% 50% no-repeat;
                 background-size: cover;
                 height: 100vh;
@@ -881,6 +927,10 @@
                 .t-s {
                     font-size: 18px!important;
                 }
+                .scroll_dow_page {
+                    z-index: 5;
+                    top: 52%!important;
+                }
             }
             @media only screen and (max-width: 1266px) {
                 .content {
@@ -890,6 +940,10 @@
                 }
                 .t-s {
                     font-size: 18px!important;
+                }
+                .scroll_dow_page {
+                    z-index: 5;
+                    top: 47%!important;
                 }
             }
 
@@ -905,9 +959,9 @@
                     </p>
                 </div>
             </div>
-            <div style="width: 1040px; display: block; position: absolute; z-index: 5;top: 76%;">
-                <a href="#longterm" class="d-flex justify-content-center" >
-                    <i class='bx bx-down-arrow-alt bx-fade-down' style="color: #ffffff; font-size: 3rem; font-weight: 400" ></i>
+            <div class="scroll_dow_page" style="width: 1040px; display: block; position: absolute; z-index: 5;top: 62%;">
+                <a href="#services_home" class="d-flex justify-content-center" >
+                    <i class='bx bx-down-arrow-alt bx-fade-down' style="color: #ffffff; font-size: 3rem; font-weight: 400 !important;" ></i>
                 </a>
             </div>
         </div>
@@ -1244,7 +1298,7 @@
         </style>
 
         <div data-aos="fade-down" data-aos-duration="1000"  class="groove-title-heading  title-heading-center  wgl-double_heading banner_reponsive">
-            <h2  id=longterm  class="dbl__title-wrapper groove-headingtitle">
+            <h2  id=services_home  class="dbl__title-wrapper groove-headingtitle">
                 <span style="font-size: 24px!important;">Our services</span> <br>
                 <span class="cp_under_line" style="background-color: #e50000;width: 80px;height: 2.5px; display: block;clear: both;margin: 4px auto auto;"></span>
 
@@ -2291,7 +2345,8 @@ lazySizes.init();
         id=jquery-slick-js></script>
 <script id=wgl_custom_footer_js></script>
 <script src=assets/wp-content/themes/zikzag/js/groovePopup.js></script>
-<script>function copyToClipboard(element) {
+<script>
+    function copyToClipboard(element) {
     const elem = document.createElement('textarea');
     elem.value = element;
     document.body.appendChild(elem);

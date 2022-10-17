@@ -382,7 +382,7 @@ figure.wp-block-image img.lazyloading {
 
 #mega-menu-wrap-main_menu #mega-menu-main_menu > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
     background: rgba(0, 0, 0, 0);
-    color: #DA291C;
+    color: #DA291C !important;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;

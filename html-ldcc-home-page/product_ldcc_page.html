@@ -366,31 +366,58 @@
                   </div>
                 </div>
 
-                <ul id=mega-menu-main_menu class="navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+                <script>
+                  $(document).ready(function () {
+                    $(".top_menu .nav-items .link_items").click(function (e) {
+                      $(".top_menu .nav-items.active_ss").removeClass("active_ss");
+
+                      var $parent = $(this).parent();
+                      $parent.addClass("active_ss");
+                      // e.preventDefault();
+                    });
+                  });
+                </script>
+                <style>
+                  .active_ss {
+                    color: #00ffea !important;
+                  }
+                </style>
+
+                <ul id=mega-menu-main_menu class="top_menu navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                     data-event=hover data-effect=fade_up data-effect-speed=200 data-effect-mobile=disabled
                     data-effect-speed-mobile=0 data-panel-width=body data-panel-inner-width=1140px
                     data-mobile-force-width=false data-second-click=go data-document-click=collapse
                     data-vertical-behaviour=standard data-breakpoint=768 data-unbind=true
                     data-mobile-state=collapse_all data-hover-intent-timeout=300
                     data-hover-intent-interval=100>
-                  <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                    <a class="mega-menu-link link_header" href=index.html tabindex=0>Home</a>
+
+
+                  <li class=' nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                      id="mega-menu-item-3512">
+                    <a class="link_items dashicons-arrow-down mega-menu-link btn mega-menu-link link_header"
+                       href=index.html
+                       aria-haspopup=true
+                       aria-expanded=false
+                       tabindex=0>Home
+                    </a>
                   </li>
                   <!--                            About    -->
-                  <li class=' mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process' id=mega-menu>
-                    <a class="dashicons-arrow-down mega-menu-link link_header"
-                       href=about_ldcc_page.html aria-haspopup=true
-                       aria-expanded=false tabindex=0
+                  <li class='nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                      id=mega-menu-item-4360>
+                    <a class="link_items dashicons-arrow-down mega-menu-link link_header"
+                       href=about_ldcc_page.html
+                       aria-haspopup=true
+                       aria-expanded=false
+                       tabindex=0
                     >
-                      About
+                      About us
                       <span class=mega-indicator></span>
-
                     </a>
                     <ul
                             class=mega-sub-menu>
                       <li
                               class=' mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
-                              id=mega-menu-item-text-10>
+                      >
                         <div
                                 class=textwidget>
                           <div
@@ -441,7 +468,7 @@
                             </div>
                             <div class="custom-mega-menu mega-border">
                               <p class=proces-anchor style="margin-bottom: 15px;">
-                                <a href=about_ldcc_partnership.html#partnership>Partnership</a>
+                                <a href=about_ldcc_partnership.html#partnership>Our partner</a>
                               </p>
                             </div>
                             <div class=custom-mega-menu>
@@ -455,10 +482,12 @@
                     </ul>
                   </li>
                   <!--                            Services       -->
-                  <li class='mega-menu-services mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4360 menu-services'
-                      id=mega-menu-item-4360>
-                    <a class="dashicons-arrow-down mega-menu-link"
-                       href=service_ldcc_page.html aria-haspopup=true aria-expanded=false
+                  <li class='nav-items mega-menu-services mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4360 menu-services'
+                      id=mega-menu-item-4576>
+                    <a class="link_items dashicons-arrow-down mega-menu-link"
+                       href=service_ldcc_page.html
+                       aria-haspopup=true
+                       aria-expanded=false
                        tabindex=0>
                       Services
                       <span class=mega-indicator></span>
@@ -471,7 +500,6 @@
                             <p>We solve challenging market challenges and build all varieties of
                               custom and platform-based frameworks and provide comprehensive
                               end-to-end software development and IT services.</p>
-
                           </div>
                         </div>
                       </li>
@@ -482,7 +510,7 @@
                             <div class="custom-mega-menu mega-border">
                               <p class=services-anchor style="margin-bottom: 15px;">
                                 <a href=service_ldcc_page.html#application
-                                   target=_blank rel=noopener>Application development & integration</a>
+                                   target=_blank rel=noopener>Application development</a>
                               </p>
                             </div>
                             <div class="custom-mega-menu mega-border">
@@ -529,18 +557,16 @@
                   </li>
                   <!--                            Services   End    -->
                   <!--                            Products       -->
-                  <li
-                          class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
-                          id=mega-menu-item-4576><a
-                          class="dashicons-arrow-down mega-menu-link"
-                          href=product_ldcc_page.html aria-haspopup=true
-                          aria-expanded=false tabindex=0>Products<span
-                          class=mega-indicator></span></a>
-                    <ul
-                            class=mega-sub-menu>
-                      <li
-                              class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
-                              id=mega-menu-item-text-10>
+                  <li class='nav-items mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                      id=mega-menu-item-5584>
+                    <a
+                            class="link_items dashicons-arrow-down mega-menu-link"
+                            href=product_ldcc_page.html aria-haspopup=true
+                            aria-expanded=false tabindex=0>Products<span
+                            class=mega-indicator></span></a>
+                    <ul class=mega-sub-menu>
+                      <li class='mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-1-of-3 mega-menu-item-text-10'
+                          id=mega-menu-item-text-10>
                         <div
                                 class=textwidget>
                           <div
@@ -612,12 +638,12 @@
                   </li>
 
                   <!--                               Case study     -->
-                  <li
-                          class='mega-menu-about-us mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-5584 menu-about-us'
-                          id=mega-menu-item-5584><a
-                          class="dashicons-arrow-down mega-menu-link" href=case_studies_ldcc_page.html
-                          aria-haspopup=true aria-expanded=false tabindex=0>Case study<span
-                          class=mega-indicator></span></a>
+                  <li class='nav-items mega-menu-about-us mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-5584 menu-about-us'
+                      id=mega-menu-item-3513>
+                    <a
+                            class="link_items dashicons-arrow-down mega-menu-link" href=case_studies_ldcc_page.html
+                            aria-haspopup=true aria-expanded=false tabindex=0>Case study<span
+                            class=mega-indicator></span></a>
                     <ul
                             class=mega-sub-menu>
                       <li
@@ -652,7 +678,7 @@
                     </ul>
                   </li>
                   <!--                            Carerr  -->
-                  <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
+                  <li class='nav-item mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
                       id=mega-menu-item-4576>
                     <a class="dashicons-arrow-down mega-menu-link"
                        href=career_ldcc_page.html aria-haspopup=true
@@ -704,7 +730,7 @@
                     </ul>
                   </li>
                   <li class='mega-menu-process mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-right mega-hide-sub-menu-on-mobile mega-menu-item-4576 menu-process'
-                      id=mega-menu-item-4576>
+                      id=mega-menu-item-9904>
                     <a class="dashicons-arrow-down mega-menu-link"
                        href= aria-haspopup=true
                        aria-expanded=false tabindex=0>
@@ -957,71 +983,7 @@
                 <a href=case_studies_ldcc_page.html>
                   <img src="assets/image/Mobile/icons8-case-study-64.png" alt="" width="30"height="30">
                 </a>
-                <!--<div class=more-show>
-                    <h3>Case Study</h3>
-                    <ul>
-                        <div class="wgl-accordion icon-custom" data-type=toggle>
-                            <div class=wgl-accordion_panel>
-                                <div class="wgl-accordion_header groove-accordion_header">
-                                    <li class="childmenu menu-services-tab2">
-                                        <a href=software-development-services/index.html#professional_services>
-                                            <span class=menu-icon></span><span>Products</span>
-                                        </a>
-                                    </li>
-                                    <i class="wgl-accordion_icon flaticon flaticon-next contact-flaticon-next"></i>
-                                </div>
-                                <div class=wgl-accordion_content style=display:none;>
-                                    <div class data-element_type=widget data-widget_type=image-box.default>
-                                        <a class="menu-child overview"
-                                           href=software-development-services/index.html#professional_services>API Gateway</a>
-                                        <a class="menu-child software-consultancy"
-                                           href=software-consultancy/index.html>Smart building management</a>
-                                        <a class="menu-child team-augmentation-full-team-outsourcing"
-                                           href=team-augmentation-full-team-outsourcing/index.html>SaaS</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=wgl-accordion_panel>
-                                <div class="wgl-accordion_header groove-accordion_header">
-                                    <li class="childmenu menu-services-tab1">
-                                        <a href=software-development-services/index.html#custom_software_development>
-                                            <span class=menu-icon>
-                                                <i class='bx bx-server'></i>
-                                            </span>
-                                            <span>Services</span>
-                                        </a>
-                                    </li>
-                                    <i class="wgl-accordion_icon flaticon flaticon-next contact-flaticon-next"></i>
-                                </div>
-                                <div class=wgl-accordion_content style=display:none;>
-                                    <div class data-element_type=widget data-widget_type=image-box.default>
-                                        <a class="menu-child overview"
-                                           href=software-development-services/index.html#custom_software_development>
-                                            Application development & integration</a>
-                                        <a class="menu-child build-ios-android"
-                                           href=build-react-native-ios-android-mobile-app/index.html>ERP implementation
-                                        </a>
-                                        <a
-                                                class="menu-child react-native"
-                                                href=react-native-mobile-app-development/index.html>Security</a>
-                                        <a
-                                                class="menu-child custom-app"
-                                                href=custom-application-development/index.html>
-                                            System management</a>
-                                        <a
-                                                class="menu-child web-app"
-                                                href=web-application-development/index.html>Cloud transformation</a>
-                                        <a
-                                                class="menu-child product-dev"
-                                                href=product-development/index.html>IT offshore</a>
-                                        <a
-                                                class="menu-child iot-page"
-                                                href=internet-of-things-iot/index.html>Data Center</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>-->
+
               </li>
 
               <!--                    Mobile   -->
