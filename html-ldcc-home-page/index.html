@@ -12,13 +12,13 @@
     <link href="assets/css/home/paper-kit.css?v=2.1.0" rel="stylesheet"/>
     <link href="assets/css/home/demo.css" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<!--    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel=preload href=assets/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js as=script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -114,17 +114,6 @@
         }
     </style>
 
-    <script>
-        console.log('hai nv')
-        function myFunction() {
-            const myNodelist = document.querySelectorAll(".nav-items");
-            for (let i = 0; i < myNodelist.length; i++) {
-                myNodelist[i].addEventListener("click", function() {
-                    this.classList.add("active");
-                });
-            }
-        }
-    </script>
 
 </head>
 <body style=" font-family: 'Poppins', sans-serif !important;"
@@ -199,13 +188,9 @@
                 <div class="groove-element groove-column groove-col-menu-2 hiden-tablet">
                     <div id=mega-menu-wrap-main_menu class=mega-menu-wrap>
                         <div class=mega-menu-toggle>
-                            <div class=mega-toggle-blocks-left>
+                            <div class=mega-toggle-blocks-left></div>
 
-                            </div>
-
-                            <div class=mega-toggle-blocks-center>
-
-                            </div>
+                            <div class=mega-toggle-blocks-center></div>
                             <div class=mega-toggle-blocks-right>
                                 <div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0'
                                      id=mega-toggle-block-0>
@@ -220,23 +205,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <script>
-                            $(document).ready(function () {
-                                $(".top_menu .nav-items .link_items").click(function (e) {
-                                    $(".top_menu .nav-items.active_ss").removeClass("active_ss");
-
-                                    var $parent = $(this).parent();
-                                    $parent.addClass("active_ss");
-                                    // e.preventDefault();
-                                });
-                            });
-                        </script>
-                        <style>
-                            .active_ss {
-                                color: #0051ff !important;
-                            }
-                        </style>
 
                         <ul id=mega-menu-main_menu class="top_menu navbar-nav mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
                             data-event=hover data-effect=fade_up data-effect-speed=200 data-effect-mobile=disabled
@@ -2263,7 +2231,7 @@
     </div>
 </footer>
 
-<script src=assets/js/static/widget.js></script>
+<!--<script src=assets/js/static/widget.js></script>-->
 <noscript>
     <iframe
             height=0 width=0 style=display:none;visibility:hidden
@@ -2284,14 +2252,13 @@ lazySizes.init();
 <!--
 <script id=zikzag-theme-js-extra>var wgl_core = {"ajaxurl": "https:\/\/groovetechnology.com\/wp-admin\/admin-ajax.php"};</script>
 -->
-<script src='assets/wp-content/themes/zikzag/js/themef658.js?ver=5.8.1'
-        id=zikzag-theme-js></script>
-<script src='assets/wp-content/themes/zikzag/js/perfect-scrollbar.min8a54.js?ver=1.0.0'
-        id=perfect-scrollbar-js></script>
-<script src='assets/wp-includes/js/hoverIntent.min73b9.js?ver=1.10.1' id=hoverIntent-js></script>
+<!--<script src='assets/wp-content/themes/zikzag/js/themef658.js?ver=5.8.1'-->
+<!--        id=zikzag-theme-js></script>-->
+<!--<script src='assets/wp-content/themes/zikzag/js/perfect-scrollbar.min8a54.js?ver=1.0.0'-->
+<!--        id=perfect-scrollbar-js></script>-->
+<!--<script src='assets/wp-includes/js/hoverIntent.min73b9.js?ver=1.10.1' id=hoverIntent-js></script>-->
 <script id=megamenu-js-extra>var megamenu = {"timeout": "300", "interval": "100"};</script>
-<script src='assets/wp-content/plugins/megamenu/js/maxmegamenuab7d.js?ver=2.9.2'
-        id=megamenu-js></script>
+<script src='assets/wp-content/plugins/megamenu/js/maxmegamenuab7d.js?ver=2.9.2' id=megamenu-js></script>
 <script src='assets/wp-includes/js/wp-embed.minf658.js?ver=5.8.1' id=wp-embed-js></script>
 <script src='assets/wp-content/plugins/elementor/assets/lib/slick/slick.minc245.js?ver=1.8.1'
         id=jquery-slick-js></script>
@@ -2330,7 +2297,7 @@ function copyToClipboard1(element) {
         window.dispatchEvent(e)
     }
 }</script>
-<script async src=assets/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js></script>
+<!--<script async src=assets/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js></script>-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
